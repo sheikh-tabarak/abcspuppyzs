@@ -16,11 +16,33 @@
       $("#header").load("components/header.html");
       $("#footer").load("components/footer.html");
     });
+
+
   </script>
 </head>
 
 <body>
   <div id="header"></div>
+
+  <div id="videoLightBox"
+    class="hidden bg-black w-full h-full fixed z-[60] items-center text-center flex justify-center bg-opacity-80">
+    <a href="#" onclick="LinkBoxClose()" class="absolute top-10 right-10 text-gray-200 p-2 rounded-lg w-10 h-10">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="white" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+        <path
+          d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
+        </path>
+      </svg>
+    </a>
+
+    <video id="LinkBoxContainer"
+      class="place-self-center fixed w-[500px] border border-gray-200 rounded-lg dark:border-gray-700" controls>
+      <source
+        src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4"
+        type="video/mp4" />
+
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
   <section onclick="closeNav()" id="body" class="pt-32">
     <section id="hero-section" class="bg-gray-100">
@@ -312,39 +334,84 @@
       </p>
 
       <div
-        class="text-left grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-10 lg:grid lg:grid-cols-2 lg:gap-16 pt-5">
+        class="text-left grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-10 lg:grid lg:grid-cols-2 lg:gap-16 pt-10">
         <div>
-          <p
-            class="text-center md:text-left lg:text-left max-w-2xl mb-6 font-light text-gray-300 lg:mb-8 md:text-lg lg:text-md">
-            We Cherish Our Pups and Their Forever Families.<br />
-            Hear the Williams Family Share their ABCs Puppy Zs Experience.
-          </p>
 
-          <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" controls>
-            <source
-              src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4"
-              type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+
+          <figure class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+
+            <div class="animate-ping bg-white opacity-[0.8] rounded-full absolute top-7 right-7 w-[40px] h-[40px]">
+            </div>
+            <svg
+              onclick="LinkBoxDisplay('abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4')"
+              class="absolute top-7 right-7" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" style="enable-background: new 0 0 32 32"
+              version="1.1" viewBox="0 0 32 32" width="40px" xml:space="preserve">
+              <g id="Layer_1" />
+              <g id="play_x5F_alt">
+                <path
+                  d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
+                  style="fill: white" />
+              </g>
+            </svg>
+
+
+
+            <a href="#">
+              <img class="h-[300px] w-full rounded-lg"
+                src="https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcspuppyzs-review-williamsae.jpg"
+                alt="image description" />
+            </a>
+            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+              <p class="bg-black p-5 rounded-lg bg-opacity-70">
+                We Cherish Our Pups and Their Forever Families.<br />
+                Hear the Williams Family Share their ABCs Puppy Zs Experience.
+              </p>
+            </figcaption>
+          </figure>
         </div>
         <div>
-          <p
-            class="text-center md:text-left lg:text-left max-w-2xl mb-6 font-light text-gray-300 lg:mb-8 md:text-lg lg:text-md">
-            We Feel Blessed Raising Goldendoodles. Meet Charlie and Moose, the
-            Bissell Family's Two Amazing Micro Goldendoodles from ABCs Puppy
-            Zs.
-          </p>
 
-          <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" controls>
-            <source
-              src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-bissweat.mp4"
-              type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <figure class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+           
+            <div class="animate-ping bg-white opacity-[0.8] rounded-full absolute top-7 right-7 w-[40px] h-[40px]">
+            </div>
+            <svg
+              onclick="  LinkBoxDisplay('abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-bissweat.mp4') "
+              class="absolute top-7 right-7" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" style="enable-background: new 0 0 32 32"
+              version="1.1" viewBox="0 0 32 32" width="40px" xml:space="preserve">
+              <g id="Layer_1" />
+              <g id="play_x5F_alt">
+                <path
+                  d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
+                  style="fill: white" />
+              </g>
+            </svg>
+
+
+     
+            <a href="#">
+              <img class="h-[300px] w-full rounded-lg"
+                src="https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcspuppyzs-review-bissweat.jpg"
+                alt="image description" />
+            </a>
+            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+              <p class="bg-black p-5 rounded-lg bg-opacity-70">
+                We Feel Blessed Raising Goldendoodles. Meet Charlie and Moose,
+                the Bissell Family's Two Amazing Micro Goldendoodles from ABCs
+                Puppy Zs.
+              </p>
+            </figcaption>
+          </figure>
+
+
         </div>
       </div>
     </section>
   </section>
+
+
 
   <div id="footer"></div>
 </body>
