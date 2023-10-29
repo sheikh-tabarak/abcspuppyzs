@@ -1,419 +1,699 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./utilities/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <script src="./utilities/js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./utilities/css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  <script src="./utilities/js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $("#header").load("components/header.html");
+        $("#footer").load("components/footer.html");
+      });
+    </script>
 
-  <script>
-    $(function () {
-      $("#header").load("components/header.html");
-      $("#footer").load("components/footer.html");
-    });
+    <script>
+      function LinkBoxDisplay(link) {
+        // document.getElementById("videoLightBox").style.display = "flex";
+        const container = document.getElementById("videoLightBox");
+        container.style.display = "flex";
+        // container.style.width = "100%";
+        const media = document.getElementById("LinkBoxContainer");
+        media.src = "https://" + link;
+        media.autoplay = true;
+      }
 
+      function LinkBoxClose() {
+        const container = document.getElementById("videoLightBox");
+        container.style.display = "none";
+        const media = document.getElementById("LinkBoxContainer");
+        media.pause();
+      }
+    </script>
+  </head>
 
-  </script>
-</head>
+  <body>
+    <div id="header"></div>
 
-<body>
-  <div id="header"></div>
+    <div
+      id="videoLightBox"
+      class="hidden bg-black w-full h-full fixed z-[60] items-center text-center flex justify-center bg-opacity-80"
+    >
+      <a
+        href="#"
+        onclick="LinkBoxClose()"
+        class="absolute top-10 right-10 text-gray-200 p-2 rounded-lg w-10 h-10"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          x="0px"
+          y="0px"
+          width="30"
+          height="30"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+          ></path>
+        </svg>
+      </a>
 
-  <div id="videoLightBox"
-    class="hidden bg-black w-full h-full fixed z-[60] items-center text-center flex justify-center bg-opacity-80">
-    <a href="#" onclick="LinkBoxClose()" class="absolute top-10 right-10 text-gray-200 p-2 rounded-lg w-10 h-10">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="white" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-        <path
-          d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
-        </path>
-      </svg>
-    </a>
+      <video
+        id="LinkBoxContainer"
+        class="place-self-center fixed w-[500px] border border-gray-200 rounded-lg dark:border-gray-700"
+        controls
+      >
+        <source
+          src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4"
+          type="video/mp4"
+        />
 
-    <video id="LinkBoxContainer"
-      class="place-self-center fixed w-[500px] border border-gray-200 rounded-lg dark:border-gray-700" controls>
-      <source
-        src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4"
-        type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <section onclick="closeNav()" id="body" class="pt-32">
-    <section id="hero-section" class="bg-gray-100">
-      <div
-        class="text-center md:text-left lg:text-left grid max-w-screen-xl px-12 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-4 lg:grid-cols-12 px-10 lg:px-16">
-        <img class="w-[250px] place-self-center md:hidden lg:hidden" src="public/images/herodog.png"
-          alt="ABCs Puppy Zs" />
-        <div class="mr-auto place-self-center lg:col-span-7">
-          <span
-            class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">GOLDENDOODLES
-            FOR SALE</span>
-          <h1 class="max-w-2xl my-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-            ABCs Puppy Zs
-          </h1>
-          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-            Make Your Next Best Friend A Family-Raised, Texas-Spoiled
-            Goldendoodle!
-          </p>
-          <a href="https://www.abcspuppyzs.com/goldendoodle-puppy-conference/"
-            class="my-1 inline-flex items-center justify-center px-5 py-3 lg:mr-3 text-base font-medium text-center text-white rounded-lg bg-[#27A7DF] hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:ring-primary-300">
-            Schedule Time With Us
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-          <a href="#products"
-            class="my-1 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
-            Visit Goldendoodles Sale
-          </a>
+    <section onclick="closeNav()" id="body" class="pt-32">
+      <section id="hero-section" class="bg-gray-100">
+        <div
+          class="text-center md:text-left lg:text-left grid max-w-screen-xl px-12 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-4 lg:grid-cols-12 px-10 lg:px-16"
+        >
+          <img
+            class="w-[250px] place-self-center md:hidden lg:hidden"
+            src="public/images/herodog.png"
+            alt="ABCs Puppy Zs"
+          />
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <span
+              class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+              >GOLDENDOODLES FOR SALE</span
+            >
+            <h1
+              class="max-w-2xl my-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+            >
+              ABCs Puppy Zs
+            </h1>
+            <p
+              class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl"
+            >
+              Make Your Next Best Friend A Family-Raised, Texas-Spoiled
+              Goldendoodle!
+            </p>
+            <a
+              href="https://www.abcspuppyzs.com/goldendoodle-puppy-conference/"
+              class="my-1 inline-flex items-center justify-center px-5 py-3 lg:mr-3 text-base font-medium text-center text-white rounded-lg bg-[#27A7DF] hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:ring-primary-300"
+            >
+              Schedule Time With Us
+              <svg
+                class="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#products"
+              class="my-1 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
+            >
+              Visit Goldendoodles Sale
+            </a>
+          </div>
+          <div class="hidden w-[500px] lg:mt-0 lg:col-span-5 lg:flex">
+            <img src="public/images/herodog.png" alt="mockup" />
+          </div>
         </div>
-        <div class="hidden w-[500px] lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="public/images/herodog.png" alt="mockup" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="products" class="products-section my-6 px-8 lg:px-16 py-4">
-      <p class="pb-2 text-center md:text-left lg:text-left rounded-md bg-white text-md font-medium text-[#27A7DF]">
-        Goldendoodle for sale
-      </p>
+      <section id="products" class="products-section my-6 px-8 lg:px-16 py-4">
+        <p
+          class="pb-2 text-center md:text-left lg:text-left rounded-md bg-white text-md font-medium text-[#27A7DF]"
+        >
+          Goldendoodle for sale
+        </p>
 
-      <p class="text-xl font-extrabold text-center md:text-left lg:text-left leading-2 md:text-xl xl:text-3xl">
-        Browse our Puppy Cuddle Piles
-      </p>
+        <p
+          class="text-xl font-extrabold text-center md:text-left lg:text-left leading-2 md:text-xl xl:text-3xl"
+        >
+          Browse our Puppy Cuddle Piles
+        </p>
 
-      <div class="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-4 lg:grid lg:grid-cols-4 lg:gap-4 mt-6">
-        <!-- 
+        <div
+          class="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-4 lg:grid lg:grid-cols-4 lg:gap-4 mt-6"
+        >
+          <!-- 
         1st Product Section -->
 
-        <div
-          class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-          <a href="https://www.abcspuppyzs.com/mini-goldendoodle-for-sale/">
-            <img class="rounded-t-lg" src="public/images/product1.jpg" alt="" />
-          </a>
-          <div class="p-5">
-            <a a href="https://www.abcspuppyzs.com/mini-goldendoodle-for-sale/">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Mini Goldendoodles
-              </h5>
+          <div
+            class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <a href="https://www.abcspuppyzs.com/mini-goldendoodle-for-sale/">
+              <img
+                class="rounded-t-lg"
+                src="public/images/product1.jpg"
+                alt=""
+              />
             </a>
+            <div class="p-5">
+              <a
+                a
+                href="https://www.abcspuppyzs.com/mini-goldendoodle-for-sale/"
+              >
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                >
+                  Mini Goldendoodles
+                </h5>
+              </a>
 
-            <p class="mb-2 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2" />
-                </svg>
-                <strong> Average Weight: &nbsp;</strong> 25-35lbs</span>
-            </p>
-            <p class="mb-4 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 22 22">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z" />
-                </svg>
+              <p class="mb-2 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2"
+                    />
+                  </svg>
+                  <strong> Average Weight: &nbsp;</strong> 25-35lbs</span
+                >
+              </p>
+              <p class="mb-4 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 22 22"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z"
+                    />
+                  </svg>
 
-                <strong>Shedding: &nbsp;</strong> Low-to-Moderate</span>
-            </p>
-            <a href="https://www.abcspuppyzs.com/mini-goldendoodle-for-sale/"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
-              Get it now
-              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
+                  <strong>Shedding: &nbsp;</strong> Low-to-Moderate</span
+                >
+              </p>
+              <a
+                href="https://www.abcspuppyzs.com/mini-goldendoodle-for-sale/"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Get it now
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- 
+          <!-- 
           2nd Product Section -->
 
-        <div
-          class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-          <a href="https://www.abcspuppyzs.com/micro-goldendoodle-for-sale/">
-            <img class="rounded-t-lg" src="public/images/product2.jpg" alt="" />
-          </a>
-          <div class="p-5">
-            <a a href="https://www.abcspuppyzs.com/micro-goldendoodle-for-sale/">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Micro Goldendoodles
-              </h5>
+          <div
+            class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <a href="https://www.abcspuppyzs.com/micro-goldendoodle-for-sale/">
+              <img
+                class="rounded-t-lg"
+                src="public/images/product2.jpg"
+                alt=""
+              />
             </a>
+            <div class="p-5">
+              <a
+                a
+                href="https://www.abcspuppyzs.com/micro-goldendoodle-for-sale/"
+              >
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                >
+                  Micro Goldendoodles
+                </h5>
+              </a>
 
-            <p class="mb-2 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2" />
-                </svg>
-                <strong> Average Weight: &nbsp;</strong> 15-25lbs</span>
-            </p>
-            <p class="mb-4 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 22 22">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z" />
-                </svg>
+              <p class="mb-2 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2"
+                    />
+                  </svg>
+                  <strong> Average Weight: &nbsp;</strong> 15-25lbs</span
+                >
+              </p>
+              <p class="mb-4 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 22 22"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z"
+                    />
+                  </svg>
 
-                <strong> Shedding: &nbsp;</strong> Low</span>
-            </p>
-            <a href="https://www.abcspuppyzs.com/micro-goldendoodle-for-sale/"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
-              Get it now
-              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
+                  <strong> Shedding: &nbsp;</strong> Low</span
+                >
+              </p>
+              <a
+                href="https://www.abcspuppyzs.com/micro-goldendoodle-for-sale/"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Get it now
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- 
+          <!-- 
           3rd Product Section -->
 
-        <div
-          class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-          <a href="https://www.abcspuppyzs.com/toy-goldendoodle-for-sale/">
-            <img class="rounded-t-lg" src="public/images/product3.jpg" alt="" />
-          </a>
-          <div class="p-5">
-            <a a href="https://www.abcspuppyzs.com/toy-goldendoodle-for-sale/">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Toy Goldendoodles
-              </h5>
+          <div
+            class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <a href="https://www.abcspuppyzs.com/toy-goldendoodle-for-sale/">
+              <img
+                class="rounded-t-lg"
+                src="public/images/product3.jpg"
+                alt=""
+              />
             </a>
+            <div class="p-5">
+              <a
+                a
+                href="https://www.abcspuppyzs.com/toy-goldendoodle-for-sale/"
+              >
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                >
+                  Toy Goldendoodles
+                </h5>
+              </a>
 
-            <p class="mb-2 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2" />
-                </svg>
-                <strong> Average Weight: &nbsp;</strong> 10-20lbs
-              </span>
-            </p>
-            <p class="mb-4 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 22 22">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z" />
-                </svg>
+              <p class="mb-2 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2"
+                    />
+                  </svg>
+                  <strong> Average Weight: &nbsp;</strong> 10-20lbs
+                </span>
+              </p>
+              <p class="mb-4 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 22 22"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z"
+                    />
+                  </svg>
 
-                <strong> Shedding: &nbsp;</strong> Low</span>
-            </p>
-            <a href="https://www.abcspuppyzs.com/toy-goldendoodle-for-sale/"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
-              Get it now
-              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
+                  <strong> Shedding: &nbsp;</strong> Low</span
+                >
+              </p>
+              <a
+                href="https://www.abcspuppyzs.com/toy-goldendoodle-for-sale/"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Get it now
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- 
+          <!-- 
           4rth Product Section -->
 
-        <div
-          class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-          <a href="https://www.abcspuppyzs.com/teacup-goldendoodle-for-sale/">
-            <img class="rounded-t-lg" src="public/images/product4.jpg" alt="" />
-          </a>
-          <div class="p-5">
-            <a a href="https://www.abcspuppyzs.com/teacup-goldendoodle-for-sale/">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Teacup Goldendoodles
-              </h5>
+          <div
+            class="transform transition duration-300 hover:translate-y-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <a href="https://www.abcspuppyzs.com/teacup-goldendoodle-for-sale/">
+              <img
+                class="rounded-t-lg"
+                src="public/images/product4.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a
+                a
+                href="https://www.abcspuppyzs.com/teacup-goldendoodle-for-sale/"
+              >
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                >
+                  Teacup Goldendoodles
+                </h5>
+              </a>
+
+              <p class="mb-2 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2"
+                    />
+                  </svg>
+                  <strong> Average Weight: &nbsp;</strong> 5-15lbs</span
+                >
+              </p>
+              <p class="mb-4 font-normal text-gray-700">
+                <span
+                  class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]"
+                >
+                  <svg
+                    class="w-3 h-3 mr-1 e"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 22 22"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z"
+                    />
+                  </svg>
+
+                  <strong> Shedding: &nbsp;</strong> Low</span
+                >
+              </p>
+              <a
+                href="https://www.abcspuppyzs.com/teacup-goldendoodle-for-sale/"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Get it now
+                <svg
+                  class="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white px-8 lg:px-16 py-4">
+        <p
+          class="pb-2 text-center md:text-left lg:text-left lg:text-left rounded-md bg-white text-md font-medium text-[#27A7DF]"
+        >
+          Goldendoodle for sale
+        </p>
+
+        <p
+          class="text-xl font-extrabold text-center md:text-left lg:text-left leading-2 md:text-xl xl:text-3xl"
+        >
+          Browse our Puppy Cuddle Piles
+        </p>
+
+        <div class="mt-6 p-2 px-4 ring-1 rounded-lg ring-gray-200">
+          <div
+            class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400"
+          >
+            <a
+              href="#"
+              class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center"
+            >
+              <img class="" src="public/images/logo1.svg" alt="" />
+            </a>
+            <a
+              href="#"
+              class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center"
+            >
+              <img class="" src="public/images/logo2.png" alt="" />
+            </a>
+            <a
+              href="#"
+              class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center"
+            >
+              <img class="" src="public/images/logo3.png" alt="" />
             </a>
 
-            <p class="mb-2 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2" />
-                </svg>
-                <strong> Average Weight: &nbsp;</strong> 5-15lbs</span>
-            </p>
-            <p class="mb-4 font-normal text-gray-700">
-              <span
-                class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#27A7DF] ring-1 ring-inset ring-[#27A7DF]">
-                <svg class="w-3 h-3 mr-1 e" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 22 22">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m12.46 7.291 3.849-3.849a1.5 1.5 0 0 1 2.122 0l.127.127a1.5 1.5 0 0 1 0 2.122l-3.839 3.838a4 4 0 0 0-2.259-2.238Zm0 0a4 4 0 0 1 2.263 2.238l3.662-3.662a8.96 8.96 0 0 1 0 10.27l-3.676-3.676m-2.249-5.17 3.677-3.676a8.96 8.96 0 0 0-10.27 0l3.662 3.662a4 4 0 0 0-2.238 2.258L3.615 5.863a8.961 8.961 0 0 0 0 10.27l3.662-3.662a4 4 0 0 0 2.258 2.238l-3.672 3.676a8.96 8.96 0 0 0 10.27 0l-3.662-3.662a4 4 0 0 0 2.238-2.262m0 0 3.849 3.848a1.499 1.499 0 0 1 0 2.122l-.127.126a1.5 1.5 0 0 1-2.122 0l-3.838-3.838a4 4 0 0 0 2.238-2.258ZM15 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-7.719 1.471-3.839 3.838a1.5 1.5 0 0 0 0 2.122l.127.126a1.5 1.5 0 0 0 2.122 0l3.848-3.848a4 4 0 0 1-2.258-2.238Zm2.248-5.19L5.691 3.442a1.5 1.5 0 0 0-2.122 0l-.127.127a1.5 1.5 0 0 0 0 2.122l3.849 3.848a4 4 0 0 1 2.238-2.258Z" />
-                </svg>
-
-                <strong> Shedding: &nbsp;</strong> Low</span>
-            </p>
-            <a href="https://www.abcspuppyzs.com/teacup-goldendoodle-for-sale/"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#27A7DF] rounded-lg hover:bg-[#27A7DF] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
-              Get it now
-              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
+            <a
+              href="#"
+              class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center"
+            >
+              <img class="" src="public/images/logo4.webp" alt="" />
+            </a>
+            <a
+              href="#"
+              class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center"
+            >
+              <img class="" src="public/images/logo5.jpg" alt="" />
             </a>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="bg-black px-8 py-8 lg:px-16 lg:py-12 mt-4">
+        <p
+          class="pb-2 text-center md:text-left lg:text-left rounded-md text-md font-medium text-[#27A7DF]"
+        >
+          Video Testimonials
+        </p>
+
+        <p
+          class="text-xl font-extrabold text-center md:text-left lg:text-left leading-2 md:text-xl xl:text-3xl text-white"
+        >
+          About Our Pups From Their Forever-Home Families
+        </p>
+
+        <div
+          class="text-left grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-10 lg:grid lg:grid-cols-2 lg:gap-16 pt-10"
+        >
+          <div>
+            <figure
+              class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+            >
+              <div
+                class="animate-ping bg-white opacity-[0.8] rounded-full absolute top-7 right-7 w-[40px] h-[40px]"
+              ></div>
+              <svg
+                onclick="LinkBoxDisplay('abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4')"
+                class="absolute top-7 right-7"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                height="40px"
+                style="enable-background: new 0 0 32 32"
+                version="1.1"
+                viewBox="0 0 32 32"
+                width="40px"
+                xml:space="preserve"
+              >
+                <g id="Layer_1" />
+                <g id="play_x5F_alt">
+                  <path
+                    d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
+                    style="fill: white"
+                  />
+                </g>
+              </svg>
+
+              <a href="#">
+                <img
+                  class="h-[300px] w-full rounded-lg"
+                  src="https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcspuppyzs-review-williamsae.jpg"
+                  alt="image description"
+                />
+              </a>
+              <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                <p class="bg-black p-5 rounded-lg bg-opacity-70">
+                  We Cherish Our Pups and Their Forever Families.<br />
+                  Hear the Williams Family Share their ABCs Puppy Zs Experience.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure
+              class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+            >
+              <div
+                class="animate-ping bg-white opacity-[0.8] rounded-full absolute top-7 right-7 w-[40px] h-[40px]"
+              ></div>
+              <svg
+                onclick="  LinkBoxDisplay('abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-bissweat.mp4') "
+                class="absolute top-7 right-7"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                height="40px"
+                style="enable-background: new 0 0 32 32"
+                version="1.1"
+                viewBox="0 0 32 32"
+                width="40px"
+                xml:space="preserve"
+              >
+                <g id="Layer_1" />
+                <g id="play_x5F_alt">
+                  <path
+                    d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
+                    style="fill: white"
+                  />
+                </g>
+              </svg>
+
+              <a href="#">
+                <img
+                  class="h-[300px] w-full rounded-lg"
+                  src="https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcspuppyzs-review-bissweat.jpg"
+                  alt="image description"
+                />
+              </a>
+              <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                <p class="bg-black p-5 rounded-lg bg-opacity-70">
+                  We Feel Blessed Raising Goldendoodles. Meet Charlie and Moose,
+                  the Bissell Family's Two Amazing Micro Goldendoodles from ABCs
+                  Puppy Zs.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="bg-white px-8 lg:px-16 py-4">
-      <p
-        class="pb-2 text-center md:text-left lg:text-left lg:text-left rounded-md bg-white text-md font-medium text-[#27A7DF]">
-        Goldendoodle for sale
-      </p>
-
-      <p class="text-xl font-extrabold text-center md:text-left lg:text-left leading-2 md:text-xl xl:text-3xl">
-        Browse our Puppy Cuddle Piles
-      </p>
-
-      <div class="mt-6 p-2 px-4 ring-1 rounded-lg ring-gray-200">
-        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400">
-          <a href="#"
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center">
-            <img class="" src="public/images/logo1.svg" alt="" />
-          </a>
-          <a href="#"
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center">
-            <img class="" src="public/images/logo2.png" alt="" />
-          </a>
-          <a href="#"
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center">
-            <img class="" src="public/images/logo3.png" alt="" />
-          </a>
-
-          <a href="#"
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center">
-            <img class="" src="public/images/logo4.webp" alt="" />
-          </a>
-          <a href="#"
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 flex justify-center items-center">
-            <img class="" src="public/images/logo5.jpg" alt="" />
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-black px-8 py-8 lg:px-16 lg:py-12 mt-4">
-      <p class="pb-2 text-center md:text-left lg:text-left rounded-md text-md font-medium text-[#27A7DF]">
-        Video Testimonials
-      </p>
-
-      <p
-        class="text-xl font-extrabold text-center md:text-left lg:text-left leading-2 md:text-xl xl:text-3xl text-white">
-        About Our Pups From Their Forever-Home Families
-      </p>
-
-      <div
-        class="text-left grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-10 lg:grid lg:grid-cols-2 lg:gap-16 pt-10">
-        <div>
-
-
-          <figure class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-
-            <div class="animate-ping bg-white opacity-[0.8] rounded-full absolute top-7 right-7 w-[40px] h-[40px]">
-            </div>
-            <svg
-              onclick="LinkBoxDisplay('abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4')"
-              class="absolute top-7 right-7" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" style="enable-background: new 0 0 32 32"
-              version="1.1" viewBox="0 0 32 32" width="40px" xml:space="preserve">
-              <g id="Layer_1" />
-              <g id="play_x5F_alt">
-                <path
-                  d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
-                  style="fill: white" />
-              </g>
-            </svg>
-
-
-
-            <a href="#">
-              <img class="h-[300px] w-full rounded-lg"
-                src="https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcspuppyzs-review-williamsae.jpg"
-                alt="image description" />
-            </a>
-            <figcaption class="absolute px-4 text-lg text-white bottom-6">
-              <p class="bg-black p-5 rounded-lg bg-opacity-70">
-                We Cherish Our Pups and Their Forever Families.<br />
-                Hear the Williams Family Share their ABCs Puppy Zs Experience.
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-        <div>
-
-          <figure class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-           
-            <div class="animate-ping bg-white opacity-[0.8] rounded-full absolute top-7 right-7 w-[40px] h-[40px]">
-            </div>
-            <svg
-              onclick="  LinkBoxDisplay('abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-bissweat.mp4') "
-              class="absolute top-7 right-7" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" style="enable-background: new 0 0 32 32"
-              version="1.1" viewBox="0 0 32 32" width="40px" xml:space="preserve">
-              <g id="Layer_1" />
-              <g id="play_x5F_alt">
-                <path
-                  d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
-                  style="fill: white" />
-              </g>
-            </svg>
-
-
-     
-            <a href="#">
-              <img class="h-[300px] w-full rounded-lg"
-                src="https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcspuppyzs-review-bissweat.jpg"
-                alt="image description" />
-            </a>
-            <figcaption class="absolute px-4 text-lg text-white bottom-6">
-              <p class="bg-black p-5 rounded-lg bg-opacity-70">
-                We Feel Blessed Raising Goldendoodles. Meet Charlie and Moose,
-                the Bissell Family's Two Amazing Micro Goldendoodles from ABCs
-                Puppy Zs.
-              </p>
-            </figcaption>
-          </figure>
-
-
-        </div>
-      </div>
-    </section>
-  </section>
-
-
-
-  <div id="footer"></div>
-</body>
-
+    <div id="footer"></div>
+  </body>
 </html>

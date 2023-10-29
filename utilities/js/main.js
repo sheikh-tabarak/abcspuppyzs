@@ -50,20 +50,3 @@ $(document).ready(function () {
 });
 
 // Video Light boxes
-
-function LinkBoxDisplay(link) {
-  // document.getElementById("videoLightBox").style.display = "flex";
-  const container = document.getElementById("videoLightBox");
-  container.style.display = "flex";
-  // container.style.width = "100%";
-  const media = document.getElementById("LinkBoxContainer");
-  media.src = "https://" + link;
-  media.autoplay = true;
-}
-
-function LinkBoxClose() {
-  const container = document.getElementById("videoLightBox");
-  container.style.display = "none";
-  const media = document.getElementById("LinkBoxContainer");
-  media.pause();
-}
