@@ -49,4 +49,6 @@ $(document).ready(function () {
   });
 });
 
-// Video Light boxes
+// Toogling the FAQs
+
+

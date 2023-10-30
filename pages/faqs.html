@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../utilities/css/style.css" />
+    <script src="/utilities/js/main.js"></script>
+    
+
+    <title>FAQs | ABCs Puppy Zs</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $("#header").load("/components/header.html");
+      $("#footer").load("/components/footer.html");
+    });
+  </script>
+</head>
+
+<body>
+
+    <div id="header"></div>
+    
+    <div class="mx-auto mt-[200px] mb-[50px] lg:w-[800px] text-center lg:mb-10 px-10 lg:px-16">
+        <span class="block mb-2 text-lg font-semibold text-primary"> FAQ </span>
+        <h2 class="text-dark text-[#186C91] mb-4 text-3xl font-bold sm:text-[40px]/[48px]">
+            Any Questions? Look Here
+        </h2>
+        <p class="text-base text-body-color dark:text-dark-6">
+            There are many variations of passages of Lorem Ipsum available but the
+            majority have suffered alteration in some form.
+        </p>
+    </div>
+
+    <div class="lg:flex lg:gap-4 px-10 lg:px-16">
+
+        <div>
+
+            <div class="accordion-item my-6">
+                <div id="flex-inline justify-between"
+                    class="accordion-item-header rounded-xl bg-[#186C91] cursor-pointer select-none border-2 border-[#186C91] px-4 py-4 text-gray-100 transition duration-300 hover:border-[#186C91] hover:text-white">
+               Where are you Located?
+                    
+                </div>
+                <div class="accordion-item-body" style="max-height: 0px">
+                    <div
+                        class="accordion-item-body-content w-full rounded-xl bg-teal-100/40 mt-2 px-4 py-5 text-teal-800">
+                        <p>
+                            We are located outside of the Dallas/Fort Worth (DFW) Metroplex in
+                            Texas. Specifically, you can find us North of Fort Worth and just
+                            West of Roanoke. Out of State? No Worries! We Offer Nationwide
+                            Hand Delivery of Our Pups all over the United States.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item my-6">
+                <div id=""
+                    class="accordion-item-header rounded-xl bg-[#186C91] w-full cursor-pointer select-none border-2 border-[#186C91] px-4 py-4 text-gray-100 transition duration-300 hover:border-[#186C91] hover:text-white">
+                    Where are you Located?
+                </div>
+                <div class="accordion-item-body" style="max-height: 0px">
+                    <div
+                        class="accordion-item-body-content w-full rounded-xl bg-teal-100/40 mt-2 px-4 py-5 text-teal-800">
+                        <p>
+                            We are located outside of the Dallas/Fort Worth (DFW) Metroplex in
+                            Texas. Specifically, you can find us North of Fort Worth and just
+                            West of Roanoke. Out of State? No Worries! We Offer Nationwide
+                            Hand Delivery of Our Pups all over the United States.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+        <div class="accordion-item my-6">
+            <div id=""
+                class="accordion-item-header rounded-xl bg-[#186C91] w-full cursor-pointer select-none border-2 border-[#186C91] px-4 py-4 text-gray-100 transition duration-300 hover:border-[#186C91] hover:text-white">
+                Where are you Located?
+            </div>
+            <div class="accordion-item-body" style="max-height: 0px">
+                <div
+                    class="accordion-item-body-content w-full rounded-xl bg-teal-100/40 mt-2 px-4 py-5 text-teal-800">
+                    <p>
+                        We are located outside of the Dallas/Fort Worth (DFW) Metroplex in
+                        Texas. Specifically, you can find us North of Fort Worth and just
+                        West of Roanoke. Out of State? No Worries! We Offer Nationwide
+                        Hand Delivery of Our Pups all over the United States.
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script>
+        function toggleAccordion(e) {
+            if (
+                ((accordionItemHeader = document.getElementById(e)),
+                    !accordionItemHeader)
+            )
+                return;
+            accordionItemHeader.classList.toggle("active");
+            const o = accordionItemHeader.nextElementSibling;
+            accordionItemHeader.classList.contains("active")
+                ? (o.style.maxHeight = o.scrollHeight + "px")
+                : (o.style.maxHeight = 0);
+        }
+        window.onload = (e) => {
+            window.location.hash && toggleAccordion(window.location.hash.slice(1));
+        };
+        const accordionItemHeaders = document.querySelectorAll(
+            ".accordion-item-header"
+        );
+        accordionItemHeaders.forEach((e) => {
+            e.addEventListener("click", (t) => {
+                e.classList.toggle("active");
+                const c = e.nextElementSibling;
+                e.classList.contains("active")
+                    ? (c.style.maxHeight = c.scrollHeight + "px")
+                    : (c.style.maxHeight = 0);
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
