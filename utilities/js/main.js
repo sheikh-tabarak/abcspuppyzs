@@ -10,6 +10,7 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "50%";
   }
   document.getElementById("background-Overlay").style.width = "100%";
+  document.getElementById("background-Overlay").style.height = "100%";
   // document.getElementById("background-Overlay").style.visibility="visible";
   //   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
@@ -18,6 +19,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("background-Overlay").style.width = "0%";
+  document.getElementById("background-Overlay").style.height = "0%";
   //   document.getElementById("background-Overlay").style.visibility="hidden"
 }
 
