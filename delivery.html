@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="utilities/css/style.css" />
         <script src="utilities/js/main.js"></script>
       
-        
+   
       
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -27,18 +27,10 @@
 <body>
     
         <div id="header"></div>
-
-
-
-
-
- 
-
-
-
         
   <div
   style="
+  
   text-shadow: 0 4px 8px rgba(0,0,0,.5);
   background-image: url('public/images/delivery-page-cover-image.jpg');
   background-position: top;
@@ -88,35 +80,91 @@
 
   </div>
 
+<section id="hero-section" class="">
+  <div class="lg:flex items-center justify-between gap-12 mx-16">
 
-<!-- Content Section -->
-<div class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-lg">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Location Information -->
-        <div>
-           
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429270.000830887!2d-97.61899713884137!3d32.80095838067323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6e122dc807ad%3A0xa4af8bf8dd69acbd!2sFort%20Worth%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1698880091060!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h2 class="text-2xl font-semibold mb-4">Our Location</h2>
-            <p>We are located outside of the Dallas/Fort Worth (DFW) Metroplex in Texas. Specifically, you can find us North of Fort Worth and just West of Roanoke.</p>
-            <p>Out of State? No Worries! We Offer Nationwide Hand Delivery of Our Pups all over the United States.</p>
-        </div>
+    <div class="mt-10 lg:col-span-5 lg:flex pr-10 ">
+      <img class="rounded-lg shadow-lg " src="public/images/720-abc-and-mi-puppy-zs.jpg" alt="mockup" />
+    </div>
+    <div class="mr-auto lg:col-span-5">
 
-        <!-- Visiting and Viewing Information -->
-        <div>
-            <h2 class="text-2xl font-semibold mb-4">Visiting and Viewing</h2>
-            <p>As a Family-Owned and Operated Breeder, we work out of Our Home and therefore we do not post Our Physical Address anywhere online. We LOVE Visitors and Welcome them to Our Family Home where the Wonderful Goldendoodle Breeding, Raising, and Socialization has its roots.</p>
-            <p>Our Goldendoodle Puppy Viewings take place at various times of the year when Our Pups are AT LEAST 7 Weeks old. Interested Puppy-Parents-to-be will have the opportunity of seeing our Goldendoodles throughout the year.</p>
-            <p>We also hold Teams Video Calls for those unable to Travel or to meet some Puppies before you make the trip. In this way, you will always be able to interact with us and our Pups as well as Journey on a VIP-guided tour of ABCs Puppy Zs from the comfort of Home!</p>
-        </div>
+      <h4 class="max-w-2xl my-6 text-xl font-extrabold  leading-none md:text-2xl xl:text-3xl uppercase">
+        Visiting and Viewing
+
+      </h4>
+      <hr class="w-[70px] my-4 h-1.5 border-t-0 bg-[#186C91] opacity-100 dark:opacity-50 rounded " />
+      <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">As a Family-Owned and Operated Breeder, we cherish our home-based approach, valuing privacy. However, we're excited to welcome visitors to experience firsthand our Goldendoodle breeding legacy. We arrange Goldendoodle Puppy Viewings year-round, allowing you to meet our puppies. For those unable to visit, we offer Teams Video Calls, providing a virtual VIP tour of ABCs Puppy Zs from the comfort of your home.</p>
     </div>
 
-    <!-- Contact Section -->
-    <div class="mt-8">
-        <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-        <p>For more information and to plan your Visit, you can easily <a href="mailto:your@email.com" class="text-blue-600">Contact Us</a> and get an email conversation started — and Let's Get Chatting Today!</p>
+  </div>
+</section>
+<div class="mx-16 flex justify-center flex-col md:flex-row gap-10 py-16">
+  <!-- Nationwide Delivery -->
+  <div class=" transition duration-500 hover:scale-[1.05] bg-white py-8 px-12 rounded-lg shadow-lg hover:shadow-2xl cursor-pointer text-center benefit-box flex-1">
+    <div class="flex justify-center">
+       <img class="w-32 h-32 place-self-center" src="public/icons/nationwide-delivery.svg" alt="">
     </div>
+   
+      <h2 class="text-lg font-semibold mb-2">Nationwide Delivery</h2>
+      <p>We offer nationwide hand delivery, ensuring our adorable puppies can find their forever homes all over the United States, no matter where you are.</p>
+  </div>
+
+  <!-- Personalized Visits -->
+  <div class=" transition duration-500 hover:scale-[1.05] bg-white py-8 px-12 rounded-lg shadow-lg hover:shadow-2xl cursor-pointer text-center benefit-box flex-1">
+    <div class="flex justify-center">
+      <img class="w-32 h-32 place-self-center" src="public/icons/personalized-visits.svg" alt="">
+   </div>
+    <h2 class="text-lg font-semibold mb-2">Personalized Visits</h2>
+      <p>Visit our family home and experience firsthand the love and care that goes into raising our Goldendoodles. We welcome you for personalized viewings.</p>
+  </div>
+
+  <!-- Virtual Puppy Preview-->
+  <div class=" transition duration-500 hover:scale-[1.05] bg-white py-8 px-12 rounded-lg shadow-lg hover:shadow-2xl cursor-pointer text-center benefit-box flex-1">
+    <div class="flex justify-center">
+      <img class="w-32 h-32 place-self-center" src="public/icons/virtual-puppy-preview.svg" alt="">
+   </div>
+    <h2 class="text-lg font-semibold mb-2">Virtual Puppy Preview</h2>
+      <p>Can't visit in person? No problem. Enjoy Teams Video Calls to meet our puppies and tour our facilities from the comfort of your home, ensuring you make the right choice for your family.</p>
+  </div>
+
+  
 </div>
 
+
+
+
+<section id="hero-section" class=" bg-gray-200 py-5">
+  <div class="lg:flex items-center justify-between gap-10 mx-16 my-8 ">
+
+    <div class="lg:mt-0 lg:col-span-5 lg:flex">
+      <iframe class="w-[100%] lg:w-[500px] h-[340px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429270.000830887!2d-97.61899713884137!3d32.80095838067323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6e122dc807ad%3A0xa4af8bf8dd69acbd!2sFort%20Worth%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1698880091060!5m2!1sen!2s" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <div class="mr-auto place-self-center lg:col-span-5 py-5">
+
+      <h4 class="max-w-2xl my-4 text-xl font-extrabold  leading-none md:text-2xl xl:text-3xl uppercase">
+        Our Location
+
+      </h4>
+      <hr class="w-[70px] my-4 h-1.5 border-t-0 bg-[#186C91] opacity-100 dark:opacity-50 rounded " />
+
+      <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">
+      
+        We are located outside of the Dallas/Fort Worth (DFW) Metroplex in Texas. Specifically, you can find us North of Fort Worth and just West of Roanoke.
+
+      </p>
+      <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">
+        Out of State? No Worries! We Offer Nationwide Hand Delivery of Our Pups all over the United States  
+      </p>
+
+      <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">For more information and to plan your Visit, you can easily <span class="text-[#186C91]"><a href="conference.html">Contact Us </a></span>  and get an email conversation started <br> Let's Get Chatting Today! </p>
+
+      </div>
+
+  </div>
+</section>
 
 
   <div id="footer"></div>
