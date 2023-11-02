@@ -1,3 +1,10 @@
+// import {
+//   Ripple,
+//   initTE,
+// } from "tw-elements";
+
+// initTE({ Ripple });
+
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   if (
@@ -22,35 +29,3 @@ function closeNav() {
   document.getElementById("background-Overlay").style.height = "0%";
   //   document.getElementById("background-Overlay").style.visibility="hidden"
 }
-
-// Logo Slider [for brands]
-
-$(document).ready(function () {
-  $(".customer-logos").slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-    ],
-  });
-});
-
-// Toogling the FAQs
-
-
