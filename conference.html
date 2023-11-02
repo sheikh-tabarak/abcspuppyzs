@@ -11,7 +11,34 @@
     <link rel="stylesheet" href="utilities/css/style.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+        <link rel="preconnect" href="https://assets.calendly.com" />
+        <link
+        rel="preload"
+        href="https://assets.calendly.com/assets/external/widget.css"
+        as="style"
+      />
 
+      <link rel="stylesheet" href="formmin.css" />
+      <link
+        rel="stylesheet"
+        href="https://assets.calendly.com/assets/external/widget.css"
+      />
+
+      <script
+      async
+      src="https://assets.calendly.com/assets/external/widget.js"
+    ></script>
+        
+  <script>
+
+function verifyCaptcha(e) {
+    
+        void Calendly.initPopupWidget({
+            url: "https://calendly.com/abcspuppyzs/goldendoodle-puppy-conference?hide_landing_page_details=1&hide_gdpr_banner=1",
+          });}
+
+  </script>
 
     <script>
         $(function () {
@@ -55,12 +82,15 @@
                                     family member.
                                 </p>
 
-
-                                <button type="submit"
+<!-- <a href="https://calendly.com/abcspuppyzs/goldendoodle-puppy-conference?hide_landing_page_details=1&hide_gdpr_banner=1"> -->
+                                <button id="conference-booking"
+                                
+                                onclick="verifyCaptcha(event)"
                                     class="w-full p-3 text-white transition border text-xl lg:text-2xl rounded border-[#186C91] bg-[#186C91] hover:bg-opacity-90">
 
                                     SCHEDULE TIME WITH US
                                 </button>
+                            <!-- </a> -->
 
                                 <div class="flex justify-center divide-x-2 py-3">
                                     <a href="https://www.abcspuppyzs.com/privacy-policy/">
