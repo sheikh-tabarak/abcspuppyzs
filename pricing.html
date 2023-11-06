@@ -10,6 +10,23 @@
     <base href="/abcspuppyzs/" />
   </environment>
 
+  <script>
+    // Get the current hostname (domain)
+    const hostname = window.location.hostname;
+
+    // Define the default base href
+    let baseHref = '/';
+
+    // Check if the hostname matches your GitHub Pages domain
+    if (hostname === 'sheikh-tabarak.github.io') {
+      baseHref = '/abcspuppyzs/';
+    }
+
+    // Set the base href dynamically
+    document.querySelector('base').setAttribute('href', baseHref);
+  </script>
+
+
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
