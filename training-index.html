@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <script>
+        const hostname = window.location.hostname;
+        let baseHref = '/';
+        if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+        document.querySelector('base').setAttribute('href', baseHref);
+    </script>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>

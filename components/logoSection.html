@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <script>
+        const hostname = window.location.hostname;
+        let baseHref = '/';
+        if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+        document.querySelector('base').setAttribute('href', baseHref);
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -13,10 +19,11 @@
           class="pb-2 text-center md:text-left lg:text-left lg:text-left rounded-md bg-white text-md font-medium text-[#186C91]">
           ABCs Puppy Zs
         </p> -->
-        <h2 class="text-dark text-center md:text-left lg:text-left text-[#186C91] mb-2 text-xl font-bold sm:text-[40px]/[48px]">
-             ABCs Puppy Zs
+        <h2
+            class="text-dark text-center md:text-left lg:text-left text-[#186C91] mb-2 text-xl font-bold sm:text-[40px]/[48px]">
+            ABCs Puppy Zs
 
-        </h2> 
+        </h2>
 
         <!-- <p class="text-xl font-extrabold text-center md:text-left lg:text-left leading-2 md:text-xl xl:text-3xl">
             WHY ABCS PUPPY ZS?

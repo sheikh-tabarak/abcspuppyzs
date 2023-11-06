@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <script>
+        const hostname = window.location.hostname;
+        let baseHref = '/';
+        if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+        document.querySelector('base').setAttribute('href', baseHref);
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
@@ -22,43 +28,49 @@
     </script>
 
 
-<style>
+    <style>
+        .demo-content {
+            color: #fff;
+            display: flex;
+            font-family: Helvetica;
+            font-weight: 100;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            border-radius: 3px;
+            font-size: 56px;
+            height: 250px;
+            width: 100%;
+        }
 
-    .demo-content {
-      color: #fff;
-      display: flex;
-      font-family: Helvetica;
-      font-weight: 100;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase;
-      border-radius: 3px;
-      font-size: 56px;
-      height: 250px;
-      width: 100%;
-    }
-    
-    .carousel__item:nth-child(1) .demo-content {
-      background-color: #216485;
-    }
-    .carousel__item:nth-child(2) .demo-content {
-      background-color: #3692b6;
-    }
-    .carousel__item:nth-child(3) .demo-content {
-      background-color: #6fccc9;
-    }
-    .carousel__item:nth-child(4) .demo-content {
-      background-color: #a6e3cf;
-    }
-    .carousel__item:nth-child(5) .demo-content {
-      background-color: #aff0be;
-    }
-    .carousel__item:nth-child(6) .demo-content {
-      background-color: #527059;
-    }
-    .carousel__item:nth-child(7) .demo-content {
-      background-color: #243127;
-    }</style>
+        .carousel__item:nth-child(1) .demo-content {
+            background-color: #216485;
+        }
+
+        .carousel__item:nth-child(2) .demo-content {
+            background-color: #3692b6;
+        }
+
+        .carousel__item:nth-child(3) .demo-content {
+            background-color: #6fccc9;
+        }
+
+        .carousel__item:nth-child(4) .demo-content {
+            background-color: #a6e3cf;
+        }
+
+        .carousel__item:nth-child(5) .demo-content {
+            background-color: #aff0be;
+        }
+
+        .carousel__item:nth-child(6) .demo-content {
+            background-color: #527059;
+        }
+
+        .carousel__item:nth-child(7) .demo-content {
+            background-color: #243127;
+        }
+    </style>
 
     <title>Traits | ABCs Puppy Zs</title>
 </head>
@@ -67,57 +79,59 @@
     <div id="header"></div>
 
 
-        
-  <div
-  style="
+
+    <div style="
   text-shadow: 0 4px 8px rgba(0,0,0,.5);
   background-image: url('public/images/aboutus-hero-image.jpg');
   background-position: center;
   background-size: cover;
 
-  "
-   class="text-center bg-white text-shadow-lg shadow-gray-200 text-white  mt-[150px]">
-   <div class="
+  " class="text-center bg-white text-shadow-lg shadow-gray-200 text-white  mt-[150px]">
+        <div class="
    bg-black bg-opacity-[0.3] px-5 lg:px-16 pt-20 py-16 lg:py-32 
    ">
-    <p class="block mb-2 text-lg font-semibold text-primary">
-        TRAITS
-       
-    </p>
-    
-  
-    <h2 class="text-dark my-4 text-3xl lg:text-[3.5rem] font-bold uppercase tracking-normal  py-3	">
-     
- Goldendoodle Traits
-    </h2>
-    <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
-        Our Goldendoodles are Cherished for their Distinctive Traits, Making
-        them Highly Desirable, and Truly Affectionate Pets.
-    </p>
+            <p class="block mb-2 text-lg font-semibold text-primary">
+                TRAITS
 
-    <nav class="flex justify-center py-5 text-white" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-          <li class="inline-flex items-center">
-            <a href="/" class="inline-flex items-center text-sm font-medium  ">
-              <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-              </svg>
-              Home
-            </a>
-          </li>
-            <li aria-current="page">
-              <div class="flex items-center">
-                <svg class="w-3 h-3  mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="ml-1 text-sm font-medium  md:ml-2">Traits</span>
-              </div>
-            </li>
-          </ol>
-        </nav>
-  </div>
+            </p>
 
-  </div>
+
+            <h2 class="text-dark my-4 text-3xl lg:text-[3.5rem] font-bold uppercase tracking-normal  py-3	">
+
+                Goldendoodle Traits
+            </h2>
+            <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
+                Our Goldendoodles are Cherished for their Distinctive Traits, Making
+                them Highly Desirable, and Truly Affectionate Pets.
+            </p>
+
+            <nav class="flex justify-center py-5 text-white" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="inline-flex items-center text-sm font-medium  ">
+                            <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3  mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="ml-1 text-sm font-medium  md:ml-2">Traits</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+    </div>
 
     <div id="wrapper" class="px-8 lg:px-0 mx-2 lg:mx-16">
         <div class="leading-8 duration-500 transform transition-all translate-y-8 ease-out my-4 text-justify">
@@ -154,7 +168,7 @@
         <div class="leading-8  duration-500 transform transition-all translate-y-8 ease-out my-4 text-justify">
 
             <h3 id="Section01"
-            class=" text-xl uppercase tracking-wide py-2 my-2 border-b border-b-gray-300 border-x-24 text-[#186C91] font-bold text-left">
+                class=" text-xl uppercase tracking-wide py-2 my-2 border-b border-b-gray-300 border-x-24 text-[#186C91] font-bold text-left">
                 Goldendoodles Love to Please!
 
 
