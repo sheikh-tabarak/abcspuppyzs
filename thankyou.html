@@ -3,143 +3,173 @@
 
 <head>
 
-    <script>
-        const hostname = window.location.hostname;
-        let baseHref = '/';
-        if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
-        document.querySelector('base').setAttribute('href', baseHref);
-    </script>
-
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="utilities/css/thankyou-page.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="utilities/js/main.js"></script>
     <link rel="stylesheet" href="utilities/css/style.css" />
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script>
         $(function () {
-            $("#header").load("components/header.html");
-            $("#footer").load("components/footer.html");
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
         });
     </script>
 
 
 
-    <title>Unsubscribe to ABCs Puppy Zs</title>
+    <title>Thank you | ABCs Puppy Zs</title>
+
 
 </head>
 
 <body>
-
-    <div id="header"></div>
-
-    <section
-        class="relative z-10 overflow-hidden bg-cover bg-center bg-opacity-0 bg-[url('public/images/720-soc-resource.jpg')] mt-40 py-10 lg:py-20 px-4 lg:px-20">
-        <div class="container mx-auto">
+    <!-- bg-[url('public/images/720-soc-resource.jpg')] -->
+    <section class="relative z-10 overflow-hidden bg-opacity-1 py-10 lg:pb-20 px-4 lg:px-20 bg-gray-100 h-screen">
+        <div class="container mx-auto ">
             <div class="">
 
 
                 <div class="w-full px-4 w-full">
-                    <div class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-                        <div
-                            class="flex flex-wrap justify-center items-center divide-y-[1.4px] lg:divide-y-0 lg:divide-x-[1.4px]">
+                    <div class="relative bg-white rounded-lg shadow-lg dark:bg-dark-2 px-4 lg:px-12">
+                        <div class="flex flex-wrap justify-center items-center text-center pb-12 ">
 
-                            <div class="w-[100%] md:w-[100%] lg:w-[50%] py-4 lg:py-0 lg:px-10">
+
+                            <div class="">
+
+                                <div class="flex justify-center items-center pb-2 ">
+                                    <dotlottie-player
+                                        src="https://lottie.host/328f996b-19db-4897-afbd-f69f993f6a88/diIRtS7kx4.json"
+                                        background="transparent" speed="1" style="width: 200px; height: 200px"
+                                        direction="1" mode="normal" loop autoplay></dotlottie-player>
+                                </div>
+
                                 <span class="block text-xl font-semibold text-[#186C91]">
-                                    Unsubscribe From Future Emails
+                                    You Have Successfully Been Subscribed
+
 
                                 </span>
                                 <h2
-                                    class=" my-2 text-[32px] font-bold tracking-normal uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                                    We're Sorry to Say Goodbye
+                                    class=" my-2 text-[32px] font-bold tracking-normal uppercase sm:text-[30px] lg:text-[30px] xl:text-[30px]">
+                                    Thank you for scheduling time with us.
+
                                 </h2>
-                                <p class="text-base leading-relaxed text-body-color dark:text-dark-6">
-                                    Whoops, it's time to part ways! We're sorry to see you go. By unsubscribing, you
-                                    won't receive any more emails from us. If you change your mind, you're always
-                                    welcome back. Thanks for being with us!
+                                <p class="text-base leading-relaxed text-body-color dark:text-dark-6 pb-5">
+                                    We eagerly anticipate our upcoming
+                                    conversation!
                                 </p>
 
-                                <div>
 
-                                    <input type="text" id="email"
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#186C91] focus:border-[#186C91] block w-full p-4 my-2"
-                                        placeholder="johndoe@example.com" required>
+                                <div class="flex flex-wrap gap-4 justify-center">
+
+                                    <div
+                                        class="relative w-[100%] md:w-[50%] lg:w-[23%] bg-gray-100 py-2 px-4 hover:bg-gray-200 rounded-lg text-left border-[1px] border-gray-400 hover:cursor-pointer ">
+                                        <a href="faqs.html">
+                                            <div class="absolute top-3 right-3">
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="#186c91" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <h2 class="text-xl font-bold text-[#186c91] pt-2 uppercase">
+                                                FAQS
+                                            </h2>
+                                            <p>Have Questions? Find Answers!
+
+                                            </p>
+                                        </a>
+                                    </div>
+
+                                    <div
+                                        class="relative w-[100%] md:w-[50%] lg:w-[23%]  bg-gray-100 py-2 px-2 hover:bg-gray-200 rounded-lg text-left border-[1px] border-gray-400 hover:cursor-pointer ">
+                                        <a href="traits.html">
+                                            <div class="absolute top-3 right-3">
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="#186c91" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <h2 class="text-xl font-bold text-[#186c91] pt-2 uppercase">TRAITS
+                                            </h2>
+                                            <p>The Goldendoodle Breed. A Must-Read!!
+
+
+
+                                            </p>
+                                        </a>
+                                    </div>
+
+
+                                    <div
+                                        class="relative w-[100%] md:w-[50%] lg:w-[23%] bg-gray-100 py-2 px-2 hover:bg-gray-200 rounded-lg text-left border-[1px] border-gray-400 hover:cursor-pointer ">
+                                        <a href="reviews.html">
+                                            <div class="absolute top-3 right-3">
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="#186c91" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                            <h2 class="text-xl font-bold text-[#186c91] pt-2 uppercase">REVIEWS
+
+                                            </h2>
+                                            <p>Just an Open Book Here. True Reviews!!!
+
+
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="relative w-[100%] md:w-[50%] lg:w-[23%] bg-gray-100 py-2 px-2 hover:bg-gray-200 rounded-lg text-left border-[1px] border-gray-400 hover:cursor-pointer ">
+                                        <a href="socialization.html">
+                                            <div class="absolute top-3 right-3">
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="#186c91" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                            <h2 class="text-xl font-bold text-[#186c91] pt-2 uppercase">SOCIALIZATION
+                                            </h2>
+                                            <p>From Day One: We're Raising Social Pups!
+
+
+
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
-                                <a href="unsubscribed-success.html">
-                                    <button id="conference-booking"
-                                        class="w-full p-3 text-white transition border text-xl lg:text-2xl rounded border-[#186C91] bg-[#186C91] hover:bg-opacity-90">
 
-                                        Unsubscribe
-                                    </button>
-                                </a>
-
-                                <div class="flex justify-center divide-x-2 py-3">
-                                    <a href="privacypolicy.html">
-                                        <div class="text-xs px-2">
-                                            Privacy policy </div>
-                                    </a>
-                                    <a href="terms.html">
-                                        <div class="text-xs px-2">
-                                            Terms and Conditions </div>
-                                    </a>
-                                </div>
 
                             </div>
-
-                            <div class="w-[100%] lg:w-[50%] lg:w-[50%] py-10 lg:py-0 lg:px-10 ">
-                                <span class="block mb-4 text-xl font-semibold text-primary">
-                                    Benefits to subscribe us
-                                </span>
-                                <div class="mb-8 flex w-full max-w-[370px]">
-                                    <div
-                                        class="bg-[#D0E2F2] text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
-                                        <i class="far fa-lightbulb text-xl text-[#186C91]"></i>
-                                    </div>
-                                    <div class="w-full">
-                                        <h4 class="mb-1 text-lg lg:text-xl font-bold tracking-normal uppercase">
-                                            Expert Guidance
-                                        </h4>
-                                        <p class="text-base text-body-color dark:text-dark-6">
-
-                                            Personalized advice from an experienced breeder.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="mb-8 flex w-full max-w-[370px]">
-                                    <div
-                                        class="bg-[#D0E2F2] text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
-                                        <i class="fas fa-heart text-xl text-[#186C91]"></i>
-                                    </div>
-                                    <div class="w-full">
-                                        <h4 class="mb-1 text-lg lg:text-xl font-bold tracking-normal uppercase">
-                                            Happy, Healthy Pups
-                                        </h4>
-                                        <p class="text-base text-body-color dark:text-dark-6">
-                                            Find the perfect, well-cared-for companion.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class=" flex w-full max-w-[370px]">
-                                    <div
-                                        class="bg-[#D0E2F2] text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
-                                        <i class="fas fa-thumbs-up text-xl text-[#186C91]"></i>
-                                    </div>
-                                    <div class="w-full">
-                                        <h4 class="mb-1 text-lg lg:text-xl font-bold tracking-normal uppercase">
-                                            Satisfaction
-                                            Guaranteed </h4>
-                                        <p class="text-base text-body-color dark:text-dark-6">
-                                            Ensure your choice aligns with your family.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
                         <div>
@@ -385,12 +415,62 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+
+        <div class="confettis opacity-[0.5]">
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+        </div>
+
     </section>
-    <!-- ====== Contact Section End -->
 
-    <div id="footer"></div>
+    <!-- <div class="text-center text-shadow-lg shadow-gray-200 text-white h-screen bg-gray-200">
 
+        <div class=" mx-auto flex flex-wrap px-12 py-12 justify-center text-black items-center gap-4">
+
+            <div class="confettis opacity-[0.5]">
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+                <div class="confetti-piece"></div>
+            </div>
+
+        </div>
+
+
+
+
+    </div> -->
+
+
+
+
+
+
+    <!-- <div id="footer"></div> -->
 </body>
 
 </html>
