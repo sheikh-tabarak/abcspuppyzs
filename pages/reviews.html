@@ -2,12 +2,21 @@
 <html lang="en">
 
 <head>
+    <base href="/">
     <script>
         const hostname = window.location.hostname;
-        let baseHref = '/';
+        var baseHref = '/';
+        console.log(hostname)
+        if (hostname === 'localhost' || hostname === '127.0.0.1') {
+            baseHref = '/';
+
+        }
         if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+
+        console.log(baseHref)
         document.querySelector('base').setAttribute('href', baseHref);
     </script>
+
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +33,7 @@
     </script>
 
 
-    <title>Document</title>
+    <title>Reviews | ABCs Puppy Zs</title>
 </head>
 
 <body>
