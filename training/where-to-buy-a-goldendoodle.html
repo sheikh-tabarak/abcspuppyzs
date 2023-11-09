@@ -2,25 +2,37 @@
 <html lang="en">
 
 <head>
+    <base href="/">
     <script>
         const hostname = window.location.hostname;
-        let baseHref = '/';
+        var baseHref = '/';
+        console.log(hostname)
+        if (hostname === 'localhost' || hostname === '127.0.0.1') {
+            baseHref = '/';
+
+        }
         if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+
+        console.log(baseHref)
         document.querySelector('base').setAttribute('href', baseHref);
     </script>
+
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+    <link rel="icon" type="image/x-icon" href="/public/icons/favicon-circlepng.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="utilities/js/main.js"></script>
+    <link rel="stylesheet" href="utilities/css/style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Training - ABCs Puppy Zs</title>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         $(function () {
-            $("#header").load("components/header.html");
-            $("#footer").load("components/footer.html");
+            $("#header").load("/components/header.html");
+            $("#footer").load("/components/footer.html");
         });
     </script>
 </head>
@@ -28,8 +40,6 @@
 <body>
 
     <div id="header"></div>
-
-
     <div style="
   text-shadow: 0 4px 8px rgba(0,0,0,.5);
   background-image: url('public/images/delivery-page-cover-image.jpg');
@@ -76,7 +86,7 @@
 
                     <li class="inline-flex items-center">
 
-                        <a href="training-index.html" class="inline-flex items-center text-sm font-medium  ">
+                        <a href="training/" class="inline-flex items-center text-sm font-medium  ">
 
 
                             <svg class="w-3 h-3 mr-2.5" aria-hidden="true" fill="white" viewBox="0 0 512 512"
@@ -503,17 +513,10 @@
 
     </ol>
 
-
-
-
-
-
-
-
-
-
     <div id="footer"></div>
 
+
+    <!-- <base href="https://www.w3schools.com/" target="_blank"> -->
 </body>
 
 </html>

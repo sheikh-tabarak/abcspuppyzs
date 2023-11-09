@@ -2,11 +2,18 @@
 <html lang="en">
 
 <head>
-
+  <base href="/">
   <script>
     const hostname = window.location.hostname;
-    let baseHref = '/';
+    var baseHref = '/';
+    console.log(hostname)
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      baseHref = '/';
+
+    }
     if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+
+    console.log(baseHref)
     document.querySelector('base').setAttribute('href', baseHref);
   </script>
   <meta charset="UTF-8" />
@@ -14,7 +21,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <link rel="stylesheet" href="utilities/css/style.css" />
-
 </head>
 
 <body>
@@ -35,10 +41,10 @@
       <div class=" ">
         <ul class="text-2xl text-gray-100 px-12 leading-10">
           <li class="hover:text-[#25A3DC]">
-            <a href="about.html">ABOUT</a>
+            <a href="pages/about.html">ABOUT</a>
           </li>
           <li class="hover:text-[#25A3DC]">
-            <a href="conference.html">SCHEDULE TIME WITH US</a>
+            <a href="pages/conference.html">SCHEDULE TIME WITH US</a>
           </li>
           <li class="hover:text-[#25A3DC]">
             <details>
@@ -81,29 +87,11 @@
               <summary class="cursor-pointer">TRAINING</summary>
               <ul class="text-xl text-gray-100 pl-12 leading-10">
                 <li class="hover:text-[#25A3DC]">
-                  <a href="training-index.html">Index
+                  <a href="training/">Index
                   </a>
                 </li>
-                <!-- <li class="hover:text-[#25A3DC]">
-                  <details>
-                    <summary class="cursor-pointer">Option 2</summary>
-                    <ul class="text-2xl text-gray-100 pl-12 leading-10">
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="https://www.abcspuppyzs.com/mini-goldendoodle-for-sale/">Option 2.1
-                        </a>
-                      </li>
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="https://www.abcspuppyzs.com/micro-goldendoodle-for-sale/">Option 2.2
-                        </a>
-                      </li>
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="https://www.abcspuppyzs.com/toy-goldendoodle-for-sale/">Option 2.3</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li> -->
                 <li class="hover:text-[#25A3DC]">
-                  <a href="where-to-buy-a-goldendoodle.html"> ⦿ Where to Buy a Goldendoodle</a>
+                  <a href="training/where-to-buy-a-goldendoodle.html"> ⦿ Where to Buy a Goldendoodle</a>
                 </li>
                 <li class="hover:text-[#25A3DC]">
                   <a href="https://www.abcspuppyzs.com/teacup-goldendoodle-for-sale/"> ⦿ How Much Exercise a
@@ -153,7 +141,7 @@
     <div class="fixed top-0 w-full z-20">
       <div
         class="flex text-white items-center justify-between bg-[#36454F] w-full h-10 px-5 lg:px-16 font-semibold uppercase">
-        <a href="delivery.html">
+        <a href="pages/delivery.html">
           <div>Delivery</div>
         </a>
         <a href="pricing.html">
@@ -174,7 +162,7 @@
         </a>
 
         <div class="flex gap-4 justify-between items-center">
-          <a href="conference.html">
+          <a href="pages/conference.html">
 
             <button
               class="lg:flex items-center text-3xl lg:text-base gap-4 lg:bg-[#186C91] lg:hover:bg-[#186C9198] tracking-widest text-white font-bold p-1 lg:py-2 lg:px-4 rounded-lg">
