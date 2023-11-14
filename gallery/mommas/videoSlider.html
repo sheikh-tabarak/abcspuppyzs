@@ -51,7 +51,8 @@
         <div class="m-2 w-full">
 
           <div class="relative w-full">
-            <div class="absolute right-0 left-0 w-full h-full flex items-center">
+
+            <!-- <div class="absolute right-0 left-0 w-full h-full flex items-center">
               <div class="flex w-full items-center justify-between px-5">
                 <div
                   class="h-10 w-10 justify-center flex items-center rounded-full bg-white text-black cursor-pointer z-10"
@@ -71,8 +72,9 @@
                   </svg>
                 </div>
               </div>
-            </div>
-            <div id="" class="flex h-[350px]">
+            </div> -->
+
+            <div id="" class="flex h-[350px] z-10">
 
               <!-- Slide 01 Container -->
               <div class="mainImage-slider transition duration-1000 gallery-item h-full w-[100%] 	">
@@ -82,18 +84,19 @@
               </div>
 
               <!-- Slide 02 Container -->
-              <div class=" mainImage-slider transition duration-1000 gallery-item h-full w-[100%] hidden">
-                <video controls class="w-full h-full rounded-lg object-cover">
+              <div
+                class=" mainImage-slider transition duration-1000 gallery-item h-full w-[100%] hidden video-tag-is-this">
+                <video class="w-full h-full rounded-lg object-cover " controls playsinline>
                   <source
                     src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/momma-hera-f1-mini-goldendoodles-litter-tuzi.mp4"
                     type="video/mp4">
-                  Your browser does not support the video tag.
+                  <!-- Your browser does not support the video tag. -->
                 </video>
               </div>
 
               <!-- Slide 03 Container -->
               <div class=" mainImage-slider transition duration-1000 gallery-item h-full w-[100%] hidden 	">
-                <video controls class="w-full h-full rounded-lg object-cover">
+                <video id="myVideo" class="w-full h-full rounded-lg object-cover video-tag" controls playsinline>
                   <source
                     src="https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4"
                     type="video/mp4">
@@ -117,6 +120,8 @@
 
             </div>
 
+
+
             <!-- If we have to put the caption on the video -->
 
             <div class="relative hidden">
@@ -125,6 +130,9 @@
                 <!-- This is -->
               </div>
             </div>
+
+
+
 
           </div>
           <div id="thumbnail-slider"
@@ -269,6 +277,17 @@
     </div> -->
   </div>
   <script src="utilities/js/video-slider.js"></script>
+  <!-- <script>
+    var video = document.getElementById("myVideo");
+
+    video.addEventListener("click", function () {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  </script> -->
 
   <div id="footer"></div>
 </body>

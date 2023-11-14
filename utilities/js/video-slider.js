@@ -6,27 +6,19 @@ const images = document.getElementsByClassName('carosel-image');
 const imageCaption = document.getElementById('image-caption');
 
 
-
 function ChooseSlide() {
   const MainImage = document.getElementsByClassName('mainImage-slider');
   for (let index = 0; index < MainImage.length; index++) {
 
     MainImage[index].style.display = 'none';
 
-    var video = MainImage[index].querySelector('video');
-    if (video) {
-
-      video.pause();
-    }
-
-
   }
   MainImage[CurrentSlide].style.display = 'block';
-  var video = MainImage[CurrentSlide].querySelector('video');
-  if (video) {
-    video.currentTime = 0;
-    video.play();
-  }
+  // var video = MainImage[CurrentSlide].querySelector('video');
+  // if (video) {
+  //   video.currentTime = 0;
+  //   video.play();
+  // }
 }
 
 function selectedThumbnail() {

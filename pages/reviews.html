@@ -25,12 +25,16 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="utilities/js/main.js"></script>
+
+
+
     <script>
         $(function () {
             $("#header").load("components/header.html");
             $("#footer").load("components/footer.html");
         });
     </script>
+
 
 
     <title>Reviews | ABCs Puppy Zs</title>
@@ -97,20 +101,18 @@
 
     </div>
 
-
-
-    <div class="flex flex-wrap gap-8 py-10 px-4 lg:px-16">
-        <div class="w-[100%] md:w-[50%] lg:w-[30%]">
+    <div id="reviews-container" class="flex flex-wrap gap-8 py-10 px-4 lg:px-16">
+        <!-- <div class="w-[100%] md:w-[50%] lg:w-[30%]">
             <a
                 href="https://www.facebook.com/jodi.rapaporttrotta/posts/pfbid0n1T6BSoH53SxfRNYSbdpZaciQyb1WiizNYT3g8zfYKjnotMWUKMAFJrjdewpvN2zl">
 
                 <img src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-reviews/jtro.png"
                     class="w-full lg:h-[530px] hover:scale-95 transition cursor-pointer duration-500 shadow hover:shadow-lg rounded-lg p-5 " />
             </a>
-        </div>
+        </div> -->
 
 
-        <div class="w-[100%] md:w-[50%] lg:w-[30%]">
+        <!-- <div class="w-[100%] md:w-[50%] lg:w-[30%]">
             <a
                 href="https://www.facebook.com/nicole.moran.3954546/posts/pfbid0FhiMwWLexop3z6xeDo9T3jCVXKiLNWxonJXnZcmJoRgNNcGzddBVkRTaNUzAF2NEl">
 
@@ -181,6 +183,7 @@
             </a>
         </div>
 
+ -->
 
 
 
@@ -194,8 +197,7 @@
 
 
 
-
-        <div class="w-[100%] md:w-[50%] lg:w-[30%]">
+        <!-- <div class="w-[100%] md:w-[50%] lg:w-[30%]">
             <a
                 href="https://www.facebook.com/damian.miodowski/posts/pfbid02aQiRCZ6K3QLWXByosrF47xegRgb6DvMUtqWeyg5ecM1kpDQxMyHDFGnW4w7L7qgwl">
 
@@ -220,7 +222,7 @@
                 <img src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-reviews/acho.png"
                     class="w-full lg:h-[530px] hover:scale-95 transition cursor-pointer duration-500 shadow hover:shadow-lg rounded-lg p-5 " />
             </a>
-        </div>
+        </div> -->
     </div>
 
 
@@ -230,6 +232,22 @@
 
 
     <div id="footer"></div>
+    <script>
+        const Testimonials = [
+            {
+                link: "https://www.facebook.com/nicole.moran.3954546/posts/pfbid0FhiMwWLexop3z6xeDo9T3jCVXKiLNWxonJXnZcmJoRgNNcGzddBVkRTaNUzAF2NEl",
+                img: "https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-reviews/tnew.png"
+            },
+            {
+                link: "https://www.facebook.com/jodi.rapaporttrotta/posts/pfbid0n1T6BSoH53SxfRNYSbdpZaciQyb1WiizNYT3g8zfYKjnotMWUKMAFJrjdewpvN2zl",
+                img: "https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-reviews/jtro.png"
+            }
+
+        ]
+        for (let index = 0; index < Testimonials.length; index++) {
+            document.getElementById("reviews-container").innerHTML += '<div class="w-[100%] md:w-[50%] lg:w-[30%]"><a href="' + Testimonials[index].link + '"> <img src="' + Testimonials[index].img + '" class="w-full lg:h-[530px] hover:scale-95 transition cursor-pointer duration-500 shadow hover:shadow-lg rounded-lg p-5 " /> </a> </div> ';
+        }
+    </script>
 </body>
 
 
