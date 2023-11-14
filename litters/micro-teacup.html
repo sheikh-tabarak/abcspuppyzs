@@ -38,6 +38,7 @@
             $("#footer").load("components/footer.html");
             $("#logoSection").load("components/logoSection.html")
             $("#testimonials").load("components/testimonials.html")
+            $("#litter-tabs").load("litters/tabs/puppy-tabs.html");
         });
     </script>
 
@@ -45,7 +46,7 @@
     <title>MICRO TEACUP | ABCs Puppy Zs</title>
 </head>
 
-<body>
+<body id="body">
     <div id="header"></div>
 
     <!-- <div id="gallery-popup" onclick="hideGallery()"
@@ -75,32 +76,9 @@
 
 
 
-        <div onclick="nothing()" class="bg-white rounded-lg p-5 mx-10  lg:w-[800px]">
-
+        <div class="bg-white rounded-lg p-5 mx-10  lg:w-[800px]">
             <div class="m-2 w-full">
-
-
                 <div class="relative w-full">
-
-                    <!-- <div class="absolute right-0 left-0 w-full h-full flex items-center">
-                        <div class="flex w-full items-center justify-between px-5">
-                            <div class="h-10 w-10 justify-center flex items-center rounded-full bg-white text-black cursor-pointer z-10"
-                                onclick="moveGallery(-1)">
-                                <svg width="8px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                    <path
-                                        d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z" />
-                                </svg>
-                            </div>
-                            <div class="h-10 w-10 justify-center flex items-center rounded-full bg-white text-black cursor-pointer z-10"
-                                onclick="moveGallery(1)">
-
-                                <svg width="8px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                    <path
-                                        d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div> -->
 
                     <div id="" class="flex h-[350px] z-10">
 
@@ -286,21 +264,57 @@
     </div>
 
 
+    <div onclick="hideLitter()" id="darkbackground"
+        class="hidden w-full h-full fixed top-0 bottom-0 bg-black bg-opacity-60 z-20"></div>
+
+
+    <div id="litter-popup" data-tabs-toggle="{parentTabContentSelector}"
+        class="hidden fixed bg-white z-20 top-16 right-8 lg:right-40 left-8 lg:left-40 bottom-16 rounded-lg flex justify-center items-center shadow-lg overflow-y-auto">
+        <div class="absolute right-5 top-5">
+
+            <svg onclick="hideLitter()" class="text-white fill-black cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                x="0px" y="0px" width="35px" height="35px" viewBox="0 0 50 50">
+                <path
+                    d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
+                </path>
+            </svg>
+        </div>
+
+
+        <div class="absolute left-auto top-4 lg:top-0 flex flex-wrap my-10 justify-center items-center w-full  px-8">
+            <div class="w-[100%] lg:w-[45%] text-center lg:text-left  pb-4 p-4">
+                <img class=" rounded" src="public/images/720-abt-frg.jpg" alt="">
+            </div>
+            <div class=" w-[100%] lg:w-[55%]  px-4">
+                <div class="flex gap-4 items-center">
+                    <div>
+                        <h2 class="text-4xl">Jane</h2>
+                    </div>
+                    <div><span
+                            class="inline-flex items-center gap-x-1.5 py-1 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-600">Available</span>
+                    </div>
+
+                </div>
+
+                <p class="text-lg py-4"><strong> Total Price:</strong> 1000</p>
+                <div class="px-6 py-2 border-[1px] rounded">
+                    <p class="py-2"><strong> Gender:</strong> Female</p>
+                    <p class="py-2"><strong> Average Weight:</strong> 5 lbs</p>
+                    <p class="py-2"><strong> Birthday:</strong> August 26, 2023</p>
+
+                </div>
+
+            </div>
 
 
 
+            <div class="pt-4 w-full" id="litter-tabs"></div>
 
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+        <div class="fixed bg-white z-20 right-8 lg:right-40 left-8 lg:left-40 bottom-16 px-8 py-4 rounded-lg">
+            <button class="w-full bg-[#186C91] p-4 text-white">INQUIRE NOW</button>
+        </div>
+    </div>
 
     <div style="
     text-shadow: 0 4px 8px rgba(0,0,0,.5);
@@ -373,7 +387,6 @@
                         </th>
                         <td class="px-4 py-2">
                             Teacup Goldendoodle
-
                         </td>
                     </tr>
                     <tr class="even:bg-white odd:bg-gray-50  border-b ">
@@ -389,8 +402,6 @@
                     <tr class="even:bg-white odd:bg-gray-50  border-b ">
                         <th scope="row" class="px-4 py-2 font-bold text-gray-900  ">
                             Litter Status:
-
-
                         </th>
                         <td class="px-4 py-2">
                             Reservations Open!
@@ -561,7 +572,7 @@
                         </div>
                 </li> -->
 
-                <li class="py-3 sm:py-4">
+                <li onclick="showLitter()" class="py-3 sm:py-4 cursor-pointer">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-24 h-24 rounded-full"
@@ -595,7 +606,7 @@
                     </div>
                 </li>
 
-                <li class="py-3 sm:py-4">
+                <li onclick="showLitter()" class="py-3 sm:py-4 cursor-pointer">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-24 h-24 rounded-full"
@@ -620,7 +631,7 @@
                 </li>
 
 
-                <li class="py-3 sm:py-4">
+                <li onclick="showLitter()" class="py-3 sm:py-4 cursor-pointer">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-24 h-24 rounded-full"
@@ -872,17 +883,28 @@
     <script src="utilities/js/video-slider.js"></script>
     <script>
 
-        function nothing() {
 
-        }
         function showGallery() {
             document.getElementById('gallery-popup').classList.remove('hidden');
-            document.getElementById('gallery-popup-2').classList.remove('hidden');
+
         }
 
         function hideGallery() {
             document.getElementById('gallery-popup').classList.add('hidden');
-            document.getElementById('gallery-popup-2').classList.add('hidden');
+        }
+
+
+        function showLitter() {
+            document.getElementById('litter-popup').classList.remove('hidden');
+            document.getElementById('darkbackground').classList.remove('hidden');
+            document.getElementById('body').classList.add('overflow-hidden')
+        }
+
+        function hideLitter() {
+            document.getElementById('litter-popup').classList.add('hidden');
+            document.getElementById('darkbackground').classList.add('hidden');
+            document.getElementById('body').classList.remove('overflow-hidden')
+
         }
     </script>
 

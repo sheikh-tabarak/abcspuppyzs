@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div x-data="
+   {
+   openTab: 1,
+   activeClasses: 'bg-[#186C91] text-white',
+   inactiveClasses: 'text-body-color hover:bg-[#186C91] hover:text-white',
+   }
+   " class="w-full mb-14">
+        <div class="flex flex-col flex-wrap rounded-lg border border-[#E4E4E4] py-3 px-4 sm:flex-row">
+            <a href="javascript:void(0)" @click="openTab = 1" :class="openTab === 1 ? activeClasses : inactiveClasses"
+                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6">
+                Details
+            </a>
+            <a href="javascript:void(0)" @click="openTab = 2" :class="openTab === 2 ? activeClasses : inactiveClasses"
+                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6">
+                Previous Litter
+            </a>
+            <a href="javascript:void(0)" @click="openTab = 3" :class="openTab === 3 ? activeClasses : inactiveClasses"
+                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6">
+                Meet Mom
+            </a>
+            <a href="javascript:void(0)" @click="openTab = 4" :class="openTab === 4 ? activeClasses : inactiveClasses"
+                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6">
+                Meet Dad
+            </a>
+        </div>
+        <div>
+            <div x-show="openTab === 1" class="py-6 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <div>
+                    <table class="text-left my-4 w-full">
+                        <thead>
+
+                        </thead>
+                        <tbody class="">
+                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  ">
+                                    DNA:
+
+
+                                </th>
+                                <td class="px-4 py-2">
+                                    <div class="flex flex-wrap gap-4">
+                                        <button class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Father's
+                                            DNA<span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg></span> </button>
+                                        <button class="flex gap-1  bg-[#186C91] px-2 py-1 rounded text-white">Mother's
+                                            DNA<span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg></span> </button>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  ">
+                                    OFA:
+
+
+                                </th>
+                                <td class="px-4 py-2">
+                                    <div class="flex  flex-wrap gap-4">
+                                        <button class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Father's
+                                            OFA<span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg></span> </button>
+                                        <button class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Mother's
+                                            OFA<span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <g id="Interface / External_Link">
+                                                        <path id="Vector"
+                                                            d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg></span> </button>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div x-show="openTab === 2" class="py-6 mb-20 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <div class="flex flex-wrap gap-4 justify-between">
+
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+
+                </div>
+            </div>
+            <div x-show="openTab === 3" class="py-6 mb-20 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <div class="flex flex-wrap gap-4 justify-between">
+
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+
+                </div>
+            </div>
+            <div x-show="openTab === 4" class="py-6 mb-20 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <div class="flex flex-wrap gap-4 justify-between">
+
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+                    <img class=" rounded w-[32%] md:w-[25%] lg:w-[23%]" src="public/images/720-abt-frg.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
