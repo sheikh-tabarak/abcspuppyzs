@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <base href="/">
+    <script>
+        const hostname = window.location.hostname;
+        var baseHref = '/';
+        console.log(hostname)
+        if (hostname === 'localhost' || hostname === '127.0.0.1') {
+            baseHref = '/';
+
+        }
+        if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+
+        console.log(baseHref)
+        document.querySelector('base').setAttribute('href', baseHref);
+    </script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MICRO TEACUP | ABCs Puppy Zs</title>
+    <link rel="stylesheet" href="utilities/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+    <script src="utilities/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $("#header").load("components/header.html");
+            $("#footer").load("components/footer.html");
+            $("#logoSection").load("components/logoSection.html")
+            $("#testimonials").load("components/testimonials.html")
+            // $("#litter-tabs").load("litters/tabs/micro-teacup.html");
+        });
+    </script>
+
+
+    <title>MICRO TEACUP | ABCs Puppy Zs</title>
+</head>
+
+<body id="body">
+    <div id="header"></div>
+
+    <div onclick="hideLitter()" id="darkbackground"
+        class="hidden w-full h-full fixed top-0 bottom-0 bg-black bg-opacity-60 z-20"></div>
+
+
+    <!-- Heading -->
+    <div style="
+    text-shadow: 0 4px 8px rgba(0,0,0,.5);
+    background-image: url('public/images/traits-page-cover-image.jpg');
+    background-position: top;
+    background-size: cover;" class="text-center bg-white text-shadow-lg shadow-gray-200 text-white  mt-[150px]">
+        <div class="bg-black bg-opacity-[0.3] px-5 lg:px-16 pt-20 py-16 lg:py-32">
+            <p class="block mb-2 text-lg font-semibold text-primary">
+                MICRO TEACUP GOLDENDOODLES FOR SALE
+
+            </p>
+
+
+            <h2 class="text-dark my-4 text-3xl lg:text-[3.5rem] font-bold uppercase tracking-normal  py-3	">
+                MICRO TEACUP
+
+            </h2>
+            <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
+                Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles
+                in a Pocket-Size Package.
+
+
+
+            </p>
+
+            <nav class="flex justify-center py-5 text-white" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="inline-flex items-center text-sm font-medium  ">
+                            <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3  mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="ml-1 text-sm font-medium  md:ml-2">Micro Teacup</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+
+    </div>
+
+    <div id="litter-popup-view">
+    </div>
+
+
+    <div id="litter-container">
+    </div>
+
+    <div id="testimonials"></div>
+    <div id="logoSection"></div>
+    <div id="footer"></div>
+
+    <script src="utilities/js/video-slider.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script src="litters/data/micro-tech.js"></script>
+    <script src="litters/data/litters-main.js"></script>
+
+</body>
+
+</html>
