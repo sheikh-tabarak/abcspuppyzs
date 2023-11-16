@@ -43,7 +43,7 @@
     </script>
 
 
-    <title>MICRO TEACUP | ABCs Puppy Zs</title>
+    <title>TEACUP | ABCs Puppy Zs</title>
 </head>
 
 <body id="body">
@@ -61,13 +61,13 @@
     background-size: cover;" class="text-center bg-white text-shadow-lg shadow-gray-200 text-white  mt-[150px]">
         <div class="bg-black bg-opacity-[0.3] px-5 lg:px-16 pt-20 py-16 lg:py-32">
             <p class="block mb-2 text-lg font-semibold text-primary">
-                MICRO TEACUP GOLDENDOODLES FOR SALE
+                TEACUP GOLDENDOODLES FOR SALE
 
             </p>
 
 
             <h2 class="text-dark my-4 text-3xl lg:text-[3.5rem] font-bold uppercase tracking-normal  py-3	">
-                MICRO TEACUP
+                TEACUP
 
             </h2>
             <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
@@ -108,6 +108,199 @@
     </div>
 
     <div id="litter-popup-view">
+        <!-- Test data -->
+        <div id="litter-popup" data-tabs-toggle="{parentTabContentSelector}"
+            class="hidden fixed bg-white z-20 top-16 right-8 lg:right-40 left-8 lg:left-40 bottom-16 rounded-lg flex justify-center items-center shadow-lg overflow-y-auto">
+            <div class="absolute right-5 top-5"> <svg onclick="hideLitter()"
+                    class="text-white fill-black cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="35px" height="35px" viewBox="0 0 50 50">
+                    <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
+                    </path>
+                </svg> </div>
+            <div
+                class="absolute left-auto top-4 lg:top-0 flex flex-wrap my-10 justify-center items-center w-full  px-8">
+                <div class="w-[100%] lg:w-[45%] text-center lg:text-left  pb-4 p-4"> <img class=" rounded"
+                        src="' + Litters[MainItemId].image + '" alt=""> </div>
+                <div class=" w-[100%] lg:w-[55%]  px-4">
+                    <div class="flex gap-4 items-center">
+                        <div>
+                            <h2 class="text-4xl">Litter Title</h2>
+                        </div>
+                        <div><span
+                                class="inline-flex items-center gap-x-1.5 py-1 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-600">Available</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-2 my-4 border-[1px] rounded">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-lg"><strong>Male:</strong> Litter Gender</p> <span
+                                class="inline-flex items-center gap-x-1.5 py-1 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-600">First
+                                Choice </span>
+                        </div>
+                        <p class="text-lg pb-2"><strong> Males:</strong> 1000</p>
+                        <div class="border-t-[1px] pt-2 flex gap-2 items-center">
+                            <p class="text-lg"><strong>Female:</strong> 1000 </p><span
+                                class="inline-flex items-center gap-x-1.5 py-1 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-600">First
+                                Choice </span>
+                        </div>
+                        <p class="text-lg"><strong> Females:</strong> 123</p>
+                    </div>
+                    <div class="px-6  border-[1px] rounded">
+                        <p class="py-2"><strong> Litter Type:</strong> 123</p>
+                        <p class="py-2"><strong> Litter Status:</strong> 123</p>
+                        <p class="py-2"><strong> Average Weight:</strong>123</p>
+                        <p class="py-2"><strong> Expecting:</strong> 123</p>
+                        <p class="py-2"><strong> Go Home:</strong> 123</p>
+                    </div>
+                </div>
+                <div class="pt-4 w-full" id="litter-tabs">
+                    <div x-data=" { openTab: 1, activeClasses: \'bg-[#186C91] text-white\', inactiveClasses: \'text-body-color hover:bg-[#186C91] hover:text-white\', } "
+                        class="w-full mb-14">
+                        <div class="flex flex-col flex-wrap rounded-lg border border-[#E4E4E4] py-3 px-4 sm:flex-row">
+                            <a href="javascript:void(0)" @click="openTab = 1"
+                                :class="openTab === 1 ? activeClasses : inactiveClasses"
+                                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6"> Details </a> <a
+                                href="javascript:void(0)" @click="openTab = 2"
+                                :class="openTab === 2 ? activeClasses : inactiveClasses"
+                                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6"> Previous Litter
+                            </a> <a href="javascript:void(0)" @click="openTab = 3"
+                                :class="openTab === 3 ? activeClasses : inactiveClasses"
+                                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6"> Meet Mom </a> <a
+                                href="javascript:void(0)" @click="openTab = 4"
+                                :class="openTab === 4 ? activeClasses : inactiveClasses"
+                                class="px-4 py-3 text-sm font-medium rounded-md md:text-base lg:px-6"> Meet Dad </a>
+                        </div>
+                        <div>
+                            <div x-show="openTab === 1"
+                                class="pb-10 pt-4 text-base leading-relaxed text-body-color dark:text-dark-6">123</div>
+                            <div x-show="openTab === 2"
+                                class="py-6 mb-20 text-base leading-relaxed text-body-color dark:text-dark-6">
+                                <div id="previous-litter-gallery" class="flex gap-4 flex-wrap p-4 justify-stretch">
+                                </div>
+                            </div>
+                            <div x-show="openTab === 3"
+                                class="py-6 mb-20 text-base leading-relaxed text-body-color dark:text-dark-6">
+                                <div class="">
+                                    <table class="text-left my-4 w-full">
+                                        <thead> </thead>
+                                        <tbody class="">
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Name: </th>
+                                                <td class="px-4 py-2"> 123</td>
+                                            </tr>
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Height:
+                                                </th>
+                                                <td class="px-4 py-2">123</td>
+                                            </tr>
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Weight:
+                                                </th>
+                                                <td class="px-4 py-2"> 123</td>
+                                            </tr>
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Genetic
+                                                    Information: </th>
+                                                <td class="px-4 py-2">
+                                                    <div class="flex flex-wrap gap-4"><a href="123"> <button
+                                                                class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Mother\'s
+                                                                DNA<span> <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        width="22px" height="22px" viewBox="0 0 24 24"
+                                                                        fill="none">
+                                                                        <g id="Interface / External_Link">
+                                                                            <path id="Vector"
+                                                                                d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                                                stroke="white" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </g>
+                                                                    </svg></span> </button></a> <a href="12"> <button
+                                                                class="flex gap-1  bg-[#186C91] px-2 py-1 rounded text-white">Mother\'s
+                                                                OFA<span> <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        width="22px" height="22px" viewBox="0 0 24 24"
+                                                                        fill="none">
+                                                                        <g id="Interface / External_Link">
+                                                                            <path id="Vector"
+                                                                                d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                                                stroke="white" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </g>
+                                                                    </svg></span> </button></a> </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div id="mom-image-container" class="flex flex-wrap gap-4 justify-center"> </div>
+                                </div>
+                            </div>
+                            <div x-show="openTab === 4"
+                                class="py-6 mb-20 text-base leading-relaxed text-body-color dark:text-dark-6">
+                                <div class="">
+                                    <table class="text-left my-4 w-full">
+                                        <thead> </thead>
+                                        <tbody class="">
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Name: </th>
+                                                <td class="px-4 py-2"> 342 </td>
+                                            </tr>
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Height:
+                                                </th>
+                                                <td class="px-4 py-2">234</td>
+                                            </tr>
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Weight:
+                                                </th>
+                                                <td class="px-4 py-2"> 234</td>
+                                            </tr>
+                                            <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                                                <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Genetic
+                                                    Information: </th>
+                                                <td class="px-4 py-2">
+                                                    <div class="flex flex-wrap gap-4"><a href="234"> <button
+                                                                class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Father\'s
+                                                                DNA<span> <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        width="22px" height="22px" viewBox="0 0 24 24"
+                                                                        fill="none">
+                                                                        <g id="Interface / External_Link">
+                                                                            <path id="Vector"
+                                                                                d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                                                stroke="white" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </g>
+                                                                    </svg></span> </button></a> <a href="234"> <button
+                                                                class="flex gap-1  bg-[#186C91] px-2 py-1 rounded text-white">Father\'s
+                                                                OFA<span> <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        width="22px" height="22px" viewBox="0 0 24 24"
+                                                                        fill="none">
+                                                                        <g id="Interface / External_Link">
+                                                                            <path id="Vector"
+                                                                                d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                                                stroke="white" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </g>
+                                                                    </svg></span> </button></a> </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div id="dad-image-container" class="flex flex-wrap gap-4 justify-center"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed bg-white z-20 right-8 lg:right-40 left-8 lg:left-40 bottom-16 px-8 py-4 rounded-lg">
+                    <button class="w-full bg-[#186C91] p-4 text-white">INQUIRE NOW</button>
+                </div>
+            </div>
+            <!-- Test Data -->
+
+
+        </div>
     </div>
 
 
