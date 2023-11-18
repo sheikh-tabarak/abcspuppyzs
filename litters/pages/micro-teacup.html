@@ -319,3 +319,103 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+    class="shadow m-10 py-10 border-[1px] rounded flex flex-wrap justify-center divide-y-2 lg:divide-y-0 lg:divide-x-2">
+    <div class="w-[100%] md:w-[100%] lg:w-[55%] lg:px-10">
+        <div class="text-2xl font-extrabold px-10 lg:px-0 text-center lg:text-left ">'+Litters[index].name + '</div>
+        <p class="py-4 px-8 lg:px-0 text-center lg:text-left">'+Litters[index].desc+'</p>
+        <table class="text-left my-4 w-content">
+            <thead> </thead>
+            <tbody class="">
+                <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                    <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Litter Type </th>
+                    <td class="px-4 py-2">' + Litters[index].type + ' </td>
+                </tr>
+                <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                    <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Average Weight: </th>
+                    <td class="px-4 py-2"> ' + Litters[index].avg_weight + ' </td>
+                </tr>
+                <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                    <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Litter Status: </th>
+                    <td class="px-4 py-2"> ' + Litters[index].status + '</td>
+                </tr>
+                <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                    <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Birthday: </th>
+                    <td class="px-4 py-2"> ' + Litters[index].status + '</td>
+                </tr>
+                <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                    <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> Go-Home: </th>
+                    <td class="px-4 py-2"> ' + Litters[index].goHome + ' </td>
+                </tr>
+                <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                    <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> DNA: </th>
+                    <td class="px-4 py-2">
+                        <div class="flex flex-wrap gap-4"> <a href="' + Litters[index].fdna + '"><button
+                                    class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Father\'s DNA<span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g id="Interface / External_Link">
+                                                <path id="Vector"
+                                                    d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg></span> </button></a> <a href="' + Litters[index].mdna + '"><button
+                                    class="flex gap-1  bg-[#186C91] px-2 py-1 rounded text-white">Mother\'s DNA<span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g id="Interface / External_Link">
+                                                <path id="Vector"
+                                                    d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg></span> </button></a> </div>
+                    </td>
+                </tr>
+                <tr class="even:bg-white odd:bg-gray-50  border-b ">
+                    <th scope="row" class="px-4 py-2 font-bold text-gray-900  "> OFA: </th>
+                    <td class="px-4 py-2">
+                        <div class="flex  flex-wrap gap-4"><a href="' + Litters[index].fofa + '"> <button
+                                    class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Father\'s OFA<span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g id="Interface / External_Link">
+                                                <path id="Vector"
+                                                    d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg></span> </button></a><a href="' + Litters[index].mofa + '"> <button
+                                    class=" flex gap-1 bg-[#186C91] px-2 py-1 rounded text-white">Mother\'s OFA<span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g id="Interface / External_Link">
+                                                <path id="Vector"
+                                                    d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                        </svg></span> </button></a> </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="w-[100%] lg:w-[45%] px-10">
+        <div id="multiple-litters"></div>
+
+    </div>
+</div>
