@@ -12,7 +12,12 @@ const Litters = [
         name: "Momma Kahala & Father Jove",
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
         type: "Teacup Goldendoodle",
-        status: "Reservations Open! <br>(1 Male - 2 Females)",
+
+        status: {
+            mode: "borned",
+            text: "Reservations Open! <br>(1 Male - 2 Females)"
+        },
+        // status: "Reservations Open! <br>(1 Male - 2 Females)",
         expected: "Spring 2024",
         goHome: "Weekend of November 17, 2023",
         available: "Available",
@@ -76,8 +81,8 @@ const Litters = [
                 name: "Jane",
                 gender: "Female",
                 availablity: "Available",
-                price: "4700",
-                birthday: "08-26-2023"
+                price: "$4,700",
+                birthday: "August-26-2023"
 
             }
             , {
@@ -85,9 +90,8 @@ const Litters = [
                 name: "Chrisy",
                 gender: "Female",
                 availablity: "Reserved",
-                price: "N/A",
-                birthday: "08-26-2023"
-                // birthday: "2023-26-08"
+                price: "RESERVED",
+                birthday: "August-26-2023"
 
             }
         ]
@@ -103,10 +107,8 @@ const Litters = [
             mode: "borned",
             text: "Reservations Open!  <br>(1 Male - 4 Females)"
         },
-        // status: "Reservations Open!  <br>(1 Male - 4 Females)",
         expected: "Spring 2024",
         birthday: "10-29-2023",
-        // birthday: "2023-10-29",
         goHome: "Weekend of January 19, 2024",
 
         available: "Available",
