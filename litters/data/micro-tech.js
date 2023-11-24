@@ -2,12 +2,17 @@ const Litters = [
     {
         mode: 0,
         image: "public/images/litters/1080x-mother-lil-bit-and-father-zeus-present.jpg",
-        name: "Momma Kahala & Father Jove",
+        name: "Momma lil bit & Father Zeus",
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
-        type: "Teacup Goldendoodle",
-        status: "Early Reservations Open!",
+        type: "Micro Teacup Goldendoodle",
+
+        status: {
+            mode: "expecting",
+            text: "Early Reservations Open!"
+        },
+        // status: "Early Reservations Open!",
         expected: "Spring 2024",
-        goHome: "Weekend of November 17, 2023",
+        goHome: "Summer 2024",
 
         available: "Available",
         avg_weight: "5-10lbs",
