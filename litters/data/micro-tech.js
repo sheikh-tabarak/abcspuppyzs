@@ -10,12 +10,38 @@ const Litters = [
             mode: "expecting",
             text: "Early Reservations Open!"
         },
-        // status: "Early Reservations Open!",
         expected: "Spring 2024",
-        goHome: "Summer 2024",
+        birthday: {
+            text: "October 29, 2023",
+            value: "10-29-2023"
+        },
 
+        goHome: "Summer 2024",
         available: "Available",
         avg_weight: "5-10lbs",
+
+        prices: [
+            {
+                title: "Male",
+                price: "$5,200",
+                priority: "First Choice"
+            },
+            {
+                title: "Males",
+                price: "$5,000",
+                priority: ""
+            },
+            {
+                title: "Female",
+                price: "$5,400",
+                priority: "First Choice"
+            },
+            {
+                title: "Females",
+                price: "$5,000",
+                priority: ""
+            }
+        ],
 
         first_choice_male_price: '5,200',
         males_price: '5,000',

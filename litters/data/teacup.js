@@ -5,6 +5,7 @@ const Litters = [
         mode: 1,
         thumbnail: {
             type: "video",
+            poster: "https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/litter-tuzi/1080-jane-pny-wsl.jpg",
             link: "https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/momma-kahala-teacup-goldendoodles-litter-tuzi.mp4",
         }
         ,
@@ -17,7 +18,6 @@ const Litters = [
             mode: "borned",
             text: "Reservations Open! <br>(1 Male - 2 Females)"
         },
-        // status: "Reservations Open! <br>(1 Male - 2 Females)",
         expected: "Spring 2024",
         goHome: "Weekend of November 17, 2023",
         available: "Available",
@@ -82,7 +82,11 @@ const Litters = [
                 gender: "Female",
                 availablity: "Available",
                 price: "$4,700",
-                birthday: "August-26-2023"
+
+                birthday: {
+                    text: "August 26, 2023",
+                    value: "08-26-2023"
+                }
 
             }
             , {
@@ -90,8 +94,11 @@ const Litters = [
                 name: "Chrisy",
                 gender: "Female",
                 availablity: "Reserved",
-                price: "RESERVED",
-                birthday: "August-26-2023"
+                price: "",
+                birthday: {
+                    text: "August 26, 2023",
+                    value: "08-26-2023"
+                }
 
             }
         ]
@@ -104,11 +111,15 @@ const Litters = [
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
         type: "Teacup Goldendoodle",
         status: {
-            mode: "borned",
+            mode: "expecting",
             text: "Reservations Open!  <br>(1 Male - 4 Females)"
         },
         expected: "Spring 2024",
-        birthday: "10-29-2023",
+        // birthday: "10-29-2023",
+        birthday: {
+            text: "October 29, 2023",
+            value: "10-29-2023"
+        },
         goHome: "Weekend of January 19, 2024",
 
         available: "Available",
@@ -118,6 +129,31 @@ const Litters = [
         males_price: '$4,000',
         first_choice_female_price: 'First and Second Choice RESERVED',
         females_price: '$4,200',
+
+        prices: [{
+            title: "Male",
+            price: "$4,000",
+            priority: ""
+        },
+
+        {
+            title: "Female",
+            price: "RESERVED",
+            priority: "First Choice"
+
+        },
+        {
+            title: "Female",
+            price: "RESERVED",
+            priority: "Second Choice"
+
+        },
+        {
+            title: "Females",
+            price: "$4,200",
+            priority: ""
+
+        }],
 
         fname: "Zeus",
         fweight: "8.5\"",
