@@ -20,12 +20,6 @@ const Litters = [
         goHome: "November 17, 2023",
         available: "Available",
         avg_weight: "5-15lbs",
-
-        // first_choice_male_price: '5,200',
-        // males_price: '5,000',
-        // first_choice_female_price: '5,400',
-        // females_price: '5,200',
-
         fname: "Jove",
         fweight: "6.5\"",
         fheight: "6lbs",
@@ -184,25 +178,25 @@ const Litters = [
         females_price: '$4,200',
 
         prices: [{
-            title: "Male",
+            title: "Male:",
             price: "$4,000",
             priority: ""
         },
 
         {
-            title: "Female",
+            title: "Female:",
             price: "<small>RESERVED</small>",
             priority: "First Choice"
 
         },
         {
-            title: "Female",
+            title: "Female:",
             price: "<small>RESERVED</small>",
             priority: "Second Choice"
 
         },
         {
-            title: "Females",
+            title: "Females:",
             price: "$4,200",
             priority: ""
 

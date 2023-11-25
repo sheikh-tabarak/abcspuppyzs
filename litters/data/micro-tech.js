@@ -22,22 +22,22 @@ const Litters = [
 
         prices: [
             {
-                title: "Male",
+                title: "Male:",
                 price: "$5,200",
                 priority: "First Choice"
             },
             {
-                title: "Males",
+                title: "Males:",
                 price: "$5,000",
                 priority: ""
             },
             {
-                title: "Female",
+                title: "Female:",
                 price: "$5,400",
                 priority: "First Choice"
             },
             {
-                title: "Females",
+                title: "Females:",
                 price: "$5,000",
                 priority: ""
             }
