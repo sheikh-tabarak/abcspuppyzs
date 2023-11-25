@@ -1,83 +1,137 @@
 const Litters = [
 
-
     {
         mode: 1,
         thumbnail: {
             type: "video",
-            poster: "https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/litter-tuzi/1080-jane-pny-wsl.jpg",
-            link: "https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/momma-kahala-teacup-goldendoodles-litter-tuzi.mp4",
+            poster: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/litter-tuzi/1080-jane-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/momma-kahala-teacup-goldendoodles-litter-tuzi.mp4",
         }
         ,
-        image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/teacup-goldendoodle/kala/720x-mother-kala-and-father-zeus-present.jpg",
+        image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080x-mother-kahala-and-father-jove-present.jpg",
         name: "Momma Kahala & Father Jove",
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
         type: "Teacup Goldendoodle",
-
         status: {
             mode: "borned",
             text: "Reservations Open! <br>(1 Male - 2 Females)"
         },
         expected: "Spring 2024",
-        goHome: "Weekend of November 17, 2023",
+        goHome: "November 17, 2023",
         available: "Available",
         avg_weight: "5-15lbs",
 
-        first_choice_male_price: '5,200',
-        males_price: '5,000',
-        first_choice_female_price: '5,400',
-        females_price: '5,200',
+        // first_choice_male_price: '5,200',
+        // males_price: '5,000',
+        // first_choice_female_price: '5,400',
+        // females_price: '5,200',
 
-        fname: "Zeus",
-        fweight: "8.5\"",
-        fheight: "8lbs",
-        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/24552/",
-        fofa: "https://ofa.org/advanced-search/?appnum=2397814/",
-        fimages: ["https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-serious.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-2-weeks.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-meadows.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-6-weeks.jpg"],
+        fname: "Jove",
+        fweight: "6.5\"",
+        fheight: "6lbs",
+        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/25012/",
+        fofa: "https://ofa.org/advanced-search/?appnum=2397811/",
+        fimages: [
 
-        mname: "lil bit",
-        mweight: "7\"",
-        mheight: "8lbs",
-        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/26476/",
-        mofa: "https://ofa.org/advanced-search/?appnum=2398331/",
-        mimages: ["https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-lil-bit-around-the-bend.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-lil-bit-oh-so-presh.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-destiny-hawk-chomp.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-destiny-yum.jpg"],
+            "public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-8-weeks.jpg ",
+            "public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-9-weeks.jpg ",
+            "public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-10-weeks.jpg ",
+            "public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-11-weeks.jpg ",
+            "public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-curious.jpg",
+            " public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-focus.jpg ",
+            "public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-meadows.jpg",
+            " public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-pathway.jpg ",
+            "public/img/our-goldendoodle-dads/lord-jove/1080-lord-jove-serious.jpg"
+        ],
+
+        mname: "Kahala",
+        mweight: "10\"",
+        mheight: "10lbs",
+        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/27682/",
+        mofa: "https://ofa.org/advanced-search/?appnum=2426744/",
+        mimages: [
+            "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-baby-girl-focused.jpg",
+            " public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-gorgeous-with-flowers.jpg",
+            " public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-serious-purple.jpg",
+            "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-tree-bound.jpg",
+            "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-straight-face.jpg",
+            "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-momma-kahalas-teacup-goldendoodles-litter-tuzi.jpg",
+            "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/momma-kahala-teacup-goldendoodles-litter-tuzi.jpg"
+        ],
         previousLitter: [
+
+
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-guri-6-weeks.jpg",
-                text: "Guri | 8 weeks old"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-adam-fetch-the-gr.jpg",
+                text: "Adam | 8 Weeks Old"
             },
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-kiona-9-weeks.jpg",
-                text: "Kiona | 8 weeks old"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-adam-lei-flowers.jpg",
+                text: "Adam | 8 weeks old"
             },
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-tala-9-weeks.jpg",
-                text: "Tala | 8 weeks old"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-adam-n-eve-portrait.jpg",
+                text: "Adam & Eve | 8 weeks old"
             },
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-lil-tut-standing-fetch-the-gr.jpg",
-                text: "Lil-tut | 8 weeks old"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-adam-n-eve-profile.jpg",
+                text: "Adam & Eve| 8 weeks old"
             }
             , {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-guri-came-fifi.jpg",
-                text: "Guri came Fifi | 1 year, 8 weeks old"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-adam-n-eve-prt-prf.jpg",
+                text: "Adam & Eve | 8 weeks old"
             }, {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-lil-lot-came-maddie.jpg"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-eve-fetch-the-gr.jpg"
                 ,
-                text: "Lil-Lot came Maddie | 1 year, 8 weeks old"
+                text: "Eve | 8 weeks old"
             }, {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-caela-came-sophie.jpg",
-                text: "Caela came Sophie |  1 year, 8 weeks old"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-eve-lei-flowers.jpg ",
+                text: "Eve | 8 weeks old"
             }, {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-bain-came-oliver.jpg",
-                text: "Bain came Oliver | 1 year, 8 weeks old"
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-jene-birthday-time.jpg",
+                text: "Jene | 8 weeks old"
             }
+            , {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-jene-fetch-the-gr.jpg",
+                text: "Jene | 8 weeks old"
+            }, {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-jene-lei-flowers.jpg",
+                text: "Jene | 8 weeks old"
+            }, {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-jene-pny-wsl.jpg",
+                text: "Jene | 8 weeks old"
+            }, {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-baby-girl-focused.jpg",
+                text: "kahala Baby girl <br> 8 weeks old"
+            }, {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-gorgeous-with-flowers.jpg",
+                text: "kahala Baby girl <br> 8 weeks old"
+            }, {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-serious-purple.jpg",
+                text: "kahala Baby girl <br> 8 weeks old"
+            }, {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-straight-face.jpg",
+                text: "kahala Baby girl <br> 8 weeks old"
+            }, {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080-kahala-tree-bound.jpg ",
+                text: "kahala Baby girl <br> 8 weeks old"
+            },
+            {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080x-from-adam-came-brownie.jpg",
+                text: "Adam came Brownie <br> 1 year, 8 weeks old"
+            },
+
+            {
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/1080x-from-eve-came-nala.jpg",
+                text: "Eve came Nala <br> 1 year, 8 weeks old"
+            }
+
         ],
 
 
         puppies: [
             {
-                image: "https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/litter-tuzi/1080-jane-pny-wsl.jpg",
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/litter-tuzi/1080-jane-pny-wsl.jpg",
                 name: "Jane",
                 gender: "Female",
                 availablity: "Available",
@@ -90,7 +144,7 @@ const Litters = [
 
             }
             , {
-                image: "https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/litter-tuzi/1080-chrisy-pny-wsl.jpg",
+                image: "public/img/familia-goldendoodle-moms/teacup-goldendoodle/kahala/litter-tuzi/1080-chrisy-pny-wsl.jpg",
                 name: "Chrisy",
                 gender: "Female",
                 availablity: "Reserved",
@@ -106,7 +160,7 @@ const Litters = [
     },
     {
         mode: 0,
-        image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/teacup-goldendoodle/kala/720x-mother-kala-and-father-zeus-present.jpg",
+        image: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/720x-mother-kala-and-father-zeus-present.jpg",
         name: "Momma Kala & Father Zeus",
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
         type: "Teacup Goldendoodle",
@@ -115,12 +169,11 @@ const Litters = [
             text: "Reservations Open!  <br>(1 Male - 4 Females)"
         },
         expected: "Spring 2024",
-        // birthday: "10-29-2023",
         birthday: {
             text: "October 29, 2023",
             value: "10-29-2023"
         },
-        goHome: "Weekend of January 19, 2024",
+        goHome: "January 19, 2024",
 
         available: "Available",
         avg_weight: "5-15lbs",
@@ -138,13 +191,13 @@ const Litters = [
 
         {
             title: "Female",
-            price: "RESERVED",
+            price: "<small>RESERVED</small>",
             priority: "First Choice"
 
         },
         {
             title: "Female",
-            price: "RESERVED",
+            price: "<small>RESERVED</small>",
             priority: "Second Choice"
 
         },
@@ -158,46 +211,56 @@ const Litters = [
         fname: "Zeus",
         fweight: "8.5\"",
         fheight: "8lbs",
-        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/24552/",
-        fofa: "https://ofa.org/advanced-search/?appnum=2397814/",
-        fimages: ["https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-serious.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-2-weeks.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-meadows.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-6-weeks.jpg"],
+        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/25012/",
+        fofa: "https://ofa.org/advanced-search/?appnum=2397811/",
+        fimages: [
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-2-weeks.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-3-weeks.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-5-weeks.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-6-weeks.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-laid-back.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-meadows.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-serious.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-focus.jpg  ",
+            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-wall.jpg"
+        ],
 
-        mname: "lil bit",
-        mweight: "7\"",
-        mheight: "8lbs",
-        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/26476/",
-        mofa: "https://ofa.org/advanced-search/?appnum=2398331/",
-        mimages: ["https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-lil-bit-around-the-bend.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-lil-bit-oh-so-presh.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-destiny-hawk-chomp.jpg", "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-destiny-yum.jpg"],
+        mname: "Kala",
+        mweight: "9.5\"",
+        mheight: "13lbs",
+        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/27682/",
+        mofa: "https://ofa.org/advanced-search/?appnum=2426744/",
+        mimages: [
+            "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-kala-kiki-a-look-beyond.jpg ",
+            "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-kala-kiki-around-the-tree.jpg ",
+            "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-kala-kiki-grass-meadow.jpg ",
+            "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-kala-kiki-seriousness.jpg",
+            " public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-kala-kiki-transition.jpg ",
+        ],
         previousLitter: [
+
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-guri-6-weeks.jpg",
-                text: "Guri | 8 weeks old"
+                image: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-kalas-f1b-teacup-goldendoodles-litter-laohu.jpg ",
+                text: "Laohu | 8 weeks old"
             },
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-kiona-9-weeks.jpg",
-                text: "Kiona | 8 weeks old"
+                image: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-kalas-f1b-teacup-goldendoodles-litter-tuzi.jpg",
+                text: "Tuzi | 8 weeks old"
             },
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-tala-9-weeks.jpg",
-                text: "Tala | 8 weeks old"
+                image: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-layne-birthday-time.jpg",
+                text: "Layne | 8 weeks old"
             },
             {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720-lil-tut-standing-fetch-the-gr.jpg",
-                text: "Lil-tut | 8 weeks old"
-            }
-            , {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-guri-came-fifi.jpg",
-                text: "Guri came Fifi | 1 year, 8 weeks old"
+                image: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080-mala-tail-wag-lei-flowers.jpg",
+                text: "Mala | 8 weeks old"
+            },
+            {
+                image: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080x-from-grish-came-cash.jpg",
+                text: "Grish came Cash <br>  1 year, 8 weeks old"
             }, {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-lil-lot-came-maddie.jpg"
-                ,
-                text: "Lil-Lot came Maddie | 1 year, 8 weeks old"
-            }, {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-caela-came-sophie.jpg",
-                text: "Caela came Sophie |  1 year, 8 weeks old"
-            }, {
-                image: "https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/720x-from-bain-came-oliver.jpg",
-                text: "Bain came Oliver | 1 year, 8 weeks old"
+                image: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/1080x-from-layne-came-ollie.jpg",
+                text: "Layne came Ollie <br> 1 year, 8 weeks old"
             }
         ],
 
