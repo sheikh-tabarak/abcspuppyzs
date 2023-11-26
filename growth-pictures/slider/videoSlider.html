@@ -21,7 +21,8 @@
   <base href="http://127.0.0.1:5500/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="utilities/js/tailwind.js"></script>
 
   <link rel="stylesheet" href="utilities/css/style.css" />
   <script src="utilities/js/main.js"></script>
@@ -78,8 +79,7 @@
 
               <!-- Slide 01 Container -->
               <div class="mainImage-slider transition duration-1000 gallery-item h-full w-[100%] 	">
-                <img
-                  src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-fetch-the-gr.jpg"
+                <img src="public/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-fetch-the-gr.jpg"
                   alt="Image 1" class="w-full h-full rounded-lg object-cover	">
               </div>
 
@@ -88,7 +88,7 @@
                 class=" mainImage-slider transition duration-1000 gallery-item h-full w-[100%] hidden video-tag-is-this">
                 <video class="w-full h-full rounded-lg object-cover " controls playsinline>
                   <source
-                    src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/momma-hera-f1-mini-goldendoodles-litter-tuzi.mp4"
+                    src="public/img/our-goldendoodle-moms/mini-goldendoodle/hera/momma-hera-f1-mini-goldendoodles-litter-tuzi.mp4"
                     type="video/mp4">
                   <!-- Your browser does not support the video tag. -->
                 </video>
@@ -98,7 +98,7 @@
               <div class=" mainImage-slider transition duration-1000 gallery-item h-full w-[100%] hidden 	">
                 <video id="myVideo" class="w-full h-full rounded-lg object-cover video-tag" controls playsinline>
                   <source
-                    src="https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4"
+                    src="public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4"
                     type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -106,15 +106,13 @@
 
               <!-- Slide 04 Container -->
               <div class="mainImage-slider transition duration-1000 gallery-item h-full w-[100%] hidden">
-                <img
-                  src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/720-tala-8-weeks.jpg"
-                  alt="Image 1" class="w-full h-full rounded-lg object-cover	">
+                <img src="public/img/our-goldendoodle-moms/mini-goldendoodle/hera/720-tala-8-weeks.jpg" alt="Image 1"
+                  class="w-full h-full rounded-lg object-cover	">
               </div>
 
               <!-- Slide 05 Container -->
               <div class="mainImage-slider transition duration-1000 gallery-item h-full w-[100%] hidden">
-                <img
-                  src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-rocks.jpg"
+                <img src="public/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-rocks.jpg"
                   alt="Image 1" class="w-full h-full rounded-lg object-cover	">
               </div>
 
@@ -142,7 +140,7 @@
 
             <div onclick="setCurrentImage(0)" class="selecting-image  relative w-[28%]  lg:w-[24%] flex-shrink-0">
               <img type="jpg" id="carosel-image"
-                src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-fetch-the-gr.jpg"
+                src="public/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-fetch-the-gr.jpg"
                 alt="Ansly" class="carosel-image  w-full cursor-pointer rounded">
               <!-- Centered Icon -->
               <!-- <i
@@ -164,7 +162,7 @@
 
             <div onclick="setCurrentImage(1)" class="selecting-image  relative w-[28%]  lg:w-[24%] flex-shrink-0">
               <img type="jpg" id="carosel-image"
-                src="https://www.abcspuppyzs.com/assets/img/familia-goldendoodle-moms/mini-goldendoodle/saylor/litter-tuzi/360-teia-oh-so-cute.jpg"
+                src="public/img/familia-goldendoodle-moms/mini-goldendoodle/saylor/litter-tuzi/360-teia-oh-so-cute.jpg"
                 alt="Ansly" class="carosel-image  w-full cursor-pointer rounded">
               <!-- Centered Icon -->
               <i
@@ -186,8 +184,8 @@
 
             <div onclick="setCurrentImage(2)" class="selecting-image  relative w-[28%]  lg:w-[24%] flex-shrink-0">
               <img type="jpg" id="carosel-image"
-                src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-stone-focus.jpg"
-                alt="Ansly" class="carosel-image  w-full cursor-pointer rounded">
+                src="public/img/our-goldendoodle-dads/lord-zeus/720-lord-zeus-stone-focus.jpg" alt="Ansly"
+                class="carosel-image  w-full cursor-pointer rounded">
               <!-- Centered Icon -->
               <i
                 class="cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl fas fa-icon-name"><svg
@@ -208,8 +206,8 @@
 
             <div onclick="setCurrentImage(3)" class="selecting-image  relative w-[28%]  lg:w-[24%] flex-shrink-0">
               <img type="jpg" id="carosel-image"
-                src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/720-tala-8-weeks.jpg"
-                alt="Ansly" class="carosel-image  w-full cursor-pointer rounded">
+                src="public/img/our-goldendoodle-moms/mini-goldendoodle/hera/720-tala-8-weeks.jpg" alt="Ansly"
+                class="carosel-image  w-full cursor-pointer rounded">
               <!-- Centered Icon -->
               <!-- <i
                 class="cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl fas fa-icon-name"><svg
@@ -230,8 +228,8 @@
 
             <div onclick="setCurrentImage(4)" class="selecting-image  relative w-[28%]  lg:w-[24%] flex-shrink-0">
               <img type="jpg" id="carosel-image"
-                src="https://www.abcspuppyzs.com/assets/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-rocks.jpg"
-                alt="Ansly" class="carosel-image  w-full cursor-pointer rounded">
+                src="public/img/our-goldendoodle-moms/mini-goldendoodle/hera/litter-tuzi/360-boid-rocks.jpg" alt="Ansly"
+                class="carosel-image  w-full cursor-pointer rounded">
               <!-- Centered Icon -->
               <!-- <i
                 class="cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl fas fa-icon-name"><svg

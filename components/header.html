@@ -17,6 +17,114 @@
     document.querySelector('base').setAttribute('href', baseHref);
   </script>
 
+  <script type="module">
+    import { onCLS, onFID, onLCP } from 'https://unpkg.com/web-vitals@3?module';
+
+    onCLS(console.log);
+    onFID(console.log);
+    onLCP(console.log);
+
+    console.log('header')
+  </script>
+
+
+  <!-- GTAG -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-816423475"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-816423475', { 'transport_type': 'beacon' });
+  </script>
+
+  <!-- END GTAG -->
+
+
+
+  <!-- SCHEMA -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://sheikh-tabarak.github.io/abcspuppyzs/",
+      "logo": "https://sheikh-tabarak.github.io/abcspuppyzs/public/images/abcs.svg"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PetStore",
+        "image": "https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-puppy-pictures/mini-goldendoodle/mini-goldendoodles-puppies-group-photos.jpg",
+        "name": "ABCs Puppy Zs",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 31.000000,
+          "longitude": -100.000000
+        },
+          "areaServed": {
+            "@type": "State",
+            "name": "Texas"
+        },
+          "url": "https://www.abcspuppyzs.com/",
+          "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "22:00"
+        }
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "VideoObject",
+          "position": 1,
+          "name": "Videos From Our Pups and Their Forever-Home Families",
+          "url": "https://www.abcspuppyzs.com/",
+          "description": "We Cherish Our Pups and Their Forever Families. Hear the Williams Family Share their ABCs Puppy Zs Experience.",
+          "thumbnailUrl": [
+            "https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcs.svg"
+          ],
+          "uploadDate": "2022-01-18T12:00:00-06:00",
+          "duration": "PT10M",
+          "contentUrl": "https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-reviews/abcspuppyzs-review-williamsae.mp4"
+        },
+        {
+          "@type": "VideoObject",
+          "position": 2,
+          "name": "Straight From the Sources",
+          "url": "https://www.abcspuppyzs.com/",
+          "description": "We Feel Blessed Raising Goldendoodles. Meet Charlie and Moose, the Bissell Family's Two Amazing Micro Goldendoodles from ABCs Puppy Zs.",
+          "thumbnailUrl": [
+            "https://www.abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcs.svg"
+          ],
+          "uploadDate": "2022-05-05T19:00:00-06:00",
+          "duration": "PT10M",
+          "contentUrl": "https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-reviews/abcspuppyzs-review-bissweat.mp4"
+          }
+      ]
+    }
+    </script>
+  <!-- END SCHEMA -->
+
   <meta charset="UTF-8" />
   <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +133,11 @@
 </head>
 
 <body>
+  <!-- GTMns -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDSS45K" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- END GTMns -->
+
   <header>
     <div id="mySidenav" class="sidenav z-50">
       <div class="text-right">
@@ -131,215 +244,30 @@
               </ul>
             </details>
           </li>
+
           <li class="hover:text-[#25A3DC]">
             <details>
-              <summary class="cursor-pointer">GALLERIES</summary>
-              <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-
+              <summary class="cursor-pointer">GROWTH PICTURES</summary>
+              <ul class="lg:text-2xl text-gray-100 pl-4 leading-10">
                 <li class="hover:text-[#25A3DC]">
-                  <details>
-                    <summary class="cursor-pointer">Our Mommas</summary>
-                    <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Mini Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Micro Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Toy Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Teacup Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-                    </ul>
-                  </details>
+                  <a href="growth-pictures/mini.html">Mini Goldendoodles</a>
                 </li>
-
-
                 <li class="hover:text-[#25A3DC]">
-
-                  <details>
-                    <summary class="cursor-pointer">Timelines</summary>
-                    <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="gallery/timeline/mini.html">Mini Goldendoodles </a>
-                      </li>
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="gallery/timeline/micro.html"> Micro Goldendoodles
-                        </a>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="gallery/timeline/toy.html"> Toy Goldendoodles
-                        </a>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="gallery/timeline/teacup.html"> Teacup Goldendoodles
-                        </a>
-                      </li>
-                      <li class="hover:text-[#25A3DC]">
-                        <a href="gallery/timeline/micro-teacup.html"> Micro Teacup Goldendoodles
-                        </a>
-                      </li>
-
-                    </ul>
-                  </details>
-
-                  </a>
+                  <a href="growth-pictures/micro.html">Micro Goldendoodles</a>
                 </li>
-
-
                 <li class="hover:text-[#25A3DC]">
-                  <details>
-                    <summary class="cursor-pointer">Familia Mommas</summary>
-                    <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Mini Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Micro Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Toy Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-
-                      <li class="hover:text-[#25A3DC]">
-                        <details>
-                          <summary class="cursor-pointer">Teacup Goldendoodles</summary>
-                          <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                            <li class="hover:text-[#25A3DC]">
-                              <details>
-                                <summary class="cursor-pointer">Hera</summary>
-                                <ul class="lg:text-xl text-gray-100 pl-4 leading-10">
-                                  <li class="hover:text-[#25A3DC]">
-                                    <a href="gallery/">Litter Tuzi
-                                    </a>
-                                  </li>
-                                </ul>
-                              </details>
-                            </li>
-                          </ul>
-                        </details>
-                      </li>
-                    </ul>
-                  </details>
+                  <a href="growth-pictures/toy.html">Toy Goldendoodles</a>
+                </li>
+                <li class="hover:text-[#25A3DC]">
+                  <a href="growth-pictures/teacup.html">Teacup Goldendoodles</a>
+                </li>
+                <li class="hover:text-[#25A3DC]">
+                  <a href="growth-pictures/micro-teacup.html">Micro Teacup Goldendoodles</a>
                 </li>
               </ul>
             </details>
-
           </li>
+
         </ul>
       </div>
     </div>
