@@ -11,9 +11,20 @@
 <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="utilities/css/fonts.css">
 <link rel="stylesheet" href="utilities/css/style.css" />
+
+<script>
+  const hostname = window.location.hostname;
+  var baseHref = '/';
+  console.log(hostname)
+  if (hostname === 'localhost' || hostname === '127.0.0.1') {
+    baseHref = '/';
+  }
+  if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+  console.log(baseHref)
+  document.querySelector('base').setAttribute('href', baseHref);
+</script>
 <script src="utilities/js/main.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- <script src="utilities/js/tailwind.js"></script> -->
+<script src="utilities/js/tailwind.js"></script>
 
 <!-- Loading Tailwind -->
 <title>Home | ABCs Puppy Zs</title>
