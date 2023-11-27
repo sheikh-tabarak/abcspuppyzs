@@ -19,8 +19,16 @@
 
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('utilities/fonts/poppins-regular-webfont.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
     <script src="utilities/js/tailwind.js"></script>
     <script src="utilities/js/main.js"></script>
     <link rel="stylesheet" href="utilities/css/style.css">
@@ -53,15 +61,10 @@
    ">
             <p class="block mb-2 text-lg font-semibold text-primary">
                 Training
-
             </p>
-
-
             <h2
                 class="text-dark my-4 text-3xl lg:text-[3.5rem] leading-[60px] font-bold uppercase tracking-normal  py-3	">
-
                 Dangerous Food for Dogs
-
             </h2>
             <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
                 It's hard to say no to those puppy eyes when your lovable Goldendoodle puppy is begging for a bite of
@@ -117,16 +120,17 @@
     </div>
 
 
-    <div class="text-center lg:text-left p-10">
-        <!-- <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
-            Exercising With Your Goldendoodle
-        </h2> -->
+    <div class="text-center lg:text-left pb-4 px-10 pt-10">
+
         <p class="text-base text-body-color dark:text-dark-6">
             It's hard to say no to those puppy eyes when your lovable Goldendoodle puppy is begging for a bite of your
             food. But knowing every type of dangerous food for dogs is one of the most important responsibilities of a
             dog owner. From upset tummies and discomfort to serious symptoms and illnesses, feeding a puppy human food
             can lead to health consequences, expensive vet visits and even the loss of a pet.
-        </p><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
         <p class="text-base text-body-color dark:text-dark-6">
             The list below is here to serve as a guide to safe pet ownership when there's a hungry fluff-ball in your
             life — and a curiosity that knows no bounds. Any dog owner can tell you that dogs love to eat, and even an
@@ -139,7 +143,7 @@
 
     </div>
 
-    <div class="text-center lg:text-left px-10 pb-5">
+    <div class="text-center lg:text-left px-10">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             Dangerous Food for Dogs: Human Food
         </h2>
@@ -147,23 +151,25 @@
 
 
 
-    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16">
+    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16 my-4">
 
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Chocolate </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Chocolate is a dangerous food for dogs because it contains a chemical called theobromine, which humans
                 have a tolerance for but causes immediate toxicity in dogs. Theobromine can lead to a range of symptoms
                 in dogs, including vomiting, diarrhea, thirst, tummy pain, frequent urination, irregular heartbeat,
                 hyperactivity, muscle tremors, lethargy, restlessness, seizures and death.
             </p>
-
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class=" text-base font-normal text-gray-500 ">
                 Symptoms of theobromine poisoning in dogs typically occur between 4 to 24 hours after ingestion. It's
                 important to note that dark chocolate has much higher levels of theobromine than milk chocolate and
                 white chocolate, which makes it significantly more dangerous. Of course, you should always avoid feeding
@@ -171,13 +177,13 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Caffeine </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Caffeine is another poisonous chemical for dogs and can be found in chocolate, chocolate-containing
                 products, coffee, tea, certain breakfast cereals, sodas and coffee-flavored ice cream. Caffeine is a
                 member of the methylxanthines family of substances, of which the theobromine found in chocolate is also
@@ -188,13 +194,13 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 The Onion Family: Onions, Garlic, Chives, Shallots and Scallions </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 The onion family (Amaryllidaceae) is a dangerous food for dogs and includes onions as well as garlic,
                 chives, shallots and scallions. While the onion family has some notable health benefits in people, it
                 has the complete opposite effect on our pups. These foods contain certain compounds that are toxic to
@@ -208,13 +214,13 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Xylitol </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Xylitol is a common artificial sweetener found in sugar-free candy, gum, baked goods and diet snacks as
                 well as in certain toothpaste, mouthwash, cough drops and chewable vitamins. Xylitol is considered
                 extremely toxic to dogs and can cause life-threatening hypoglycemia (reduced blood sugar),
@@ -225,13 +231,13 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Grapes & Raisins </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 You should never feed grapes or raisins to a dog and always supervise them around food that contains
                 them — even in the smallest amounts (like fruit loaf and grandma's pecan pie). Grapes and raisins are a
                 bit of a mystery when it comes to our pups. Some doggies can get away with eating them while others
@@ -246,13 +252,13 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Alcohol </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Alcohol is literally a poison — and the doggie metabolism is just not cut out for a drink. It's even
                 more toxic to our pups than it is to us, and a drunk dog may be the least of your worries when it
                 happens. Alcohol in dogs can lead to symptoms of vomiting, diarrhea, disorientation, excessive panting,
@@ -263,13 +269,13 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Yeast Dough (Raw Bread Dough)</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Uncooked bread dough is a dangerous food for dogs and can pose a significant health risk. When ingested,
                 yeast dough can begin to rise in a dog's digestive system and lead to bloating, stomach expansion,
                 blockage, digestive tissue damage and life-threatening consequences. Yeast also produces alcohol as a
@@ -277,25 +283,25 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Macadamia Nuts</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Macadamia nuts can cause a temporary illness in pups with symptoms such as vomiting, weakness,
                 paralysis, high body temperature and tremors lasting 1-2 days.
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Bones</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 “Give the dog a bone” is a saying we've all heard, but it's actually not the best idea. Dogs love to
                 chew — which is exactly why there are a world of chew toys and dog chews that your pup will love and
                 chew safely. Real bones pose a choking hazard to dogs because they can splinter or get stuck in their
@@ -305,13 +311,13 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Moldy Food</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Dogs can react badly to mold toxins (mycotoxins) found in stale bread and leftover foods that have seen
                 better days. Always keep the trash can out of your puppy's reach and moldy food out of their diet, which
                 can cause mycotoxin poisoning and symptoms such as vomiting, excessive drooling, high body temperature,
@@ -319,13 +325,13 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Milk and Dairy Products</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Most dogs are lactose intolerant and are unable to properly digest dairy products such as milk and
                 cheese. Ingestion can lead to symptoms such as upset tummy, vomiting and diarrhea. While it's not really
                 a dangerous food for dogs, milk can cause symptoms of both intolerance and allergies. Believe it or not,
@@ -333,13 +339,13 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Blue Cheese</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 Unlike other dairy products that may cause indigestion and symptoms of lactose intolerance, blue cheese
                 is actually a dangerous food for dogs. Blue cheese contains something called roquefortine C, which is a
                 known toxin in dogs. Blue cheese ingestion among dogs can lead to symptoms that include vomiting,
@@ -347,13 +353,13 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Corn on the Cob</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 You shouldn't feed your dog corn on the cob for the same reason you shouldn't feed them bones. Unlike a
                 person, your pup won't stop chewing when the corn is gone, and can end up swallowing pieces of the cob
                 which can result in intestinal problems and blockage. Your pup might have swallowed something too big to
@@ -361,13 +367,13 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Raw Meat and Eggs</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class=" text-base font-normal text-gray-500 ">
                 While a bloody steak might sound like the perfect thing to feed your dog, it's important to keep in mind
                 that domesticated dogs and wild animals are not the same — and that your pup can get sick from the
                 bacteria that raw food harbors. You also don't want to feed your dog raw eggs, which contain avidin — an
@@ -388,7 +394,10 @@
                 salt poisoning which can lead to vomiting, diarrhea, twitching, tremors, high body temperature, seizures
                 and death when consumed in large amounts. A general rule of thumb is that anything you might feel guilty
                 about eating is probably also bad for your dog!
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 While a bloody steak might sound like the perfect thing to feed your dog, it's important to keep in mind
                 that domesticated dogs and wild animals are not the same — and that your pup can get sick from the
@@ -396,7 +405,10 @@
                 enzyme that reduces B-vitamin absorption and can cause skin, fur and health problems in dogs. We know
                 you have loving intentions, but it's best to stick to high-quality pet food to avoid giving them
                 dangerous food for dogs.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 While a bloody steak might sound like the perfect thing to feed your dog, it's important to keep in mind
                 that domesticated dogs and wild animals are not the same — and that your pup can get sick from the
@@ -404,12 +416,18 @@
                 enzyme that reduces B-vitamin absorption and can cause skin, fur and health problems in dogs. We know
                 you have loving intentions, but it's best to stick to high-quality pet food to avoid giving them
                 dangerous food for dogs.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 IMPORTANT NOTE: If your puppy or dog has consumed any of the below foods or you suspect ingestion may
                 have taken place, call a local veterinarian or animal poison control center right away and seek
                 immediate treatment in the case of symptoms.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Apart from Human Food, we must also be mindful of Additives and Ingredients to STAY AWAY from commonly
                 found in Puppy Food and Treats.
@@ -418,7 +436,7 @@
         </li>
     </ol>
 
-    <div class="text-center lg:text-left px-10 py-10">
+    <div class="text-center lg:text-left px-10">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             Dangerous Food for Dogs: Harmful Pet Food Ingredients
         </h2>
@@ -426,40 +444,48 @@
 
 
 
-    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16">
-        <li class="mb-10 ml-4">
+    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16 my-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Dog Food and Treats to STAY AWAY From
             </h3>
 
-            <p class="mb-4 text-base font-normal text-gray-500 ">As we discussed above, not all food is safe for dogs,
+            <p class=" text-base font-normal text-gray-500 ">As we discussed above, not all food is safe for dogs,
                 so let us now dive into bad Pet Food Additives and Ingredients you should watch out for.
-            </p><br>
-
-            <p class="mb-4 text-base font-normal text-gray-500 ">Your dog is a member of the family — so it's only
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class=" text-base font-normal text-gray-500 ">Your dog is a member of the family — so it's only
                 natural to treat the Goldendoodle puppy like a baby! From happy snuggle-time and healthy activities to
                 feeding them nutritious foods, your puppy's well-being is always on your mind. Unfortunately, not every
                 company we trust with puppy food shares the same regard for our puppies' health — as the harmful dog
                 food ingredients in their products show.
-            </p><br>
-            <p class="mb-4 text-base font-normal text-gray-500 ">Unprincipled pet food companies use harmful ingredients
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class=" text-base font-normal text-gray-500 ">Unprincipled pet food companies use harmful ingredients
                 to cut down expenses as well as extend their products' shelf life all in the name of profit. They also
                 specialize in creating misleading advertisements to fool pet owners into thinking the food is actually
                 safe. In the end, it can make even the biggest pet food brands dangerous food for dogs!
-            </p><br>
-            <p class="mb-4 text-base font-normal text-gray-500 ">This leaves it up to us to know what's in the food
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class=" text-base font-normal text-gray-500 ">This leaves it up to us to know what's in the food
                 before feeding it to our sweet and innocent pups. Just like we carefully inspect food labels when
                 feeding our kids and loved ones (not to mention ourselves!), choosing the right puppy food involves
                 simply being aware of what's in the food we're putting in their hungry little tummies.
             </p>
-            <p class="mb-4 text-base font-normal text-gray-500 ">Here's a list of bad ingredients in puppy food you'll
+            <p class=" text-base font-normal text-gray-500 ">Here's a list of bad ingredients in puppy food you'll
                 want to avoid so that your puppy can grow up strong, healthy and safe.
             </p>
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Feed-Grade Dog Food Ingredients
@@ -469,14 +495,20 @@
                 their source: feed-grade plants — where questionable ingredients are processed and stuffed into the food
                 our innocent pups rely on for sustenance. Before we get into the ingredients themselves, it's important
                 to understand what feed-grade food actually is.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">In short, feed-grade food is processed food that is
                 considered unsafe for human consumption by the FDA. If that explanation bothers you, it should. As
                 opposed to human-grade food, feed-grade food includes chemicals, “meats” (we'll get into that), fillers
                 and other ingredients that are officially illegal to put into human food. It also gives a pass to
                 excreta from rodents, roaches and birds before processing. Does that sound like something you want to be
                 feeding your growing Goldendoodle puppy?
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">That's not to say you can't find some “human-grade”
                 ingredients in puppy dog food that are also harmful. So not only will this article teach you about
                 harmful ingredients to avoid in dog food, but in human food as well!
@@ -484,10 +516,7 @@
 
         </li>
 
-
-
-
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Mycotoxins </h3>
@@ -499,7 +528,7 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">So why are mycotoxins on this list? </h3>
@@ -514,7 +543,7 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">“Meat”, “Meals”, and “Byproducts” </h3>
@@ -526,7 +555,10 @@
                 diseased animals from farms, feedlots, facilities, shelters and even leftover food waste from stores and
                 restaurants. As disgusting as it sounds, this is, unfortunately, completely legal to put in feed-grade
                 food (in the USA, for now…).
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 So-called “meats” and “meals” are simply scraps which have been cooked to remove fat, leaving protein
                 and other mysterious elements. There is no standard of quality regarding the source of these
@@ -537,7 +569,7 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Pentobarbital </h3>
@@ -551,7 +583,7 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">BHA, BHT & Ethoxyquin </h3>
@@ -562,7 +594,10 @@
                 (and even standard) pet food brands and are actually banned in some countries. They are known
                 carcinogens that have been shown to cause organ damage in rats and may be linked to conditions such as
                 hyperactivity and cancer in human children.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Ethoxyquin is a feed-grade preservative considered too toxic for human consumption. It is used in pet
                 food to preserve its fat contents and extend the product's shelf life. Ethoxyquin can also be found in
@@ -571,7 +606,7 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Propylene Glycol (PG) </h3>
@@ -583,7 +618,7 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Rendered Fat (often sourced from 4D meat) </h3>
@@ -597,7 +632,7 @@
             </p>
 
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Melamine </h3>
@@ -613,7 +648,7 @@
 
 
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Sodium Hexametaphosphate</h3>
@@ -621,7 +656,7 @@
                 A dental additive meant to prevent tartar buildup. Good intentions, harmful effects when ingested.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Artificial Colors</h3>
@@ -631,7 +666,7 @@
                 puppies and dogs even care what their food looks like?
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Food Dye</h3>
@@ -641,7 +676,8 @@
                 health problems in humans. They are the last thing your growing puppy needs to be eating.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Corn Syrups and Artificial Sweeteners</h3>
@@ -650,7 +686,7 @@
                 result in related diseases such as diabetes and problems with the nervous system.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">MSG</h3>
@@ -662,7 +698,7 @@
                 or calcium caseinate, glutamate, glutanic acid, disodium inosinate, guaylate, and “flavors”. Phew!
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Gluten</h3>
@@ -672,7 +708,7 @@
                 problems, making it a dangerous food for dogs.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">White Flour</h3>
@@ -681,7 +717,7 @@
                 problems and diabetes.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Sodium Nitrate</h3>
@@ -690,7 +726,9 @@
                 people, these preservatives are particularly harmful to pets and can lead to blood disorders and even
                 cancer.
             </p>
-
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
 
             <p class="text-base font-normal text-gray-500">
                 • Carrageenan </p>
@@ -720,7 +758,11 @@
                 • Pea Protein </p>
             <p class="text-base font-normal text-gray-500">
                 • Phew! </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
+
                 By now you must be wondering what on earth they are trying to feed our pets. The truth is, these big
                 companies simply don't have your best interests in mind. We know the idea of reviewing every label and
                 checking off dozens of harmful ingredients may not be practical or even realistic. Instead, it's much
@@ -731,16 +773,17 @@
         </li>
     </ol>
 
-    <div class="text-center lg:text-left px-10 pb-10">
+    <div class="text-center lg:text-left px-10">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             Dangerous Food for Dogs: Poisonous Plants
-
-
         </h2>
         <p class="text-base text-body-color dark:text-dark-6">Whether the word “walk”, “outside” or “car ride” gets
             their tail wagging, one thing's for sure — Our Goldendoodle Puppies absolutely love getting out of the
             house!
-        </p><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
         <p class="text-base text-body-color dark:text-dark-6">
             One of the best things about being a dog owner is the way our excitable pups inspire joy in the outdoors and
             can make us feel like kids again. The fresh air, the sky above and the beauty all around become extra
@@ -750,9 +793,9 @@
         </p>
     </div>
 
-    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16 mb-10">
+    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16 my-4">
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
@@ -762,18 +805,27 @@
                 other pets and even humans. They look like mini palm trees, which makes them a popular choice for home
                 décor as bonsai house plants and outdoor landscaping. Sago palms are native to tropical and subtropical
                 climates and can be found growing naturally in some areas of the southern United States.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Common names for sago palm include cycad, Japanese sago palm, coontie palm and cardboard palm. All parts
                 of sago palms are poisonous to dogs, but the seeds and nuts contain the highest levels of the toxin
                 cycasin — which leads to liver failure in dogs.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Symptoms of sago palm ingestion include drooling, lack of appetite, vomiting, diarrhea and lethargy, as
                 well as clinical conditions such as abdominal fluid accumulation, jaundice, nose bleeds, bruising, liver
                 failure, seizures and death. If you suspect sago palm ingestion or poisoning, contact a veterinarian or
                 an animal poison control center immediately for emergency treatment.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 As pet owners, it's important for us to know which plants we keep in our homes, gardens and backyards.
                 And while sago palms are very beautiful, keeping them on our properties with dogs or other pets present
@@ -782,7 +834,7 @@
                 pet.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
@@ -797,7 +849,7 @@
                 center immediately.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
@@ -806,7 +858,10 @@
                 Oleander is another pretty flower with a mean streak when it comes to pets. These flowering bushy shrubs
                 grow naturally in the western and southern United States, and are favored in private landscapes for
                 their height (up to 12 feet) and blooming colors.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Oleander contains cardiac glycosides, which are the same toxin found in lily of the valley. These
                 poisonous shrubs for dogs are toxic in all their parts, but their poison is concentrated in the stem.
@@ -816,7 +871,7 @@
                 able to identify and avoid oleander should be in the toolkit of every dog owner.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
@@ -826,7 +881,10 @@
                 produce eye-catching scenery whether lined up neatly in gardens or sprawling wildly in open fields. But
                 like with many plants, their beauty is reserved for the eyes only — and no doggie should ever go
                 wandering in these flower fields.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Tulips, hyacinths and irises are poisonous flowers for puppies and dogs, and can lead to symptoms such
                 as upset stomach, drooling, diarrhea, intense vomiting, dehydration, lethargy, lack of appetite and
@@ -835,7 +893,7 @@
                 fatal, they are far from safe — and can cause severe illness especially when ingested in large amounts.
             </p>
         </li>
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
@@ -845,7 +903,10 @@
                 danger time to our curious pups! While in a way true, information like this can help you and your dog
                 enjoy the beauty and fragrance of springtime while keeping a safe distance from any dangers, so everyone
                 comes home happy, healthy and safe.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 When it comes to dogs, daffodils fall in the same category of poisonous spring-flowering plants as
                 tulips, hyacinths and irises. They can lead to drooling, low blood pressure, diarrhea, vomiting,
@@ -867,7 +928,10 @@
                 Azalea are a flowering shrub known for their bright, gorgeous and repeated blooms, which makes them
                 quite popular and a common sight in home landscaping, backyards and gardens. But when dogs eat a
                 substantial amount, this poisonous shrub for puppies can lead to toxic shock and even death.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Symptoms of azalea poisoning including upset stomach, vomiting, confusion, weakness and slow heart rate.
                 If you have azalea on your property or are familiar with the plant, it's important to keep your dogs and
@@ -910,7 +974,10 @@
                 potentially fatal to both people and animals makes it quite risky to have around. The Japanese yew can
                 be identified by its red berries, but it's not the berries you have to watch out for — it's the leaves,
                 seeds and bark.
-            </p> <br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 The Japanese yew is extremely toxic when ingested, and can lead to symptoms of vomiting, loss of
                 balance, difficulty breathing, tremors, seizures, blood pressure changes and heart failure. If you have
@@ -923,6 +990,7 @@
             <h3 class="text-lg font-semibold text-[#186C91] my-2 e">
                 Other Notable Mentions</h3>
             <p class="text-base font-normal text-gray-500">
+
             <ul class="list-disc text-gray-500 pl-5">
                 <li> Milkweed</li>
                 <li> Kalanchoe</li>
@@ -940,12 +1008,15 @@
                 <li>Begonia</li>
             </ul>
             </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 We only wish this was the end of the list, but unfortunately, there are quite a few other plants that
                 are poisonous to dogs. You can review a complete list of toxic plants for dogs as well as non-toxic
                 plants at the American Society for the Prevention of Cruelty to Animals (ASPCA) website.
 
-            </p><br>
+            </p>
         </li>
 
 
@@ -959,12 +1030,18 @@
             <p class="text-base font-normal text-gray-500">Mushrooms can grow just about anywhere, whether in the
                 backyard, under the house or in the woods. And while only about 1% of all mushrooms species are known to
                 be toxic, it's pretty hard to even know what you're looking at unless you know your mushrooms.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 In the United States, a mushroom species known as the Amanita, dubiously dubbed as the “death cap” and
                 “panther cap”, has been responsible for the deaths of both humans and animals. And while rare, such
                 dangerous species have been known to sprout up right in the yard.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 The severity of mushroom poisoning typically depends on the amount ingested and species of mushroom.
                 Dogs may have no symptoms at all, or get better after a minor tummy ache. But serious cases of mushroom
@@ -972,7 +1049,10 @@
                 seizures, kidney failure, liver failure and death. Because it's hard to know the mushroom species type
                 and safe limits of ingestion, a general rule of thumb is to consider them a dangerous food for dogs and
                 simply avoid mushrooms altogether.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Of course, it's much easier said than done! If you suspect that your dog may have eaten mushrooms, don't
                 panic, and contact a local veterinarian to discuss details, symptoms and if treatment is necessary.
@@ -991,7 +1071,10 @@
                 trees in particular are worth mentioning, such as apple and crabapple trees, plum trees, peach trees,
                 cherry trees and apricot trees. But other trees, such as mimosas, boxwoods, oak trees, red maples, black
                 walnuts and more all come with their own dangers, such as toxic seedpods, acorns and mold.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">To learn more, contact your local Department of Natural
                 Resources (DNR) or a certified arborist for more information on local tree species that can pose a risk
                 to your pets. If you suspect that your dog has ingested a tree toxin or is showing unusual symptoms such
@@ -1014,13 +1097,16 @@
                 climate, it's best to contact your local DNR or veterinarian to discuss dangerous wildlife for dogs and
                 how to avoid any unfriendly encounters.
 
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Being a dog owner is a big responsibility, and part of that responsibility is doing your best to keep
                 your best friend safe while enjoying the wonderful outdoors. It's always a good idea to get to know your
                 local DNR office, veterinarian and other qualified support platforms so you can have the information and
                 resources you need to stay safe and get immediate help in case of emergency.
-            </p><br>
+            </p>
         </li>
     </ol>
 

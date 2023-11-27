@@ -19,8 +19,15 @@
 
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('utilities/fonts/poppins-regular-webfont.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
     <script src="utilities/js/tailwind.js"></script>
     <script src="utilities/js/main.js"></script>
     <link rel="stylesheet" href="utilities/css/style.css">
@@ -53,17 +60,10 @@
    ">
             <p class="block mb-2 text-lg font-semibold text-primary">
                 Training
-
             </p>
-
-
             <h2
                 class="text-dark my-4 text-3xl lg:text-[3.5rem] leading-[60px] font-bold uppercase tracking-normal  py-3	">
-
                 Hip Dysplasia in Dogs
-
-
-
             </h2>
             <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
                 We want nothing more than for every puppy to grow up happy, healthy, and strong.
@@ -119,35 +119,50 @@
     </div>
 
 
-    <div class="text-center lg:text-left p-10">
+    <div class="text-center lg:text-left px-10 pt-10 pb-4">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             The Condition Known as Hip Dysplasia
         </h2>
         <p class="text-base text-body-color dark:text-dark-6">
-
             We want nothing more than for every puppy to grow up happy, healthy, and strong. And thanks to our dedicated
             Goldendoodle puppy breeding practices, we're doing our part to ensure all the best and strongest
             characteristics of the parent lines stand out in this wonderful dog breed.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             But as with all things health, we can only do our best. Even the most responsible dog breeding practices
             can't guarantee that conditions such as hip dysplasia do not occur. At least not yet, as research continues.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             Hip dysplasia is a condition known to happen in humans, dogs, and other animals. In hip dysplasia, the “ball
             and socket” of the hip and femur bone is not formed properly, which results in an irregular shape, fit and
             function of the joint. This affects how the surrounding muscles develop, which in turn leads to further
             deterioration of the joint.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             Hip dysplasia in dogs is a progressive condition that gets worse over time. As it does, dogs will exhibit
             more and more visible symptoms. These include reduced activity, stiffness, limping, swaying or “bunny
             hopping”, weakness or lameness in the hind legs, reluctance to go up stairs, reduced range of motion, loss
             of muscle mass in the back legs, increased muscle mass in the shoulders, discomfort, pain, and even unequal
             leg length.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             While hip dysplasia is more common in older dogs and larger breeds, it has been known to affect puppies and
             young dogs of all dog breeds, even the little ones. Fortunately, this article is designed to help owners
             understand the underlying causes of dog hip dysplasia, identify its signs, do their best to prevent it, and
             intervene as quickly and early as possible for the best chance of treatment.
-        </p><br>
+        </p>
     </div>
 
     <div class="text-center lg:text-left px-10 pb-5">
@@ -161,10 +176,10 @@
             responsible puppy breeders are doing their part to prevent any known associated hereditary traits from being
             passed on to future generations. And while the problem remains complicated, we have learned a lot about dog
             hip dysplasia and can now help treat and even prevent it by sharing knowledge.
-        </p><br>
+        </p>
     </div>
 
-    <div class="text-center lg:text-left px-10">
+    <div class="text-center lg:text-left px-10 pb-4">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             It's Not Congenital
         </h2>
@@ -175,7 +190,7 @@
         </p>
     </div>
 
-    <div class="text-center lg:text-left px-10 py-10">
+    <div class="text-center lg:text-left px-10">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             Hip Joints Continue to Grow Normally as Long as there is Congruity in their Structure
         </h2>
@@ -187,26 +202,34 @@
         </p>
     </div>
 
-    <div class="text-center lg:text-left px-10 py-10">
+    <div class="text-center lg:text-left px-10 pb-4">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             Genes Seem to Play a Key Role, but We Are Not Sure Which Ones They Are
         </h2>
         <p class="text-base text-body-color dark:text-dark-6">
             One thing for sure is that some dog breeds and lines are more susceptible to this condition than others.
             This suggests a genetic connection, but scientists have yet to pinpoint the culprit—or culprits—at work.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             Genes are complicated, that much we get. For example, all dogs have 100% dog DNA. But a tiny portion of that
             genome is unique to each breed. These little differences are what give our pups their unique characteristics
             and make each breed special in its own right. And it's within this tiny and unique spectrum that the genes
             linked to hip dysplasia have been found, where they unfortunately differ from one dog breed to the other.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             In other words, scientists have yet to find any specific genes that are, with 100% certainty, responsible
             for hip dysplasia. The search continues.
         </p>
     </div>
 
 
-    <div class="text-center lg:text-left px-10 py-10">
+    <div class="text-center lg:text-left px-10 ">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             Estimated Breeding Values (EBVs) Can Help, but Only Somewhat
         </h2>
@@ -219,21 +242,25 @@
             instead targeting an associated trait using calculated estimates based on a ton of data.
         </p>
     </div>
-    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16">
+    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16 my-4">
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 If not Gene Studies and EBVs, then What Can We Do About Dog Hip Dysplasia?
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="text-base font-normal text-gray-500 ">
 
                 After decades of gene studies and breed selection practices, we still haven't found a solution to hip
                 dysplasia on the genetic front. But because a genetic root cause has been so elusive, it's actually led
                 to an important discovery — hip dysplasia is not caused by genetics alone.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 If there are specific genes that cause the condition, those genes seem to be part of a greater pathology
                 involving non-genetic, environmental factors.
                 <br>
@@ -242,24 +269,25 @@
 
     </ol>
 
-
-
-    <div class="text-center lg:text-left px-10 py-10">
+    <div class="text-center lg:text-left px-10 pb-4">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             Different Goldendoodle Coat Types
         </h2>
         <p class="text-base text-body-color dark:text-dark-6">
             Goldendoodles can grow up to have three basic coat types or textures. The coat type your Goldendoodle puppy
             inherits may mean you need to do more or less grooming overall.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             Here is a brief overview of the three basic Mini Goldendoodle coat types. (If you are having any trouble
             identifying your puppy's coat type, feel free to Get in Touch with us here at ABCs Puppy Zs and we would be
             happy to help!)
         </p>
     </div>
 
-
-    <div class="text-center lg:text-left px-10 py-10">
+    <div class="text-center lg:text-left px-10 ">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             What Kind of Environmental Factors?
         </h2>
@@ -269,39 +297,53 @@
             good is what we all want. We can only hope that one day this comes true, but genetic research and breed
             selection are a slow process. In the meantime, finding out that environmental factors are associated with
             dog hip dysplasia gives us hope. It means that we can actually do something about it!
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             So what kind of environmental factors are we talking about? Let's read on.
         </p>
     </div>
 
+    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16 my-4">
 
-
-    <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16">
-
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Joint Laxity
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="text-base font-normal text-gray-500 ">
                 In humans, joint laxity is another term for loose joints. In most cases, the condition is completely
                 non-medical and can even provide for a greater range of motion. For example, people such as dancers,
                 athletes and contortionists use it to their advantage and are the envy of those who can't.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 But in the case of doggie hips, joint laxity is not a good thing. It means that the “ball and socket”
                 does
                 not have a perfect fit. Because all puppies are born with normal hips, joint laxity is a malformation
                 that
                 takes place after birth.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 When joint laxity is present, there is a much higher risk of hip dysplasia developing. Joint laxity can
                 take
                 shape in different ways, such as a result of injury, muscle weakness, too much weight on the joint, or
                 something known as adductor forces, which, in the case of hips, just means contracting the legs
                 together.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 When there's joint laxity, it means the ligament between the ball and socket, known as the teres
                 ligament,
                 is loose or severed. In turn, the femoral head, or the “ball”, doesn't fit properly into the “socket”,
@@ -313,7 +355,7 @@
             </p>
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
@@ -321,18 +363,30 @@
                 Joint Stability
 
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="text-base font-normal text-gray-500 ">
                 Through research, scientists found that the teres ligament could already be damaged before some puppies
                 were even 1 month old. This was one of the first major findings linking possible environmental factors
                 with hip dysplasia, and a big red flag.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 With a damaged teres ligament, the head and socket are no longer held firmly together. And with joint
                 laxity at such an early age, the surrounding muscles are unable to develop as strongly as they're
                 supposed to. It's the perfect recipe for the development of hip dysplasia at a very young age.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Since all puppies are born with normal hips, and the hip joint develops in response to stimulation and
                 traction, then what could be causing a puppy's teres ligament to be damaged so early?
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Scientists have found no evidence of bone defects that could lead to this condition. In fact, what
                 they've found is that hip bone dysplasia can actually be improved, worsened, or prevented altogether by
                 the degree of joint stability and congruity. Hip dysplasia appears to be a meeting point for genetic
@@ -342,7 +396,7 @@
         </li>
 
 
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
@@ -350,27 +404,43 @@
                 Body Weight is a Major Culprit
 
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="text-base font-normal text-gray-500 ">
                 As we've discussed, hip dysplasia is a progressive condition that seems to involve multiple factors.
                 Whether it begins with genetic weakness or it's just another fuel in the process, one problem sort of
                 leads to another and hip dysplasia is the result.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 For example, joint laxity makes the joint vulnerable to environmental stresses, such as being under too
                 much weight. Research has shown that heavier dogs are more susceptible to the condition, but so are
                 puppies that are hefty at birth, as well as puppies that have a faster growth rate, or get big fast.
                 Fortunately, scientists have found a connection between a restricted diet and a reduced risk of hip
                 dysplasia. Young dogs kept on a restricted diet are more likely to develop hip dysplasia much later in
                 life compared to those who are not on a restricted diet.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 It's only natural to not even think about a restricted diet until we feel it's necessary, like if our
                 dogs are already overweight, or are older. But a study showed that, by 4 years of age, less than 10% of
                 dogs on a restricted diet were developing hip dysplasia — compared to more than 30% of dogs who were not
                 on a restricted diet.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 The study was telling: it proved that weight management in young dogs was a gigantic factor in the
                 development of hip dysplasia. But this isn't the only benefit of a restricted diet, which has also been
                 associated with a longer life and preventing a slew of obesity-related illnesses in dogs.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 While genetic research is still ongoing, it's exciting to know that a restricted diet can stave off hip
                 dysplasia until much later in life, control it, or even prevent it.
             </p>
@@ -379,7 +449,7 @@
 
 
 
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
@@ -387,45 +457,81 @@
                 The Role of Exercise
 
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="text-base font-normal text-gray-500 ">
 
                 Before you take your puppy for a game of fetch, let's talk about the role of exercise in puppy hip
                 dysplasia and why it's both good and bad.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Nobody will argue that exercise is healthy. It helps boost circulation, cardiovascular health, fat
                 burning, muscle and bone strength, energy levels, the immune system, and more. But as we've learned, hip
                 dysplasia is a progressive condition that involves environmental factors which affect joint stability
                 and congruity over time — and one of those environmental factors is exercise.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 On the one hand, exercise is necessary. Without it, the muscles that support the legs and pelvis can
                 become weak, which puts extra pressure on the joints. At the same time, the type of exercise that
                 puppies engage in can mean the difference between strengthening their hip joints and wearing them down.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Once puppies are born, their hips begin to grow, develop and transform from cartilage into bone. The
                 period from birth to 8 weeks is the most important time for hip development, and in the case of these
                 sweet Goldendoodle puppies, their little hips are fully under our knowledgeable care. But as long as
                 puppies are growing, so are their hips. That's why it's important to consider all of these factors
                 before your pupper is fully grown.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Studies have shown that puppies who spend a lot of time on slippery surfaces or running up and down
                 stairs before they are 3 months old are at higher risk of developing hip dysplasia. Similar studies
                 revealed that puppies who spend more time off-lead on soft ground (such as a well-kept lawn or park
                 grounds) are actually at lower risk of developing puppy hip dysplasia.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Going further, it seems that puppies born during summertime have a lower risk of developing hip
                 dysplasia. Since puppies born in warm weather are more likely to spend much more time outdoors than
                 puppies born during cold weather, this suggests that outdoor exercise has something to do with hip
                 dysplasia pathology.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 But these studies come with an interesting caveat. Dogs aged 12-24 months who play a lot of fetch (such
                 as chasing a ball or stick) were at higher risk of developing the condition. This in turns suggests that
                 high-intensity running such as sprinting may have a negative impact on doggie hips when done regularly
                 before the age of 2.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Phew!
-
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 So let's just go over the takeaways:
-
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Puppies who spend more time playing on soft and uneven ground outside are at a lower risk of hip
                 dysplasia
                 Puppies who spend more time inside playing on hard slippery floors and going up and down stairs are at
@@ -442,22 +548,30 @@
 
 
 
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 The Role of Nutrition
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="text-base font-normal text-gray-500 ">
                 Puppies grow fast, and proper nutrition is essential for strong and healthy development. At the same
                 time, for the reasons discussed above, overeating can become an immediate problem during the critical
                 stages of joint and bone growth when the hips are most vulnerable to dysplasia.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Not only is it important that puppies don't overeat, but it's also important they don't get an excessive
                 intake of certain nutrients. This can happen if puppies eat too much or are being given nutritional
                 supplements while growing and also consuming plenty of food.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 As long as puppies have a healthy, balanced and nutritional diet, they should not be given supplements.
                 Doing so can cause excessive intake of certain minerals, such as calcium, and may lead to various health
                 problems. We don't recommend doggie supplements until later in life or unless prescribed by a
@@ -466,38 +580,51 @@
             </p>
         </li>
 
-
-
-
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">
                 Early Intervention is Super Important
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">
+            <p class="text-base font-normal text-gray-500 ">
                 Like with so many things, it pays to nip it in the bud. Hip dysplasia tends to develop very early in a
                 dog's life. By 4 to 6 months old, puppies can already be showing symptoms of lameness, pain or
                 discomfort in the hips.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 But hip dysplasia is also tricky. What happens is that once the damage is done, the microfractures begin
                 to heal. The puppy can start feeling better, playing more and behaving normally after a few weeks.
                 Concern turns to relief, and all seems well. But unfortunately, that's not the case. Even as the joint
                 “heals”, the malformation remains. The dog will feel better, but the joint is no longer the shape it's
                 supposed to be. As a result, the condition continues to worsen throughout the dog's life.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Years can go by before the dog shows any symptoms of hip dysplasia again. This makes the condition very
                 easy to overlook. And unfortunately, when treated later in life, the damage is much more significant.
                 But the whole point of this article is to give dog owners an advantage over a progressive condition by
                 catching it early. The great thing is that hip dysplasia is much easier to treat for puppies and young
                 dogs. Success rates are much higher. There are more options.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Depending on the dog breed, full skeletal growth can take anywhere from 6 months to 2 years. As long as
                 the puppy is still growing, a lot can be done to minimize dysplasia. With the help of a veterinarian,
                 it's possible to detect joint laxity as early as 4 months old. Once a diagnosis and prognosis has been
                 made, intervention can begin immediately to promote healthier development of the joints.
-                <br><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">
                 Intervention can involve everything from weight management to specific exercises and even surgery. And
                 while this might seem like a lot for a puppy, everything you do now to treat hip dysplasia can give your
                 dog a heal
@@ -508,7 +635,7 @@
 
 
 
-    <div class="text-center lg:text-left px-10 py-10">
+    <div class="text-center lg:text-left px-10 pb-10">
         <h2 class="text-dark text-[#186C91] mb-2 text-3xl font-bold sm:text-[25px]/[48px]">
             In Conclusion
 
@@ -519,13 +646,21 @@
             out hip dysplasia from doggie gene pools. Meanwhile, responsible puppy breeders like us are always hard at
             work doing our part through EBVs and other selective breeding practices designed to promote dog wellness,
             longevity, and, in our case, wonderfully healthy Goldendoodles.
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             As we've discussed in this article, even owners can contribute to preventing and treating dog hip dysplasia
             through management of environmental factors such as weight, exercise, nutrition and early detection and
             intervention. Together, we can use this knowledge in the fight against dog hip dysplasia and help reduce its
             incident rates, severity, and likelihood at different stages of the doggie lifespan.
 
-            <br><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
+        <p class="text-base text-body-color dark:text-dark-6">
             If Our Puppers Could Talk, They'd Say Thank You!
         </p>
     </div>

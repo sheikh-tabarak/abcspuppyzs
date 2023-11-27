@@ -19,8 +19,15 @@
 
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('utilities/fonts/poppins-regular-webfont.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
     <script src="utilities/js/tailwind.js"></script>
     <script src="utilities/js/main.js"></script>
     <link rel="stylesheet" href="utilities/css/style.css">
@@ -146,13 +153,13 @@
 
 
     <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16">
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">It's a Great Way To Bond With Your Dog
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 ">If you are looking for more ways to bond with your dog,
+            <p class="text-base font-normal text-gray-500 ">If you are looking for more ways to bond with your dog,
                 exercising together is a great option. It gives you quality time to spend together and strengthens your
                 bond because you get to rely on each other during the workout. Depending on your workout, you also get
                 to be playful together, which is great for bonding.
@@ -160,10 +167,9 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
-            <!-- <time class="mb-1 text-sm font-normal leading-none text-gray-400 ">March 2022</time> -->
             <h3 class="text-lg font-semibold text-[#186C91] my-2">It Can Help Reduce Behavioral Problems
             </h3>
 
@@ -214,6 +220,9 @@
             physical conditions need to be taken into consideration. If you are unsure how much exercise your particular
             goldendoodle might need, talk to your veterinarian.
         </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
         </p>
         <p class="text-base text-body-color dark:text-dark-6">
             Now that we have discussed the importance of Exercising with your Goldendoodle and how much exercise they
@@ -234,7 +243,10 @@
             pleasures only a dog owner can enjoy. Dogs are adventurous by nature, and much like people, they love to get
             out and explore new environments, have their own favorite places and activities — and genuinely enjoy the
             beauty of the world.
-        </p><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
         <p class="text-base text-body-color dark:text-dark-6">
             Outdoor activities also help keep your dog happy and healthy, with exercise and green spaces providing a big
             boost to your dog's immune system and mental wellbeing — and to yours! With every new adventure, your
@@ -255,25 +267,34 @@
                 Neighborhood Walks?
             </h3>
 
-            <p class="mb-4 text-base font-normal text-gray-500 ">Your puppy's first walk — what an adrenaline-filled,
+            <p class="text-base font-normal text-gray-500 ">Your puppy's first walk — what an adrenaline-filled,
                 mind-blowing and thrilling experience!!!
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
 
-            <p class="mb-4 text-base font-normal text-gray-500 ">But seriously, you should be almost as excited as your
+            <p class="text-base font-normal text-gray-500 ">But seriously, you should be almost as excited as your
                 puppy to join them on their first walk. After all, it's their first time around the block — and the
                 stimulation is almost too much to bear! The sights, the smells and the sounds can have your puppy's
                 adorably-limited attention span pulling them in every direction all at once. Going on a walk is not only
                 physically healthy for dogs, but puppies will enjoy the extra benefit of an educational experience. This
                 brain-stimulating good time will challenge your puppy to observe, discover and understand things as they
                 begin to familiarize themselves with their surroundings and the world.
-            </p><br>
-            <p class="mb-4 text-base font-normal text-gray-500 ">Since Goldendoodles also love to be around people, they
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">Since Goldendoodles also love to be around people, they
                 will enjoy meeting new neighbors on your walks. There is no set rule for how long or far you can walk
                 your dog, especially if you walk slowly. You can start small and move towards a set goal, then increase
                 the pace and distance as the days go by. Besides keeping fit, walks are great for reducing common
                 behavioral problems in dogs.
-            </p><br>
-            <p class="mb-4 text-base font-normal text-gray-500 ">Walking a puppy should always be done on a short leash,
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">Walking a puppy should always be done on a short leash,
                 at about 4-6 feet long. It's important not to spend too much time on a walk when your puppy is still
                 young, as their bones and joints are still growing and you don't want to overexert them. A general rule
                 of thumb is to walk your puppy for 5 minutes for every month of age, so a 4-month old pup typically
@@ -283,7 +304,7 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">How Much Exercise Does a Goldendoodle Need While
@@ -295,12 +316,18 @@
                 if they are still young. Remember, your puppy's bones and joints are still growing, and overexertion and
                 shock can lead to growth plate injuries. Just keep your runs short and gentle, and everything should be
                 ok!
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">Chances are, your pup will be so busy inspecting everything
                 on your path that running for an extended period of time will seem impossible anyway! But if your pup
                 suddenly wants to have a trot at your side, be sure to limit your pace and keep an eye on them to avoid
                 any silly mishaps.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 As we've discussed, you should walk your puppy for no more than 5 minutes for every month of age, so if
                 your puppy wants to run the whole time, your walk should be limited to about half that, or even less.
@@ -317,7 +344,10 @@
             <p class="text-base font-normal text-gray-500">Ahh the open trail, what fragrant wonders await a puppy's
                 insatiable nose? We can all agree that dogs are the ultimate hiking buddy, and a puppy can make your
                 visit to nature even more refreshing and fun.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">If you're the outdoorsy type and feel like your pup has
                 graduated their neighborhood walk and the dog park, then it may be time for an adventure in the sticks!
                 Remember, the younger the pup, the shorter the walk, or about 5 minutes for every month of age. However,
@@ -325,25 +355,37 @@
                 reduce the amount of walking time by as much as half when on a trail with your pup (use your best
                 judgment to determine if the puppy is exerting more energy on your trail of choice than they would in
                 the neighborhood or at the dog park).
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">You should never take your puppy on a hike until they've
                 received their final vaccination booster and are fully protected from common pathogens that affect dogs.
                 Also, experts recommend never taking your puppy out on long and steep hikes or through difficult terrain
                 until their bodies are fully grown, which occurs between 12 to 18 months of age.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">After your puppy has received their final vaccine and is
                 familiar with going on walks, you can begin to slowly introduce them to walking on nature trails. While
                 your puppy is still young, or under 1 year of age, you should always use a leash. As your puppy grows
                 older and becomes more experienced with being leash-free while at the dog park or on a walk, you can
                 consider taking them out into nature without one — provided that they can respond to your commands!
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">Remember, the outdoors is full of small animals that can
                 seize your puppy's attention and make them give chase, which can turn a pleasant stroll in the woods
                 into a prolonged and stressful game of hide-and-seek. Also, depending on where you live, the woods can
                 be full of toxic plants such as poison ivy, poison sumac, mushrooms, poison berries and others.
                 Typically, letting your dog run off in the woods is not recommended, unless you are well-informed of the
                 natural surroundings, plant life and geographic features.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">If you decide to take your puppy on a nature walk while
                 they're still young, a great tip is to bring a puppy carry pack where they can rest when they get tired
                 without slowing you down. Always bring plenty of water and snacks for both yourself and your puppy when
@@ -352,14 +394,20 @@
                 puppy from jumping on rocks or getting too physical when outdoors, as their bones and joints are still
                 forming and strong shocks can result in growth plate injuries. For the same reason, too much exercise
                 and exertion is not recommended for younger dogs.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">When hiking with your puppy, take frequent rests and keep an
                 eye on their energy levels. You certainly don't want your puppy to be exhausted after hiking, so always
                 stop before they look too tired. Give them a frequent drink of water, and the older they get and the
                 longer the hike, an occasional snack can offer a well-deserved energy boost. When introducing your puppy
                 to rougher and more challenging trails as they grow into an adult dog, make sure that you are working
                 them up through experience levels and that they are ready to tackle the trail at your side.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">Happy trails!
             </p>
         </li>
@@ -390,7 +438,10 @@
             <p class="text-base font-normal text-gray-500">
                 The weather is warm and the water enticing, so what better way to spend the day than by going for a
                 swim?
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Swimming is another great exercise for Goldendoodles since they are bred to be good swimmers. It is also
                 a low-impact activity that is easy on their joints. But just like people, dogs have unique
@@ -398,7 +449,10 @@
                 try to gauge their reaction and interest in the water before letting them in. You should never force
                 your puppy into the water if they seem scared or unwilling to do so themselves. This can cause them to
                 panic, have a traumatizing experience and even develop a water phobia.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Pooch experts recommend starting young when it comes to puppy swimming, so in the case that your puppy
                 is younger than 16 weeks and is not yet fully vaccinated, the only place you should go swimming with
@@ -407,14 +461,19 @@
                 sense of security. If you have a built-in backyard pool, your puppy may or may not take to the idea of
                 going in. If they seem interested, make sure to practice in the shallow end under strict supervision
                 only.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Before beginning your puppy's first swimming lesson, always equip them with a puppy life jacket. This
                 will not only keep your puppy safe, but it will make it easier for you to grab and control them while
                 they're in the water. Let your pup spend a little time in their life vest outside of the water and get
                 used to it before getting in.
             </p>
-            <br>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
 
             <p class="text-base font-normal text-gray-500">
                 A great way to get started is by bringing some of your puppy's squeaky toys along for a swim. Enter the
@@ -425,7 +484,10 @@
                 another day, and if it doesn't work, try again! The more patient you are with your puppy, the more
                 likely they are to overcome their misgivings about the water and eventually plop right in — to your
                 delight!
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Keep in mind that while swimming is a great exercise for your puppy and is easy on their growing joints,
                 they will get tired quickly, so you should either be with them in the water or at the least very close
@@ -434,7 +496,10 @@
                 this stage as your puppy may feel slightly disoriented without the assistive buoyancy of a life jacket.
                 Make sure to be in the water with your puppy during their first several attempts at swimming without a
                 life vest.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Chlorinated water is safe to swallow in moderate amounts, so don't worry if your puppy gets pool water
                 in their mouth or even decides to take a little drink. After swimming in a pool with your puppy, give
@@ -444,13 +509,19 @@
                 general, regular and extended swimming pool activities (in chlorinated water) are not recommended for
                 dogs, as this can remove natural oils from their skin and fur, causing it to be dry and brittle to the
                 touch.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Once your puppy is fully vaccinated, you can explore the notion of taking a dip in a natural body of
                 water, such as a river or a lake. Ocean swimming for dogs is generally not recommended. This is because
                 oceans can have unpredictable currents and dangerous marine characters such as jellyfish and sharks,
                 which makes it no place for a puppy.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">
                 Before taking your puppy for a swim in a river or a lake, it's important to do a background check on the
                 body of water to ensure that it is free of harmful seasonal algae, known pathogens or possible chemical
@@ -473,40 +544,52 @@
     </div>
 
     <ol class="relative border-l-[1.2px] border-[#186C91] mx-10 lg:mx-16">
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] ">
             </div>
 
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Taking a Trip to the Dog Park
             </h3>
 
-            <p class="mb-4 text-base font-normal text-gray-500 ">If you want to mix things up, take a trip to the dog
+            <p class="text-base font-normal text-gray-500 ">If you want to mix things up, take a trip to the dog
                 park. It's a great way for your dog to socialize and get some exercise at the same time. By playing with
                 the other dogs, your dog can get out some of their energy while keeping fit and making friends. Since
                 dogs love to socialize just like humans, they can come up with their own games when they come together.
-            </p><br>
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
 
-            <p class="mb-4 text-base font-normal text-gray-500 ">Before taking your puppy to the dog park, it's a good
+            <p class="text-base font-normal text-gray-500 ">Before taking your puppy to the dog park, it's a good
                 idea to do a brief doggie stakeout and make sure that the park is a safe and accommodating place for
                 your puppy. Good dog owners will always practice courteous dog park etiquette, which includes
                 controlling their dogs—whether they are free or on a leash—and cleaning up after them. The park should
                 also be well-maintained and have a fully intact fence, and be free of trash and small, dangerous debris
                 such as pieces of glass, metal or other objects that your puppy can pick up with their mouth.
-            </p><br>
-            <p class="mb-4 text-base font-normal text-gray-500 ">If your local dog park looks like the perfect place to
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">If your local dog park looks like the perfect place to
                 spend time with your puppy, it's best to use an extended leash at first just to see how your puppy
                 behaves and interacts with other dogs. When exiting a vehicle, always pick your puppy up and place them
                 gently on the ground, as their bones and joints are still forming and you should avoid letting them jump
                 out of the car.
-            </p><br>
-            <p class="mb-4 text-base font-normal text-gray-500 ">Because the dog park can be very stimulating and
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">Because the dog park can be very stimulating and
                 exciting for your puppy, make sure they feel safe at all times and try not to get distracted by your
                 phone while your puppy is wandering off alone. Any negative experiences your puppy has at the dog park
                 can impact their social development and cause them to be nervous around other animals, so you should
                 only let them near other dogs after you've confirmed that the dog is friendly and will not intimidate or
                 upset your puppy in any way.
-            </p><br>
-            <p class="mb-4 text-base font-normal text-gray-500 ">If you don't have the luxury of going to the dog park,
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
+            <p class="text-base font-normal text-gray-500 ">If you don't have the luxury of going to the dog park,
                 you can let your dog play with your neighbor's or friend's dog and see them having lots of fun together.
                 A dog park is also a great place for people to relax and socialize, so you can also have a good time as
                 your dog plays. Just make sure to keep an eye on your Pup to ensure they're playing nicely with the
@@ -516,7 +599,7 @@
 
         </li>
 
-        <li class="mb-10 ml-4">
+        <li class=" ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91]">
             </div>
             <h3 class="text-lg font-semibold text-[#186C91] my-2">Building a Backyard Obstacle Course
@@ -529,7 +612,7 @@
                 obstacle course that is perfect for your Goldendoodle. Be sure to start with easy obstacles and work
                 your way up to more difficult ones as they master each one. Goldendoodles love a challenge, so don't shy
                 away from switching up the course now and then.
-            </p><br>
+            </p>
 
 
         </li>
@@ -544,14 +627,14 @@
                 your dog's confidence, strength, and impulse control. Just make sure your Pup is playing by the rules!
                 Dogs can get very excited when it comes to Tug of War, so it's important to make sure they don't get too
                 rough. Always let your dog win and end the game on a good note, so they don't get too worked up!
-            </p><br>
+            </p>
 
         </li>
 
         <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] mb-2 ">
             </div>
-            <h3 class="text-lg font-semibold text-[#186C91] my-2 e">Playing Fetch With a Puppy
+            <h3 class="text-lg font-semibold text-[#186C91] my-2">Playing Fetch With a Puppy
             </h3>
             <p class="text-base font-normal text-gray-500">
                 When the question is how much exercise does a Goldendoodle need, you'll soon find out with a simple game
@@ -560,16 +643,25 @@
                 experience to enjoy with your Goldendoodle puppy. For your pup's own safety, fetch should only be
                 introduced in a safe and enclosed environment, such as a gated backyard.
             </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">When your puppy gets good at playing fetch and you are
                 comfortable with taking them off the leash outdoors, you can play fetch at a park, beach or other
                 dog-friendly open space. Unless your dog is already an adept swimmer and is equally skilled at fetch,
                 you should never play fetch in the water with your dog or puppy.
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
             </p>
             <p class="text-base font-normal text-gray-500">If it's your puppy's first time playing fetch, a quick
                 demonstration may be in order. Before you begin, make sure you are using something soft, chewable and
                 easy for your puppy to carry, such as one of their smaller toys. Sticks should never be used to play
                 fetch with a puppy because they can irritate or injure your puppy's mouth and even cause them to swallow
                 the bits and pieces.
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
             </p>
             <p class="text-base font-normal text-gray-500">Your puppy may favor some of its toys over others, so bring a
                 few along to see which one they respond to best. Toss one of your puppy's toys towards a safe location,
@@ -580,16 +672,25 @@
                 with the toy in front of your puppy to show them that the toy is fun, and lead them around the yard
                 until they can't wait to get it. Now, give it a toss!
             </p>
+            <p class="leading-tight text-[12px]">
+                <br>
+            </p>
             <p class="text-base font-normal text-gray-500">However, your puppy is more than likely to take its time
                 playing with the toy before bringing it back to you, so if your pup goes after the toy and starts
                 playing with it, just stay where you are! Wait patiently to see if your puppy brings the toy back when
                 it's done playing, and make sure to reward them with treats and praises if they do.
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
             </p>
             <p class="text-base font-normal text-gray-500">If your puppy comes back without the toy, try demonstrating
                 the required action yourself by throwing the toy and then running after it. When you pick it up, run
                 back to the spot where you threw it from, even sometimes with the puppy running at your feet! Try this a
                 few times and let your puppy run after it alone, then call them back. When your puppy comes back with
                 the toy, make sure to let them know they're a very good boy or girl!
+            </p>
+            <p class="leading-tight text-[12px]">
+                <br>
             </p>
             <p class="text-base font-normal text-gray-500">Keep fetch sessions short and fun, and no more than 10-20
                 minutes at a time to prevent your puppy from getting fatigued. If you've already taught your puppy
@@ -609,7 +710,7 @@
                 Wrestling is another great way to play with your dog and get them some exercise. While wrestling, it is
                 important to ensure that you are both having fun and not getting too rough. Since dogs get very excited
                 when playing, set boundaries so that it doesn't go too far.
-            </p><br>
+            </p>
         </li>
         <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] mb-2 ">
@@ -619,7 +720,7 @@
             <p class="text-base font-normal text-gray-500">
                 It is smart to take several safety precautions when exercising with your dog so that everyone can have a
                 good time. Here are some of them:
-            </p><br>
+            </p>
         </li>
         <li class="ml-4">
             <div class="absolute w-3 h-3 bg-[#186C91] rounded-full mt-1.5 -left-1.5 border border-[#186C91] mb-2 ">
@@ -632,7 +733,7 @@
                 on a leash is important in public areas. No matter how well trained a dog can be, distracting
                 environments can confuse them and they can run away or not always obey your commands.
 
-            </p><br>
+            </p>
         </li>
 
         <li class="ml-4">
@@ -644,7 +745,7 @@
                 check with your vet to see if there are any health issues you need to be aware of. For example, some
                 dogs have heart conditions preventing them from doing certain exercises. You don't want to put your dog
                 into a situation that is dangerous for their health and longevity.
-            </p><br>
+            </p>
         </li>
 
         <li class="ml-4">
@@ -656,7 +757,7 @@
                 Start slow and gradually increase the intensity of workouts based on your dog's limitations. When your
                 dog has been overworked, they may start exhibiting signs such as staggering, panting excessively, or
                 refusing to follow you, so watch out for those signs.
-            </p><br>
+            </p>
         </li>
 
         <li class="ml-4">
@@ -668,7 +769,7 @@
                 dog's paws! Be sure to start slowly and work your way up gradually. During summer, avoid too much
                 contact with sand or asphalt, and during winter, check your Goldendoodle's paws for ice build-up. If you
                 are constantly venturing into rough terrain, consider getting your Goldendoodle some dog booties.
-            </p><br>
+            </p>
         </li>
 
         <li class="ml-4">
@@ -679,7 +780,7 @@
             <p class="text-base font-normal text-gray-500">When exercising with your dog, give them plenty of breaks in
                 between so they can rest and recover. They may want to keep going, but it's important to listen to their
                 cues and let them take a break when needed.
-            </p><br>
+            </p>
         </li>
 
         <li class="ml-4">
@@ -690,7 +791,7 @@
             <p class="text-base font-normal text-gray-500">When exercising with your dog, give them plenty of breaks in
                 between so they can rest and recover. They may want to keep going, but it's important to listen to their
                 cues and let them take a break when needed.
-            </p><br>
+            </p>
         </li>
 
         <li class="ml-4">
@@ -701,7 +802,7 @@
             <p class="text-base font-normal text-gray-500">If you have an older dog, it's important to do lighter
                 exercises with them. Older dogs are more prone to injuries, so you don't want to put too much strain on
                 their bodies. Try things like walks, light jogs, or swimming are usualy enough.
-            </p><br>
+            </p>
         </li>
 
 
@@ -723,7 +824,7 @@
             distemper and other pathogens — at least not until your puppy has been fully vaccinated.
 
 
-        </p><br>
+        </p>
 
     </div>
 
@@ -737,7 +838,10 @@
             received all of their vaccinations and show non-aggressive and friendly behavior. This ensures that your
             puppy stays healthy and can avoid any negative experiences such as fighting or being attacked, which can
             traumatize a puppy and make them afraid of or aggressive towards other dogs later in life.
-        </p><br>
+        </p>
+        <p class="leading-tight text-[12px]">
+            <br>
+        </p>
 
         <p class="text-base text-body-color dark:text-dark-6">
             An extended family pet or a neighbor's friendly dog are great candidates for your puppy's first social
@@ -745,7 +849,7 @@
             backyard or home. As your puppy gets older and bigger, you can begin to feel safer about letting them have
             social encounters in the street, at the dog park or elsewhere with stranger dogs just looking for a new
             friend.
-        </p><br>
+        </p>
 
     </div>
 
@@ -760,7 +864,7 @@
             furry friend will enjoy. No matter what activity you choose, be sure to have fun while spending time with
             your dog. Also, be keen on their needs and always put their safety first.
 
-        </p><br>
+        </p>
 
     </div>
 
