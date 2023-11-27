@@ -15,7 +15,7 @@ function SettheURLStructure() {
   document.querySelector('base').setAttribute('href', baseHref);
 }
 
-SettheURLStructure();
+// SettheURLStructure();
 // Loads the elements
 function loadEssesntialElements() {
 
