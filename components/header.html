@@ -2,55 +2,16 @@
 <html lang="en">
 
 <head>
-  <base href="/">
-  <script>
-    const hostname = window.location.hostname;
-    var baseHref = '/';
-    console.log(hostname)
-    if (hostname === 'localhost' || hostname === '127.0.0.1') {
-      baseHref = '/';
-
-    }
-    if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
-
-    console.log(baseHref)
-    document.querySelector('base').setAttribute('href', baseHref);
-  </script>
-
-  <script type="module">
-    import { onCLS, onFID, onLCP } from 'https://unpkg.com/web-vitals@3?module';
-
-    onCLS(console.log);
-    onFID(console.log);
-    onLCP(console.log);
-
-    console.log('header')
-  </script>
-
-
-  <!-- GTAG -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-816423475"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'AW-816423475', { 'transport_type': 'beacon' });
-  </script>
-
-  <!-- END GTAG -->
-
-
-
   <!-- SCHEMA -->
-  <script type="application/ld+json">
+  <!-- <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "url": "https://sheikh-tabarak.github.io/abcspuppyzs/",
       "logo": "https://sheikh-tabarak.github.io/abcspuppyzs/public/images/abcs.svg"
     }
-  </script>
-  <script type="application/ld+json">
+  </script> -->
+  <!-- <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "PetStore",
@@ -122,14 +83,21 @@
           }
       ]
     }
-    </script>
+    </script> -->
   <!-- END SCHEMA -->
 
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+  <!-- 
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  <link rel="stylesheet" href="utilities/css/style.css" />
+  <meta charset="UTF-8" />
+
+  <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+
+  <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="utilities/css/fonts.css">
+  <link rel="stylesheet" href="utilities/css/style.css" /> -->
+
+
 </head>
 
 <body>
@@ -138,7 +106,7 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- END GTMns -->
 
-  <header>
+  <header id="header">
     <div id="mySidenav" class="sidenav z-50">
       <div class="text-right">
         <a href="javascript:void(0)" class="absolute top-5 right-5 lg:text-2xl text-white hover:text-gray-200 p-2"

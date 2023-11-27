@@ -2,81 +2,27 @@
 <html>
 
 <head>
-
   <base href="/">
-  <script>
-    const hostname = window.location.hostname;
-    var baseHref = '/';
-    console.log(hostname)
-    if (hostname === 'localhost' || hostname === '127.0.0.1') {
-      baseHref = '/';
-
-    }
-    if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
-
-    console.log(baseHref)
-    document.querySelector('base').setAttribute('href', baseHref);
-  </script>
-
-
-
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
 
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+  <!-- FAVICON -->
 
-  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="utilities/css/fonts.css">
+  <link rel="stylesheet" href="utilities/css/style.css" />
+  <link href="utilities/css/output.css" rel="stylesheet">
 
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <script src="utilities/js/tailwind.js"></script>
 
+  <!-- Loading Tailwind -->
   <title>Home | ABCs Puppy Zs</title>
-  <link rel="stylesheet" href="utilities/css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-
-  <script src="utilities/js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-  <script>
-    $(function () {
-      $("#header").load("components/header.html");
-      $("#footer").load("components/footer.html");
-      $("#logoSection").load("components/logoSection.html")
-    });
-  </script>
-
-  <script>
-
-
-
-    // Display Light Box
-
-    function LinkBoxDisplay(link) {
-      // document.getElementById("videoLightBox").style.display = "flex";
-      const container = document.getElementById("videoLightBox");
-      container.style.display = "flex";
-      // container.style.width = "100%";
-      const media = document.getElementById("LinkBoxContainer");
-      media.src = "https://" + link;
-      media.autoplay = true;
-    }
-
-    function LinkBoxClose() {
-      const container = document.getElementById("videoLightBox");
-      container.style.display = "none";
-      const media = document.getElementById("LinkBoxContainer");
-      media.pause();
-    }
-
-  </script>
 </head>
-
-
 
 <body>
   <div id="header"></div>
-
   <div id="videoLightBox" onclick="LinkBoxClose()"
     class="hidden bg-black w-full h-full fixed z-[60] items-center text-center flex justify-center bg-opacity-80">
     <a onclick="LinkBoxClose()" class="absolute top-10 right-10 text-gray-200 p-2 rounded-lg w-10 h-10 cursor-pointer">
@@ -424,8 +370,9 @@
       </div>
     </section>
   </section>
-
+  <script src="utilities/js/main.js"></script>
   <div id="footer"></div>
+
 </body>
 
 </html>

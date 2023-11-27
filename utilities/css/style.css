@@ -173,21 +173,23 @@ body {
   cursor:pointer;
 } */
 .accordion-item-header::before {
-  /* background-color: red; */
-  /* color: red; */
-position: relative;
-right: 0px;
-  content:"\002B";
-  padding-right: 5px;
-  /* font-size:2rem; */
-  /* position:absolute; */
-  /* right:1rem; */
+    /* background-color: red; */
+    /* color: red; */
+    position: relative;
+    right: 0px;
+    content: "\002B";
+    padding-right: 5px;
+    /* font-size:2rem; */
+    /* position:absolute; */
+    /* right:1rem; */
 }
+
 .accordion-item-header.active::before {
-  content:"\2212";
+    content: "\2212";
 }
+
 .accordion-item-body {
-  max-height:0;
-  overflow:hidden;
-  transition:max-height 0.2s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }

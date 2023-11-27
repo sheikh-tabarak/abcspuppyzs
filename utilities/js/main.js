@@ -1,11 +1,99 @@
-// import {
-//   Ripple,
-//   initTE,
-// } from "tw-elements";
 
-// initTE({ Ripple });
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function SettheURLStructure() {
+  const hostname = window.location.hostname;
+
+  var baseHref = '/';
+  console.log(hostname)
+  if (hostname === 'localhost' || hostname === '127.0.0.1') {
+    baseHref = '/';
+
+  }
+  if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+
+  console.log(baseHref)
+  document.querySelector('base').setAttribute('href', baseHref);
+}
+
+SettheURLStructure();
+// Loads the elements
+function loadEssesntialElements() {
+
+  // loads Header in to all pages!
+  fetch('components/header.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+    })
+    .catch(error => {
+      console.error('Error fetching header:', error);
+    });
+
+  // loads Footer in to all pages!
+  fetch('components/footer.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    })
+    .catch(error => {
+      console.error('Error fetching header:', error);
+    });
+
+
+  // loads logo section in to all pages!
+  fetch('components/logoSection.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('logoSection').innerHTML = html;
+    })
+    .catch(error => {
+      console.error('Error fetching header:', error);
+    });
+
+
+
+}
+
+loadEssesntialElements();
+
+
+
+
+// Open Testimonial video Lighbox !
+
+function LinkBoxDisplay(link) {
+  // document.getElementById("videoLightBox").style.display = "flex";
+  const container = document.getElementById("videoLightBox");
+  container.style.display = "flex";
+  // container.style.width = "100%";
+  const media = document.getElementById("LinkBoxContainer");
+  media.src = "https://" + link;
+  media.autoplay = true;
+}
+
+// Close Testimonial video Lighbox !
+
+function LinkBoxClose() {
+  const container = document.getElementById("videoLightBox");
+  container.style.display = "none";
+  const media = document.getElementById("LinkBoxContainer");
+  media.pause();
+}
 
 
 
@@ -55,7 +143,7 @@ function closeNav() {
 // Schedule Appointment
 
 function submitToAPI(e) {
-  document.getElementById("conference-booking").disabled = true;
+  // document.getElementById("conference-booking").disabled = true;
   // setTimeout('document.getElementById("conference-booking").disabled=false;', 5000);
   // e.preventDefault();
   // var URL =
