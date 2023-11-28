@@ -2,15 +2,20 @@
 <html lang="en">
 
 <head>
+
     <script>
+
         const hostname = window.location.hostname;
         let baseHref = '/';
         if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
         document.querySelector('base').setAttribute('href', baseHref);
+
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script defer src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -33,31 +38,67 @@
             </p>
         </div>
 
-
-
-
-        <div class="lg:flex lg:gap-5 lg:justify-between ">
-            <a
-                href="https://www.facebook.com/lyndsey.longley/posts/pfbid02YEaTVi1icdoLHQt2RDpes5pqu7qgufrjp2pZd5My8xx4xYcMuuPfg5kqG3Ttm3Edl">
-
-                <img src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-reviews/lfon.png"
-                    class="w-full lg:h-[530px] hover:scale-95 transition cursor-pointer duration-500 shadow hover:shadow-lg rounded-lg p-5 " />
-            </a>
-            <a
-                href="https://www.facebook.com/ccrouser/posts/pfbid0wyPbyxrc19fyd6MWNTcFED5DzVPXkbj6DUTd8MRoVxM3UG7zoTadD54mzov1Jr7El">
-                <img src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-reviews/cbie.png"
-                    class="w-full lg:h-[530px] hover:scale-95  transition cursor-pointer duration-500 shadow hover:shadow-lg rounded-lg p-5 " />
-            </a>
-            <a
-                href=" https://www.facebook.com/max.lulkun/posts/pfbid0pGB7Q3DWL4Sf6jZbRCfGngdy8bFumQk1JPPuiqgMRPS5jCm6kEyyccaV7JyxbyLZl">
-                <img src="https://www.abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-reviews/mliu.png"
-                    class="w-full lg:h-[530px] hover:scale-95  transition cursor-pointer duration-500 shadow hover:shadow-lg rounded-lg p-5 " />
-            </a>
-        </div>
-
-
     </div>
 
+
+    <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+    
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+        },
+      })" class="relative w-10/12 mx-auto my-10 flex flex-row ">
+        <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+            <button @click="swiper.slidePrev()"
+                class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none shadow-lg  border-2">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="swiper-container" x-ref="container">
+            <div id="swiper-wrapper" class="swiper-wrapper">
+                <!-- This is Loading by js  -->
+                <!-- Go to Micro-teacup.js file to fill up the data to load -->
+            </div>
+        </div>
+
+        <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+            <button @click="swiper.slideNext()"
+                class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none  shadow-lg  border-2">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="utilities/js/main.js"></script>
+    <script src="components/data/testimonials.js"></script>
+
+    <script>  for (let index = 0; index < Testimonials.length; index++) {
+            document.getElementById('swiper-wrapper').innerHTML += '<div class="swiper-slide p-4 "><a href="' + Testimonials[index].link + '""> <div class="hover:scale-[1.02] transition duration-500 flex flex-col rounded-lg shadow-lg overflow-hidden border-2"> <div class="flex-shrink-0 justify-center"> <img class="  h-[450px]" src="' + Testimonials[index].image + '" alt="">  </div> </div> </a></div>'
+        }</script>
+
 </body>
+
+
 
 </html>

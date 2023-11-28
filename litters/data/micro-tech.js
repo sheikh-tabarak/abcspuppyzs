@@ -1,7 +1,7 @@
 const Litters = [
     {
         mode: 0,
-        image: "public/images/litters/1080x-mother-lil-bit-and-father-zeus-present.jpg",
+        image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080x-mother-lil-bit-and-father-zeus-present.jpg",
         name: "Momma lil bit & Father Zeus",
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
         type: "Micro Teacup Goldendoodle",
@@ -54,16 +54,20 @@ const Litters = [
         fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/24552/",
         fofa: "https://ofa.org/advanced-search/?appnum=2397814/",
         fimages: [
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-laid-back.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-2-weeks.jpg",
 
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-2-weeks.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-3-weeks.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-5-weeks.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-6-weeks.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-laid-back.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-meadows.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-serious.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-focus.jpg",
-            "public/img/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-wall.jpg",],
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-meadows.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-3-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-serious.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-5-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-focus.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-6-weeks.jpg",
+
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-wall.jpg"
+        ],
 
         mname: "lil bit",
         mweight: "7\"",
@@ -71,46 +75,51 @@ const Litters = [
         mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/26476/",
         mofa: "https://ofa.org/advanced-search/?appnum=2398331/",
         mimages: [
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-bit-around-the-bend.jpg",
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-bit-composed.jpg",
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-bit-oh-so-presh.jpg",
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-bit-stern-forward.jpg",
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-bit-wilderness.jpg",
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-bits-f1b-micro-teacups-litter-jian.jpg",
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-bits-f1b-micro-teacups-litter-niu.jpg",
-            "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-tut-standing-fetch-the-gr.jpg",
+
+
+
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-oh-so-presh.jpg ",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/puppy/1080-destiny-hawk-chomp.jpg ",
+
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-composed.jpg ",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/puppy/1080-destiny-yum.jpg",
+
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-around-the-bend.jpg ",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-stern-forward.jpg ",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-wilderness.jpg"
+
+
         ],
         previousLitter: [
+
             {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-guri-6-weeks.jpg",
-                text: "Guri | 8 weeks old"
-            },
-            {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-kiona-9-weeks.jpg",
+                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-kiona-came-luna.jpg",
                 text: "Kiona | 8 weeks old"
             },
+
             {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-tala-9-weeks.jpg",
-                text: "Tala | 8 weeks old"
-            },
-            {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080-lil-tut-standing-fetch-the-gr.jpg",
-                text: "Lil-tut | 8 weeks old"
-            }
-            , {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080x-from-guri-came-fifi.jpg",
+                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-guri-came-fifi.jpg",
                 text: "Guri came Fifi | 1 year, 8 weeks old"
             }, {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080x-from-lil-lot-came-maddie.jpg"
+                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-lil-lot-came-maddie.jpg"
                 ,
                 text: "Lil-Lot came Maddie | 1 year, 8 weeks old"
             }, {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080x-from-caela-came-sophie.jpg",
+                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-caela-came-sophie.jpg",
                 text: "Caela came Sophie |  1 year, 8 weeks old"
             }, {
-                image: "public/img/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080x-from-bain-came-oliver.jpg",
+                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-bain-came-oliver.jpg",
                 text: "Bain came Oliver | 1 year, 8 weeks old"
+            },
+            {
+                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-niu.jpg",
+                text: "F1B Micro Teacups Niu"
+            },
+            {
+                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-jian.jpg",
+                text: "F1B Micro Teacups Jian"
             }
+
         ],
 
 

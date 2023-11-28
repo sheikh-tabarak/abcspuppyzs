@@ -66,6 +66,12 @@ function loadEssesntialElements() {
     });
 
 
+  // Loading Testimonals
+
+
+
+
+
 
 }
 
