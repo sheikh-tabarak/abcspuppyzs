@@ -1,6 +1,6 @@
 const GrowthGallery = [
-    " public/img/our-goldendoodle-timelines/micro-teacup-goldendoodle/680-from-bain-came-oliver.jpg ",
-    "public/img/our-goldendoodle-timelines/micro-teacup-goldendoodle/680-from-caela-came-sophie.jpg",
-    " public/img/our-goldendoodle-timelines/micro-teacup-goldendoodle/680-from-guri-came-fifi.jpg ",
-    "public/img/our-goldendoodle-timelines/micro-teacup-goldendoodle/680-from-lil-lot-came-maddie.jpg"
+    "public/img/website-growth-pictures/teacups/1080x-from-layne-came-ollie.jpg ",
+    "public/img/website-growth-pictures/teacups/1080x-from-grish-came-cash.jpg ",
+    "public/img/website-growth-pictures/teacups/1080x-from-eve-came-nala.jpg ",
+    "public/img/website-growth-pictures/teacups/1080x-from-adam-came-brownie.jpg"
 ]
