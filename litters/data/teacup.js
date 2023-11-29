@@ -244,20 +244,11 @@ const Litters = [
             " public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/mom/1080-kala-kiki-transition.jpg"
         ],
         previousLitter: [
-            {
-                image: "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080x-from-grish-came-cash.jpg",
-                text: "Grish came Cash <br>  1 year, 8 weeks old"
-            }, {
-                image: "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080x-from-layne-came-ollie.jpg",
-                text: "Layne came Ollie <br> 1 year, 8 weeks old"
-            }, {
-                image: "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080-kalas-f1b-teacup-goldendoodles-litter-laohu.jpg ",
-                text: "Laohu | 8 weeks old"
-            },
-            {
-                image: "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080-kalas-f1b-teacup-goldendoodles-litter-tuzi.jpg",
-                text: "Tuzi | 8 weeks old"
-            },
+
+            "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080x-from-grish-came-cash.jpg",
+            "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080x-from-layne-came-ollie.jpg",
+            "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080-kalas-f1b-teacup-goldendoodles-litter-laohu.jpg ",
+            "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080-kalas-f1b-teacup-goldendoodles-litter-tuzi.jpg",
 
         ],
 

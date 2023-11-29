@@ -92,37 +92,14 @@ const Litters = [
         ],
         previousLitter: [
 
-            {
-                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-kiona-came-luna.jpg",
-                text: "Kiona | 8 weeks old"
-            },
-
-            {
-                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-guri-came-fifi.jpg",
-                text: "Guri came Fifi | 1 year, 8 weeks old"
-            }, {
-                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-lil-lot-came-maddie.jpg"
-                ,
-                text: "Lil-Lot came Maddie | 1 year, 8 weeks old"
-            }, {
-                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-caela-came-sophie.jpg",
-                text: "Caela came Sophie |  1 year, 8 weeks old"
-            }, {
-                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-bain-came-oliver.jpg",
-                text: "Bain came Oliver | 1 year, 8 weeks old"
-            },
-            {
-                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-niu.jpg",
-                text: "F1B Micro Teacups Niu"
-            },
-            {
-                image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-jian.jpg",
-                text: "F1B Micro Teacups Jian"
-            }
-
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-kiona-came-luna.jpg",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-guri-came-fifi.jpg",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-lil-lot-came-maddie.jpg",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-caela-came-sophie.jpg",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-bain-came-oliver.jpg",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-niu.jpg",
+            "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-jian.jpg",
         ],
-
-
         puppies: [
         ]
 
