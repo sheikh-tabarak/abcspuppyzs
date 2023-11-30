@@ -1,110 +1,287 @@
 const Litters = [
-    // {
-    //     mode: 0,
-    //     image: "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080x-mother-lil-bit-and-father-zeus-present.jpg",
-    //     name: "Momma lil bit & Father Zeus",
-    //     desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
-    //     type: "Micro Teacup Goldendoodle",
 
-    //     status: {
-    //         mode: "expecting",
-    //         text: "Early Reservations Open!"
-    //     },
-    //     expected: "Spring 2024",
-    //     birthday: {
-    //         text: "October 29, 2023",
-    //         value: "10-29-2023"
-    //     },
-
-    //     goHome: "Summer 2024",
-    //     available: "Available",
-    //     avg_weight: "5-10lbs",
-
-    //     prices: [
-    //         {
-    //             title: "Male:",
-    //             price: "$5,200",
-    //             priority: "First Choice"
-    //         },
-    //         {
-    //             title: "Males:",
-    //             price: "$5,000",
-    //             priority: ""
-    //         },
-    //         {
-    //             title: "Female:",
-    //             price: "$5,400",
-    //             priority: "First Choice"
-    //         },
-    //         {
-    //             title: "Females:",
-    //             price: "$5,000",
-    //             priority: ""
-    //         }
-    //     ],
-
-    //     first_choice_male_price: '5,200',
-    //     males_price: '5,000',
-    //     first_choice_female_price: '5,400',
-    //     females_price: '5,200',
-
-    //     fname: "Zeus",
-    //     fweight: "8.5\"",
-    //     fheight: "8lbs",
-    //     fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/24552/",
-    //     fofa: "https://ofa.org/advanced-search/?appnum=2397814/",
-    //     fimages: [
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-laid-back.jpg ",
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-2-weeks.jpg",
-
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-meadows.jpg ",
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-3-weeks.jpg ",
-
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-serious.jpg ",
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-5-weeks.jpg ",
-
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-focus.jpg ",
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-6-weeks.jpg",
-
-    //         "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-wall.jpg"
-    //     ],
-
-    //     mname: "lil bit",
-    //     mweight: "7\"",
-    //     mheight: "8lbs",
-    //     mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/26476/",
-    //     mofa: "https://ofa.org/advanced-search/?appnum=2398331/",
-    //     mimages: [
+    // 1 - Momma Callie & Father Jove (1)
+    {
+        mode: 1,
+        thumbnail: {
+            type: "blank",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
+        image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/1080x-mother-callie-and-father-jove-present.jpg",
+        name: "Momma Callie & Father Jove",
+        // desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
+        type: "Toy Goldendoodle",
+        status: {
+            // mode: "borned",
+            // mode: "expecting",
+            mode: "available",
+            text: "Available Today!"
+        },
+        expected: "Spring 2024",
+        goHome: "August 26, 2023",
+        available: "Available",
+        avg_weight: "10-20lbs",
 
 
+        // Jove Profile
+        fname: "Jove",
+        fweight: "6lbs",
+        fheight: "6.5\"",
+        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/25012/",
+        fofa: "https://ofa.org/advanced-search/?appnum=2397811/",
+        fimages: [
 
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-oh-so-presh.jpg ",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/puppy/1080-destiny-hawk-chomp.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-curious.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-8-weeks.jpg ",
 
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-composed.jpg ",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/puppy/1080-destiny-yum.jpg",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-focus.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-9-weeks.jpg ",
 
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-around-the-bend.jpg ",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-stern-forward.jpg ",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/mom/1080-lil-bit-wilderness.jpg"
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-meadows.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-10-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-pathway.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-11-weeks.jpg",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-serious.jpg"
+
+        ],
+
+        // Jove Profile
 
 
-    //     ],
-    //     previousLitter: [
+        // Callie Profile
 
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-kiona-came-luna.jpg",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-guri-came-fifi.jpg",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-lil-lot-came-maddie.jpg",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-caela-came-sophie.jpg",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080x-from-bain-came-oliver.jpg",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-niu.jpg",
-    //         "public/img/parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/previous-litter/1080-lil-bits-f1b-micro-teacups-litter-jian.jpg",
-    //     ],
-    //     puppies: [
-    //     ]
+        mname: "Callie",
+        mweight: "16lbs",
+        mheight: "12\"",
+        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/28102/",
+        mofa: "#",
+        mimages: [
 
-    // }
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/mom/1080-callie-car-time.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/mom/1080-callie-covered-view.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/mom/1080-callie-free-time.jpg",
+            " public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/mom/1080-callie-grass-field.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/mom/1080-callie-outdoor-love.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/mom/1080-callie-outdoor-time.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/mom/1080-callie-puppy-shot.jpg"
+        ],
 
+        // Callie Profile
+
+
+        previousLitter: [
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hai-freedom.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hai-side-portrait.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-haydn-freedom.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-haydn-profile.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hens-freedom.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hens-on-the-move.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hens-side-portrait.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-abbot-came-ryder.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-abner-came-monkey.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-acton-came-mac.jpg"
+
+        ],
+
+
+        puppies: [
+            {
+                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-zayne-oh-so-cute.jpg",
+                name: "Zayne",
+                gender: "Male",
+                availablity: "Available",
+                price: "$3,000",
+
+                birthday: {
+                    text: "August 6, 2023",
+                    value: "08-06-2023"
+                }
+
+            }
+            , {
+                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-xuan-oh-so-cute.jpg",
+                name: "Xuan",
+                gender: "Male",
+                availablity: "Available",
+                price: "$3,000",
+                birthday: {
+                    text: "August 6, 2023",
+                    value: "08-06-2023"
+                }
+
+            }, {
+                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-yago-oh-so-cute.jpg",
+                name: "Yago",
+                gender: "Male",
+                availablity: "Available",
+                price: "$3,000",
+                birthday: {
+                    text: "August 6, 2023",
+                    value: "08-06-2023"
+                }
+
+            }, {
+                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-zya-oh-so-cute.jpg",
+                name: "Zya",
+                gender: "Female",
+                availablity: "Available",
+                price: "$3,200",
+                birthday: {
+                    text: "August 6, 2023",
+                    value: "08-06-2023"
+                }
+
+            }
+        ]
+
+    },
+
+    //2. Momma Quince & Father Zeus(1)
+    {
+        mode: 1,
+        thumbnail: {
+            type: "video",
+            poster: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/litter-tuzi/1080-urbain-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4",
+        },
+        image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/1080x-mother-quince-and-father-zeus-present.jpg",
+        name: " Momma Quince & Father Zeus",
+        type: "Toy Goldendoodle",
+        status: {
+            mode: "available",
+            text: "Available Today!"
+        },
+        expected: "Spring 2024",
+        // birthday: {
+        //     text: "October 29, 2023",
+        //     value: "10-29-2023"
+        // },
+        goHome: "January 19, 2024",
+
+        available: "Available",
+        avg_weight: "5-15lbs",
+
+        // prices: [{
+        //     title: "Male:",
+        //     price: "$4,000",
+        //     priority: ""
+        // },
+
+        // {
+        //     title: "Female:",
+        //     price: "<small>RESERVED</small>",
+        //     priority: "First Choice"
+
+        // },
+        // {
+        //     title: "Female:",
+        //     price: "<small>RESERVED</small>",
+        //     priority: "Second Choice"
+
+        // },
+        // {
+        //     title: "Female:",
+        //     price: "<small>RESERVED</small>",
+        //     priority: "Third Choice"
+
+        // },
+
+        // {
+        //     title: "Females:",
+        //     price: "$4,200",
+        //     priority: ""
+
+        // }],
+
+        // Zeus Proile
+
+        fname: "Zeus",
+        fweight: "8.5\"",
+        fheight: "8lbs",
+        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/24552/",
+        fofa: "https://ofa.org/advanced-search/?appnum=2397814/",
+        fimages: [
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-laid-back.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-2-weeks.jpg",
+
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-meadows.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-3-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-serious.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-5-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-focus.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/puppy/1080-lord-zeus-6-weeks.jpg",
+
+            "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-wall.jpg"
+        ],
+
+        // Zeus Proile
+
+
+        // Quince Proile
+
+        mname: "Quince",
+        mweight: "14lbs",
+        mheight: "13\"",
+        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/25015/",
+        mofa: "https://ofa.org/advanced-search/?appnum=2402521/",
+        mimages: [
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/1080-quince-peaches-field-of-relaxation.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/puppy/1080-quince-girl-harness-practice-breaking.jpg ",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/1080-quince-peaches-field-profile.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/puppy/1080-quince-peaches-puppy-portrait.jpg ",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/1080-quince-peaches-laid-back.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/puppy/1080-quince-peaches-puppy-time.jpg ",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/1080-quince-peaches-stone-focus.jpg",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/puppy/1080-quince-peaches-training-down-in-grass.jpg",
+
+            " public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/mom/1080-quince-peaches-through-the-flowers.jpg",
+        ],
+
+        //Quince Profile
+
+
+        previousLitter: [
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080-momma-quince-toy-goldendoodles-litter-tuzi.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080-momma-quinces-toy-goldendoodles-litter-laohu.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-amada-came-remi.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-bele-came-coco.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-chay-came-mose.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-ramos-came-bruno.jpg"
+        ],
+
+
+        puppies: [
+
+            {
+                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/litter-tuzi/1080-urbain-pny-wsl.jpg",
+                name: "Urbain",
+                gender: "Male",
+                availablity: "Available",
+                price: "$3,000",
+
+                birthday: {
+                    text: "August 28, 2023",
+                    value: "08-28-2023"
+                }
+
+            }
+
+
+
+
+        ]
+
+    },
 ];
 
 

@@ -24,19 +24,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <script src="utilities/js/tailwind.js"></script>
   <link rel="stylesheet" href="utilities/css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-  <script>
-    $(function () {
-      $("#header").load("components/header.html");
-      $("#footer").load("components/footer.html");
-      $("#logoSection").load("components/logoSection.html");
-      $("#testimonials").load("components/testimonials.html");
-    });
-  </script>
-
 
   <title>About | ABCs Puppy Zs</title>
 </head>
@@ -387,10 +374,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
   <div id="testimonials"></div>
+
   <div id="footer"></div>
-  <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-  <script defer src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+
+  <script src="utilities/js/main.js"></script>
+  <script src="components/data/testimonials.js"></script>
+
+  <script>
+
+    for (let index = 0; index < 3; index++) {
+      document.getElementById('swiper-wrapper').innerHTML += '<div class="swiper-slide p-4 "> <div class="flex flex-col rounded-lg shadow-lg overflow-hidden border-2"> <div class="flex-shrink-0"> <a href="' + OurReviews[index].link + '" class="cursor-pointer"> <img class="h-full w-full object-cover" src="' + OurReviews[index].image + '" alt=""> </a> </div> </div> </div>'
+    }
+
+  </script>
+  <!-- <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script> -->
 </body>
 
 </html>

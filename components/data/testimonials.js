@@ -1,4 +1,4 @@
-const Testimonials = [
+const OurReviews = [
     {
         link: " ",
         image: "public/img/abcs-puppy-zs-goldendoodle-reviews/acho.jpg"

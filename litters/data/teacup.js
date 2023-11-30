@@ -152,6 +152,8 @@ const Litters = [
     //     ]
 
     // },
+
+    //1. Momma Kala & Father Zeus(0)
     {
         mode: 0,
         image: "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/1080x-mother-kala-and-father-zeus-present.jpg",
@@ -209,6 +211,9 @@ const Litters = [
 
         }],
 
+
+        // Zeus Profile
+
         fname: "Zeus",
         fweight: "8.5\"",
         fheight: "8lbs",
@@ -229,6 +234,11 @@ const Litters = [
 
             "public/img/parents/our-goldendoodle-dads/lord-zeus/1080-lord-zeus-stone-wall.jpg"
         ],
+        // Zeus Profile
+
+
+
+        // Kala Profile
 
         mname: "Kala",
         mweight: "9.5\"",
@@ -243,6 +253,10 @@ const Litters = [
             " public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/mom/1080-kala-kiki-seriousness.jpg",
             " public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/mom/1080-kala-kiki-transition.jpg"
         ],
+
+        // Kala Profile
+
+
         previousLitter: [
 
             "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/previous-litter/1080x-from-grish-came-cash.jpg",

@@ -10,7 +10,6 @@ const Litters = [
         },
         image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/clio/1080x-mother-clio-and-father-jove-present.jpg",
         name: "Momma Clio & Father Jove",
-        // desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
         type: "F1 Mini Goldendoodle",
         status: {
             // mode: "borned",
@@ -132,6 +131,11 @@ const Litters = [
     // 3 - Momma Luci & Father Pluto (0)
     {
         mode: 0,
+        thumbnail: {
+            type: "no",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
         image: "public/img/parents/familia-goldendoodle-moms/f1b-mini-goldendoodle/luci/1080x-mother-luci-and-father-pluto-present.jpg",
         name: "Momma Luci & Father Pluto",
         type: "F1B Mini Teddy Bear Goldendoodle",
@@ -234,6 +238,11 @@ const Litters = [
     // 4 - Momma Mia & Father Jove (0)
     {
         mode: 0,
+        thumbnail: {
+            type: "no",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
         image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/mia/1080x-mother-mia-and-father-jove-present.jpg",
         name: "Momma Mia & Father Jove",
         type: "F1 Mini Goldendoodle",
@@ -346,6 +355,11 @@ const Litters = [
     // 5 - Momma Poly & Father Jove (0)
     {
         mode: 0,
+        thumbnail: {
+            type: "no",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
         image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/poly/1080x-mother-poly-and-father-jove-present.jpg",
         name: "Momma Poly & Father Jove",
         type: "F1 Mini Goldendoodle",
@@ -461,6 +475,11 @@ const Litters = [
     // 6 - Momma Gracie & Father Pluto (0)
     {
         mode: 0,
+        thumbnail: {
+            type: "no",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
         image: "public/img/parents/familia-goldendoodle-moms/f1b-mini-goldendoodle/gracie/1080x-mother-gracie-and-father-pluto-present.jpg",
         name: "Momma Gracie & Father Pluto",
         type: "F1B Mini Teddy Bear Goldendoodle",
@@ -526,9 +545,9 @@ const Litters = [
 
         //   Gracie Profile
         mname: "Gracie",
-        mweight: "21\"",
-        mheight: "68bs",
-        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/28108/",
+        mweight: "15\"",
+        mheight: "26lbs",
+        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/26824/",
         mofa: "#",
         mimages: [
             "public/img/parents/familia-goldendoodle-moms/f1b-mini-goldendoodle/gracie/mom/1080-gracie-car-time.jpg ",
@@ -561,6 +580,11 @@ const Litters = [
     // 7 - Momma Bailey Lynn & Father Jove (0)
     {
         mode: 0,
+        thumbnail: {
+            type: "no",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
         image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/bailey-lynn/1080x-mother-bailey-lynn-and-father-jove-present.jpg",
         name: "Momma Bailey Lynn & Father Jove",
         type: "F1 Mini Goldendoodle",
