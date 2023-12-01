@@ -43,10 +43,6 @@ const Litters = [
             }
         ],
 
-        first_choice_male_price: '5,200',
-        males_price: '5,000',
-        first_choice_female_price: '5,400',
-        females_price: '5,200',
 
         fname: "Zeus",
         fweight: "8.5\"",

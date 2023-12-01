@@ -282,6 +282,133 @@ const Litters = [
         ]
 
     },
+
+    // 3 - Momma Moana & Father Jove (0)
+    {
+        mode: 0,
+        thumbnail: {
+            type: "none",
+            poster: "public/img/our-goldendoodle-dads/lord-jove/720-lord-jove-focus.jpg",
+            link: "public/img/our-goldendoodle-moms/micro-goldendoodle/kiki/momma-kiki-f1b-micro-goldendoodles-litter-tuzi.mp4",
+        },
+        image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/1080x-mother-moana-and-father-jove-present.jpg",
+        name: "Momma Moana & Father Jove",
+        type: "Toy Goldendoodle",
+        status: {
+            mode: "expecting",
+            text: "Early Reservations Open!"
+        },
+        expected: "January 2024",
+        birthday: {
+            text: "October 18, 2023",
+            value: "10-18-2023"
+        },
+        goHome: "April 2024",
+
+        available: "Available",
+        avg_weight: "10-20lbs",
+
+
+
+        //   Jove Profile
+
+        fname: "Jove",
+        fweight: "6lbs",
+        fheight: "6.5\"",
+        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/25012/",
+        fofa: "https://ofa.org/advanced-search/?appnum=2397811/",
+        fimages: [
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-curious.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-8-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-focus.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-9-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-meadows.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-10-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-pathway.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-11-weeks.jpg",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-serious.jpg"
+
+        ],
+
+        //   Jove Profile
+
+
+
+
+        //   Moana Profile
+
+
+        mname: "Moana ",
+        mweight: "15lbs",
+        mheight: "15\"",
+        mdna: "#",
+        mofa: "https://ofa.org/advanced-search/?appnum=2421848/",
+        mimages: [
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/1080-moana-field-of-dreams.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/puppy/1080-freya-1-week.jpg",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/1080-moana-gorgeous-greenery.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/puppy/1080-freya-2-weeks.jpg ",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/1080-moana-portrait-perfection.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/puppy/1080-freya-4-weeks.jpg ",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/1080-moana-profile-gaze.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/puppy/1080-freya-5-weeks.jpg ",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/moana/mom/1080-moana-purple-berries.jpg",
+
+
+
+        ],
+
+        //   Moana Profile
+
+
+        prices: [{
+            title: "Male:",
+            price: "$3,200",
+            priority: "First Choice"
+        },
+
+        {
+            title: "Males:",
+            price: "$3,000",
+            priority: ""
+
+        },
+
+        {
+            title: "Female:",
+            price: "$3,400",
+            priority: "First Choice"
+
+        },
+        {
+            title: "Females:",
+            price: "$3,200",
+            priority: ""
+
+        },
+
+
+        ],
+
+        previousLitter: [
+
+        ],
+
+
+        puppies: [
+        ]
+
+    },
 ];
 
 
