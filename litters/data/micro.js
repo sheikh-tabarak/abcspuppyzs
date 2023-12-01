@@ -134,6 +134,8 @@ const Litters = [
     },
 
 
+
+
     // 2 - Momma Daimie & Father Zeus  (1)
     {
         mode: 1,
@@ -142,6 +144,7 @@ const Litters = [
             poster: "public/img/our-goldendoodle-dads/lord-jove/720-lord-jove-focus.jpg",
             link: "public/img/parents/familia-goldendoodle-moms/micro-goldendoodle/daimie/puppies/1080-cesi-pny-wsl.jpg",
         },
+        prices: [],
         image: "public/img/parents/familia-goldendoodle-moms/micro-goldendoodle/daimie/1080x-mother-daimie-and-father-zeus-present.jpg",
         name: "Momma Daimie & Father Zeus        ",
         type: "F1B Micro Goldendoodle",
@@ -208,25 +211,7 @@ const Litters = [
         //   Daimie Profile
 
 
-        prices: [{
-            title: "Male:",
-            price: "<small>RESERVED</small>",
-            priority: "First Choice"
-        },
 
-        {
-            title: "Males:",
-            price: "$2,000",
-            priority: ""
-
-        },
-        {
-            title: "Female:",
-            price: "<small>RESERVED</small>",
-            priority: ""
-
-        },
-        ],
 
 
 
@@ -256,8 +241,8 @@ const Litters = [
                 name: "Cara",
                 gender: "Female",
 
-                availablity: "Available",
-                price: "$2,700",
+                availablity: "Reserved",
+                price: "N/A",
 
 
                 birthday: {

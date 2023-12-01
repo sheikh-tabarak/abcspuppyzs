@@ -8,6 +8,7 @@ const Litters = [
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
+        prices: [],
         image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/clio/1080x-mother-clio-and-father-jove-present.jpg",
         name: "Momma Clio & Father Jove",
         type: "F1 Mini Goldendoodle",
@@ -119,6 +120,175 @@ const Litters = [
                 birthday: {
                     text: "August 26, 2023",
                     value: "08-26-2023"
+                }
+
+            }
+        ]
+
+    },
+
+    // 2 - Momma Reba & Father Jove (1)
+    {
+        mode: 1,
+        thumbnail: {
+            type: "none",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
+        prices: [
+            {
+                title: "Male:",
+                price: "<small>RESERVED</small>",
+                priority: "First Choice"
+
+            },
+            {
+                title: "Male:",
+                price: "<small>RESERVED</small>",
+                priority: "Second Choice"
+
+            },
+            {
+                title: "Male:",
+                price: "<small>RESERVED</small>",
+                priority: "Third Choice"
+
+            },
+            {
+                title: "Male:",
+                price: "$2,500",
+                priority: "Fourth Choice"
+
+            },
+
+        ],
+        image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/1080x-mother-reba-and-father-jove-present.jpg",
+        name: "Momma Reba & Father Jove ",
+        type: "F1 Mini Goldendoodle",
+        status: {
+            mode: "borned",
+            // mode: "expecting",
+            // mode: "available",
+            text: "Reservations Open! (4 Males)"
+        },
+        expected: "Spring 2024",
+        goHome: "Christmas 2023",
+        available: "Available",
+        avg_weight: "25-35lbs",
+
+
+        // Jove Profile
+        fname: "Jove",
+        fweight: "6lbs",
+        fheight: "6.5\"",
+        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/25012/",
+        fofa: "https://ofa.org/advanced-search/?appnum=2397811/",
+        fimages: [
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-curious.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-8-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-focus.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-9-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-meadows.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-10-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-pathway.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-11-weeks.jpg",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-serious.jpg"
+
+        ],
+
+        // Jove Profile
+
+
+        // Reba Profile
+
+        mname: "Reba",
+        mweight: "64lbs",
+        mheight: "21.5\"",
+        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/26831/",
+        mofa: "#",
+        mimages: [
+
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/mom/1080-reba-all-smiles.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/mom/1080-reba-focused.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/mom/1080-reba-lake-time.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/mom/1080-reba-long-smile.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/mom/1080-reba-naughty.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/mom/1080-reba-never-camera-ready.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/mom/1080-reba-puppy-back-drop.jpg"
+
+
+        ],
+
+        // Reba Profile
+
+
+        previousLitter: [
+
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kasem-oh-so-cute.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kemp-portrait.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kenja-portrait.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-karl-came-karl.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-obro-came-teddy.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-olaf-came-kobe.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-oliv-came-stella.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-olli-came-watson.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-onyx-came-ryker.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-oron-came-thor.jpg"
+
+        ],
+
+
+        puppies: [
+            {
+                image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/1080-birny-pny-wsl.jpg",
+                name: "Birny",
+                gender: "Male",
+                availablity: "Available",
+                price: "Available",
+
+                birthday: {
+                    text: "September 26, 2023",
+                    value: "09-26-2023"
+                }
+
+            }
+            , {
+                image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/1080-bazil-pny-wsl.jpg",
+                name: "Bazil",
+                gender: "Male",
+                availablity: "Available",
+                price: "Available",
+                birthday: {
+                    text: "September 26, 2023",
+                    value: "09-26-2023"
+                }
+
+            }, {
+                image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/1080-beck-pny-wsl.jpg",
+                name: "Beck",
+                gender: "Male",
+                availablity: "Available",
+                price: "Available",
+                birthday: {
+                    text: "September 26, 2023",
+                    value: "09-26-2023"
+                }
+
+            },
+            {
+                image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/1080-bary-pny-wsl.jpg",
+                name: "Bary",
+                gender: "Male",
+                availablity: "Available",
+                price: "Available",
+                birthday: {
+                    text: "September 26, 2023",
+                    value: "09-26-2023"
                 }
 
             }

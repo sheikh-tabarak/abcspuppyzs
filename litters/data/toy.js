@@ -8,6 +8,7 @@ const Litters = [
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
+        prices: [],
         image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/1080x-mother-callie-and-father-jove-present.jpg",
         name: "Momma Callie & Father Jove",
         // desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
@@ -143,11 +144,13 @@ const Litters = [
     //2. Momma Quince & Father Zeus(1)
     {
         mode: 1,
+
         thumbnail: {
             type: "video",
             poster: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/litter-tuzi/1080-urbain-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4",
         },
+        prices: [],
         image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/1080x-mother-quince-and-father-zeus-present.jpg",
         name: " Momma Quince & Father Zeus",
         type: "Toy Goldendoodle",
@@ -283,7 +286,144 @@ const Litters = [
 
     },
 
-    // 3 - Momma Moana & Father Jove (0)
+
+    // 3. Momma Jaimie & Father Jove (1)
+    {
+        mode: 1,
+        thumbnail: {
+            type: "blank",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
+        image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/1080x-mother-jaimie-and-father-jove-present.jpg",
+        name: "Momma Jaimie & Father Jove",
+        // desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
+        type: "Toy Goldendoodle",
+        status: {
+            mode: "borned",
+            // mode: "expecting",
+            // mode: "available",
+            text: "Reservations Open!(3 Males)"
+        },
+        expected: "Spring 2024",
+        goHome: "Christmas 2023",
+        available: "Available",
+        avg_weight: "10-20lbs",
+
+
+        // Jove Profile
+        fname: "Jove",
+        fweight: "6lbs",
+        fheight: "6.5\"",
+        fdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/25012/",
+        fofa: "https://ofa.org/advanced-search/?appnum=2397811/",
+        fimages: [
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-curious.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-8-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-focus.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-9-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-meadows.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-10-weeks.jpg ",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-pathway.jpg ",
+            "public/img/parents/our-goldendoodle-dads/lord-jove/puppy/1080-lord-jove-11-weeks.jpg",
+
+            "public/img/parents/our-goldendoodle-dads/lord-jove/1080-lord-jove-serious.jpg"
+
+        ],
+
+        // Jove Profile
+
+
+        // Jaimie Profile
+
+        mname: "Jaimie",
+        mweight: "14lbs",
+        mheight: "8\"",
+        mdna: "https://www.pawprintgenetics.com/pedigrees/dogs/details/28101/",
+        mofa: "#",
+        mimages: [
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-awe-looking.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-favorite-laking.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-first-hike.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-girly-rose.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-looking-fine-approach.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-puppy-days.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-water-favorite-time.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/mom/1080-jaimie-woods-times-best-times.jpg"
+        ],
+
+        // Jaimie Profile
+
+
+        previousLitter: [
+
+        ],
+
+
+        prices: [{
+            title: "Male:",
+            price: "<small>RESERVED</small>",
+            priority: "First Choice"
+        },
+
+        {
+            title: "Males:",
+            price: "$3,000",
+            priority: ""
+
+        },
+
+        ],
+
+
+        puppies: [
+            {
+                image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/1080-dixon-pny-wsl.jpg",
+                name: "Dixon",
+                gender: "Male",
+                availablity: "Available",
+                price: "$3,000",
+
+                birthday: {
+                    text: "October 16, 2023",
+                    value: "10-16-2023"
+                }
+
+            }
+            , {
+                image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/1080-dano-pny-wsl.jpg",
+                name: "Dano",
+                gender: "Male",
+                availablity: "Available",
+                price: "$3,000",
+                birthday: {
+                    text: "October 16, 2023",
+                    value: "10-16-2023"
+                }
+
+            }, {
+                image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/1080-dale-pny-wsl.jpg",
+                name: "Dale",
+                gender: "Male",
+                availablity: "Available",
+                price: "$3,000",
+                birthday: {
+                    text: "October 16, 2023",
+                    value: "10-16-2023"
+                }
+
+            }
+        ]
+
+    },
+
+
+    // 4 - Momma Moana & Father Jove (0)
     {
         mode: 0,
         thumbnail: {
