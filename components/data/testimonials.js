@@ -1,6 +1,6 @@
 const OurReviews = [
     {
-        link: " ",
+        link: "/",
         image: "public/img/abcs-puppy-zs-goldendoodle-reviews/acho.jpg"
     },
     {
