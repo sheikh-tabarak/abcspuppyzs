@@ -5,7 +5,7 @@ const Litters = [
         mode: 1,
         thumbnail: {
             type: "video",
-            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
         birthday: {
@@ -305,12 +305,11 @@ const Litters = [
     },
 
 
-
     // 3 - Momma Luci & Father Pluto (0)
     {
         mode: 0,
         thumbnail: {
-            type: "no",
+            type: "none",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
@@ -417,7 +416,7 @@ const Litters = [
     {
         mode: 0,
         thumbnail: {
-            type: "no",
+            type: "none",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
@@ -534,7 +533,7 @@ const Litters = [
     {
         mode: 0,
         thumbnail: {
-            type: "no",
+            type: "none",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
@@ -654,7 +653,7 @@ const Litters = [
     {
         mode: 0,
         thumbnail: {
-            type: "no",
+            type: "none",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
@@ -759,7 +758,7 @@ const Litters = [
     {
         mode: 0,
         thumbnail: {
-            type: "no",
+            type: "none",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },

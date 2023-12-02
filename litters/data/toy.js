@@ -4,7 +4,7 @@ const Litters = [
     {
         mode: 1,
         thumbnail: {
-            type: "blank",
+            type: "none",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
@@ -151,7 +151,7 @@ const Litters = [
 
         thumbnail: {
             type: "video",
-            poster: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/litter-tuzi/1080-urbain-pny-wsl.jpg",
+            poster: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.jpg",
             link: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4",
         },
         prices: [],
@@ -300,7 +300,7 @@ const Litters = [
     {
         mode: 1,
         thumbnail: {
-            type: "blank",
+            type: "none",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },

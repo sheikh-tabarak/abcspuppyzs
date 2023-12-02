@@ -6,7 +6,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "video",
-            poster: "public/img/our-goldendoodle-dads/lord-jove/720-lord-jove-focus.jpg",
+            poster: "public/img/our-goldendoodle-moms/micro-goldendoodle/hono/momma-hono-f1b-micro-goldendoodles-litter-yetu.jpg",
             link: "public/img/our-goldendoodle-moms/micro-goldendoodle/hono/momma-hono-f1b-micro-goldendoodles-litter-yetu.mp4",
         },
         image: "public/img/parents/our-goldendoodle-moms/micro-goldendoodle/hono/1080x-mother-hono-and-father-jove-present.jpg",
@@ -132,7 +132,6 @@ const Litters = [
         ]
 
     },
-
 
     // 2 - Momma Daimie & Father Zeus  (1)
     {
@@ -270,7 +269,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "video",
-            poster: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/720-tien-profile.jpg",
+            poster: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/momma-gavi-f1b-micro-goldendoodles-litter-tuzi.jpg",
             link: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/momma-gavi-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
         image: "public/img/parents/familia-goldendoodle-moms/micro-goldendoodle/gavi/1080x-mother-gavi-and-father-zeus-present.jpg",
@@ -399,7 +398,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "video",
-            poster: "public/img/our-goldendoodle-dads/lord-jove/720-lord-jove-focus.jpg",
+            poster: "public/img/our-goldendoodle-moms/micro-goldendoodle/kiki/momma-kiki-f1b-micro-goldendoodles-litter-tuzi.jpg",
             link: "public/img/our-goldendoodle-moms/micro-goldendoodle/kiki/momma-kiki-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
         image: "public/img/parents/our-goldendoodle-moms/micro-goldendoodle/kiki/1080x-mother-kiki-and-father-jove-present.jpg",
@@ -518,7 +517,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "video",
-            poster: "public/img/our-goldendoodle-dads/lord-jove/720-lord-jove-focus.jpg",
+            poster: "public/img/our-goldendoodle-moms/micro-goldendoodle/lulu/momma-lulu-f1b-micro-goldendoodles-litter-tuzi.jpg",
             link: "public/img/our-goldendoodle-moms/micro-goldendoodle/lulu/momma-lulu-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
         image: "public/img/parents/our-goldendoodle-moms/micro-goldendoodle/lulu/1080x-mother-lulu-and-father-jove-present.jpg",
@@ -632,7 +631,6 @@ const Litters = [
         ]
 
     },
-
 
     // 6 - Momma Kula & Father Zeus (0)
     {
@@ -881,7 +879,6 @@ const Litters = [
         ]
 
     },
-
 
     // 8 - Momma Paia & Father Jove (0)
     {
