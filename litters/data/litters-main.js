@@ -84,7 +84,7 @@ function loadCards() {
 
             for (let inner_index = 0; inner_index < Litters[index].prices.length; inner_index++) {
                 if (Litters[index].prices[inner_index].price != "") {
-                    document.getElementById('prices-container' + index).innerHTML += '<tr class="even:bg-white odd:bg-gray-50  border-b border-t"> <th scope="row" class="px-4 py-2 font-bold text-gray-900 text-right "> ' + Litters[index].prices[inner_index].title + ' </th> <td class="px-4 py-2 text-left">' + Litters[index].prices[inner_index].price + '<span class="text-wrap pl-2" id="availability-badge-' + index + inner_index + '"></span> </td> </tr>'
+                    document.getElementById('prices-container' + index).innerHTML += '<tr class="even:bg-white odd:bg-gray-50  border-b border-t"> <th scope="row" class="px-4 py-2 font-bold text-gray-900 text-right "> <span class="text-wrap pl-2 mr-4" id="availability-badge-' + index + inner_index + '"></span>' + Litters[index].prices[inner_index].title + ' </th> <td class="px-4 py-2 text-left">' + Litters[index].prices[inner_index].price + ' </td> </tr>'
                     if (Litters[index].prices[inner_index].priority != "" && Litters[index].prices[inner_index].price != "") {
                         document.getElementById('availability-badge-' + index + inner_index).innerHTML += '<span class="inline-flex items-center gap-x-1.5 py-[3px] px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-600">' + Litters[index].prices[inner_index].priority + ' </span>'
                     }
