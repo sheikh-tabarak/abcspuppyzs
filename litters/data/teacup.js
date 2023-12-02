@@ -161,7 +161,7 @@ const Litters = [
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
         type: "Teacup Goldendoodle",
         status: {
-            mode: "expecting",
+            mode: "borned",
             text: "Reservations Open!  <br>(1 Male - 4 Females)"
         },
         expected: "Spring 2024",
@@ -205,9 +205,9 @@ const Litters = [
         },
 
         {
-            title: "Females:",
+            title: "Female:",
             price: "$4,200",
-            priority: ""
+            priority: "Fourth Choice"
 
         }],
 

@@ -8,6 +8,10 @@ const Litters = [
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
+        birthday: {
+            text: "August 26, 2023",
+            value: "08-26-2023"
+        },
         prices: [],
         image: "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/clio/1080x-mother-clio-and-father-jove-present.jpg",
         name: "Momma Clio & Father Jove",
@@ -135,6 +139,10 @@ const Litters = [
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
+        birthday: {
+            text: "September 26, 2023",
+            value: "09-26-2023"
+        },
         prices: [
             {
                 title: "Male:",
@@ -229,16 +237,16 @@ const Litters = [
 
         previousLitter: [
 
-            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kasem-oh-so-cute.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kemp-portrait.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kenja-portrait.jpg ",
             "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-karl-came-karl.jpg ",
             "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-obro-came-teddy.jpg ",
             "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-olaf-came-kobe.jpg ",
             "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-oliv-came-stella.jpg ",
             "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-olli-came-watson.jpg ",
             "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-onyx-came-ryker.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-oron-came-thor.jpg"
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080x-from-oron-came-thor.jpg",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kasem-oh-so-cute.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kemp-portrait.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/mini-goldendoodle/reba/previous-litter/1080-kenja-portrait.jpg ",
 
         ],
 

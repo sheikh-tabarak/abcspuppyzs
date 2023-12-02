@@ -9,6 +9,10 @@ const Litters = [
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
         prices: [],
+        birthday: {
+            text: "August 6, 2023",
+            value: "08-06-2023"
+        },
         image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/1080x-mother-callie-and-father-jove-present.jpg",
         name: "Momma Callie & Father Jove",
         // desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",
@@ -79,13 +83,13 @@ const Litters = [
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hai-side-portrait.jpg ",
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-haydn-freedom.jpg ",
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-haydn-profile.jpg ",
+
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-abbot-came-ryder.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-abner-came-monkey.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-acton-came-mac.jpg",
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hens-freedom.jpg ",
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hens-on-the-move.jpg ",
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080-hens-side-portrait.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-abbot-came-ryder.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-abner-came-monkey.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/callie/previous-litter/1080x-from-acton-came-mac.jpg"
-
         ],
 
 
@@ -158,13 +162,17 @@ const Litters = [
             mode: "available",
             text: "Available Today!"
         },
+
+        birthday: {
+            text: "August 28, 2023",
+            value: "08-28-2023"
+        },
         expected: "Spring 2024",
         // birthday: {
         //     text: "October 29, 2023",
         //     value: "10-29-2023"
         // },
         goHome: "January 19, 2024",
-
         available: "Available",
         avg_weight: "5-15lbs",
 
@@ -254,12 +262,13 @@ const Litters = [
 
 
         previousLitter: [
-            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080-momma-quince-toy-goldendoodles-litter-tuzi.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080-momma-quinces-toy-goldendoodles-litter-laohu.jpg ",
+
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-amada-came-remi.jpg ",
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-bele-came-coco.jpg ",
             "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-chay-came-mose.jpg ",
-            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-ramos-came-bruno.jpg"
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080x-from-ramos-came-bruno.jpg",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080-momma-quince-toy-goldendoodles-litter-tuzi.jpg ",
+            "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/quince/previous-litter/1080-momma-quinces-toy-goldendoodles-litter-laohu.jpg ",
         ],
 
 
@@ -294,6 +303,10 @@ const Litters = [
             type: "blank",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+        },
+        birthday: {
+            text: "October 16, 2023",
+            value: "10-16-2023"
         },
         image: "public/img/parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/1080x-mother-jaimie-and-father-jove-present.jpg",
         name: "Momma Jaimie & Father Jove",

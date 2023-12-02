@@ -134,8 +134,6 @@ const Litters = [
     },
 
 
-
-
     // 2 - Momma Daimie & Father Zeus  (1)
     {
         mode: 1,
