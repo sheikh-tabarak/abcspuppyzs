@@ -24,7 +24,7 @@ const Litters = [
             {
                 title: "Male:",
                 price: "$5,200",
-                priority: "First Choice"
+                priority: "1ST"
             },
             {
                 title: "Males:",
@@ -34,7 +34,7 @@ const Litters = [
             {
                 title: "Female:",
                 price: "$5,400",
-                priority: "First Choice"
+                priority: "1ST"
             },
             {
                 title: "Females:",

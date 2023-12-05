@@ -72,9 +72,6 @@
             <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
                 Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles
                 in a Pocket-Size Package.
-
-
-
             </p>
 
             <nav class="flex justify-center py-5 text-white" aria-label="Breadcrumb">
@@ -307,16 +304,30 @@
     </div>
 
     <div id="testimonials"></div>
+    <div id="reviews-container" class="flex flex-wrap gap-8 px-4 lg:px-16">
+    </div>
+
     <div id="logoSection"></div>
     <div id="footer"></div>
 
+    <script src="components/data/testimonials.js"></script>
+    <script>
+        for (let index = 0; index < OurReviews.length; index++) {
+            if (OurReviews[index].type == "micro-teacup") {
+                document.getElementById("reviews-container").innerHTML += '<div class="w-[100%] md:w-[50%] lg:w-[30%]"><a href="' + OurReviews[index].link + '"> <img src="' + OurReviews[index].image + '" class="object-contain w-full lg:h-[530px] hover:scale-95 transition cursor-pointer duration-500 shadow hover:shadow-lg rounded-lg p-5 " /> </a> </div> ';
+            }
+        }
+    </script>
+
     <script src="utilities/js/video-slider.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
 
     <script src="litters/data/micro-tech.js"></script>
     <script src="litters/data/litters-main.js"></script>
     <script defer src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
 </body>
+
 
 </html>

@@ -3,6 +3,9 @@
 
 <head>
     <base href="/">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         const hostname = window.location.hostname;
         var baseHref = '/';
@@ -17,40 +20,23 @@
         document.querySelector('base').setAttribute('href', baseHref);
     </script>
 
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="utilities/js/tailwind.js"></script>
 
     <link rel="stylesheet" href="utilities/css/style.css" />
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-
     <link rel="preconnect" href="https://assets.calendly.com" />
     <link rel="preload" href="https://assets.calendly.com/assets/external/widget.css" as="style" />
-
     <link rel="stylesheet" href="formmin.css" />
     <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
 
     <script async src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 
 
-    <script>
 
-        function verifyCaptcha(e) {
 
-            void Calendly.initPopupWidget({
-                url: "https://calendly.com/abcspuppyzs/goldendoodle-puppy-chat?hide_landing_page_details=1&hide_gdpr_banner=1",
-            });
-        }
-
-    </script>
-    <!-- 
-    <script>
+    <!-- <script>
         $(function () {
             $("#header").load("components/header.html");
             $("#footer").load("components/footer.html");
@@ -107,11 +93,11 @@
                                 <div class="flex justify-center divide-x-2 py-3">
                                     <a href="pages/privacypolicy.html">
                                         <div class="text-xs px-2">
-                                            Privacy policy </div>
+                                            PRIVACY POLICY </div>
                                     </a>
                                     <a href="pages/terms.html">
                                         <div class="text-xs px-2">
-                                            Terms and Conditions </div>
+                                            TERMS AND CONDITIONS </div>
                                     </a>
                                 </div>
 
@@ -417,8 +403,17 @@
             </div>
         </div>
     </section>
-    <!-- ====== Contact Section End -->
     <div id="footer"></div>
+    <script>
+
+        function verifyCaptcha(e) {
+
+            void Calendly.initPopupWidget({
+                url: "https://calendly.com/abcspuppyzs/goldendoodle-puppy-chat?hide_landing_page_details=1&hide_gdpr_banner=1",
+            });
+        }
+
+    </script>
     <script src="utilities/js/main.js"></script>
 </body>
 

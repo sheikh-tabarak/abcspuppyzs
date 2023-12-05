@@ -1,116 +1,41 @@
 <!DOCTYPE html>
-<html>
-<base href="/">
+<html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta charset="UTF-8" />
-<script>
-  const hostname = window.location.hostname;
+<meta name="apple-mobile-web-app-capable" content="yes">
 
-  var baseHref = '/';
-  console.log(hostname)
-  if (hostname === 'localhost' || hostname === '127.0.0.1') {
-    baseHref = '/';
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  }
-  if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+<head>
+  <base href="/">
+  <script src="utilities/js/tailwind.js"></script>
+  <link rel="stylesheet" href="utilities/css/style.css" />
 
-  console.log(baseHref)
-  document.querySelector('base').setAttribute('href', baseHref);
-</script>
+  <script src="utilities/js/main.js"></script>
 
-<!-- SCHEMA -->
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "url": "https://sheikh-tabarak.github.io/abcspuppyzs/",
-    "logo": "https://sheikh-tabarak.github.io/abcspuppyzs/public/images/abcs.svg"
-  }
-</script>
-<script type="application/ld+json">
-  {
-      "@context": "https://schema.org",
-      "@type": "PetStore",
-      "image": "https://s3.amazonaws.com/abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-puppy-pictures/mini-goldendoodle/mini-goldendoodles-puppies-group-photos.jpg",
-      "name": "ABCs Puppy Zs",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "TX",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 31.000000,
-        "longitude": -100.000000
-      },
-        "areaServed": {
-          "@type": "State",
-          "name": "Texas"
-      },
-        "url": "https://www.abcspuppyzs.com/",
-        "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "06:00",
-        "closes": "22:00"
-      }
-    ]
-  }
-</script>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "VideoObject",
-        "position": 1,
-        "name": "Videos From Our Pups and Their Forever-Home Families",
-        "url": "https://www.abcspuppyzs.com/",
-        "description": "We Cherish Our Pups and Their Forever Families. Hear the Williams Family Share their ABCs Puppy Zs Experience.",
-        "thumbnailUrl": [
-          "https://s3.amazonaws.com/abcspuppyzs.com/assets/schema/abcs-puppy-zs-goldendoodle-logos/abcspuppyzs-review-williamsae.jpg"
-        ],
-        "uploadDate": "2022-01-18T12:00:00-06:00",
-        "duration": "PT10M",
-        "contentUrl": "https://s3.amazonaws.com/abcspuppyzs.com/assets/img/abcs-puppy-zs-goldendoodle-video-reviews/abcspuppyzs-review-williamsae.mp4"
-      }
-    ]
-  }
-</script>
-<!-- END SCHEMA -->
+  <script>
+    const hostname = window.location.hostname;
 
+    var baseHref = '/';
+    console.log(hostname)
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      baseHref = '/';
 
-<!-- FAVICON -->
-<link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
-<!-- FAVICON -->
+    }
+    if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+    console.log(baseHref)
+    document.querySelector('base').setAttribute('href', baseHref);
+  </script>
 
-<link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <script src="utilities/js/tailwind.js"></script>
+  <link rel="stylesheet" href="utilities/css/style.css" />
 
-<style>
-  @font-face {
-    font-family: 'Poppins';
-    src: url('utilities/fonts/poppins-regular-webfont.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
-</style>
+  <title>Home | ABCs Puppy Zs</title>
 
-<link rel="stylesheet" href="utilities/css/style.css" />
-<script src="utilities/js/tailwind.js"></script>
-
-<!-- Loading Tailwind -->
-<title>Home | ABCs Puppy Zs</title>
 </head>
+
+
 
 <body>
   <div id="header"></div>
@@ -139,11 +64,33 @@
     <section id="hero-section" class="bg-gray-100">
       <div
         class="text-center md:text-left lg:text-left grid max-w-screen-xl px-12 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-4 lg:grid-cols-12 px-10 lg:px-16">
-        <img class="w-[250px] place-self-center md:hidden lg:hidden" src="public/images/herodog.png"
-          alt="ABCs Puppy Zs" />
+
+        <div class="relative lg:hidden">
+          <div class="absolute flex w-full h-full justify-center items-center">
+            <div class="animate-ping bg-white opacity-[0.8] rounded-full 
+              w-[40px] h-[40px] absolute flex  justify-center items-center">
+            </div>
+            <svg class="absolute flex  w-[40px] h-[40px] justify-center items-center cursor-pointer"
+              onclick="LinkBoxDisplay('sheikh-tabarak.github.io/abcspuppyzs/public/images/reviews/PUPPYZS_2_.mp4')"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px"
+              style="enable-background: new 0 0 32 32" version="1.1" viewBox="0 0 32 32" width="40px"
+              xml:space="preserve">
+              <g id="Layer_1" />
+              <g id="play_x5F_alt">
+                <path
+                  d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
+                  style="fill: white" />
+              </g>
+            </svg>
+
+          </div>
+          <img class="w-full place-self-center md:hidden lg:hidden" src="public/images/herodog.png"
+            alt="ABCs Puppy Zs" />
+        </div>
+
         <div class="mr-auto place-self-center lg:col-span-7">
           <span
-            class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">GOLDENDOODLES
+            class="inline-flex items-center rounded-md bg-white px-2 pb-1 pt-2 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">GOLDENDOODLES
             FOR SALE</span>
           <h1 class="max-w-2xl my-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
             ABCs Puppy Zs
@@ -163,7 +110,26 @@
           </a>
 
         </div>
-        <div class="hidden w-[500px] lg:mt-0 lg:col-span-5 lg:flex">
+        <div class="hidden lg:relative  w-[500px] lg:mt-0 lg:col-span-5 lg:flex">
+
+          <div class="absolute flex w-full h-full justify-center items-center">
+            <div class="animate-ping bg-white opacity-[0.8] rounded-full 
+              w-[40px] h-[40px] absolute flex  justify-center items-center">
+            </div>
+            <svg class="absolute flex  w-[40px] h-[40px] justify-center items-center cursor-pointer"
+              onclick="LinkBoxDisplay('sheikh-tabarak.github.io/abcspuppyzs/public/images/reviews/PUPPYZS_2_.mp4')"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px"
+              style="enable-background: new 0 0 32 32" version="1.1" viewBox="0 0 32 32" width="40px"
+              xml:space="preserve">
+              <g id="Layer_1" />
+              <g id="play_x5F_alt">
+                <path
+                  d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   "
+                  style="fill: white" />
+              </g>
+            </svg>
+
+          </div>
           <img src="public/images/herodog.png" alt="mockup" />
         </div>
       </div>
@@ -198,15 +164,15 @@
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/average-weight.svg" alt="">
 
-                <strong> &nbsp;Avg. Weight: &nbsp;</strong> 25-35lbs</span>
+                <span class="pt-1"> <strong> &nbsp;Avg. Weight: &nbsp;</strong> 25-35lbs</span></span>
             </p>
             <p class="mb-4 font-normal text-gray-700">
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/shedding.svg" alt="">
 
-                <strong> &nbsp; Shedding: &nbsp;</strong>
-                Low</span>
+                <span class="pt-1"> <strong> &nbsp; Shedding: &nbsp;</strong>
+                  Low</span></span>
             </p>
             <a href="litters/pages/mini.html"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#186C91] rounded-lg hover:bg-[#186C91] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -238,14 +204,17 @@
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/average-weight.svg" alt="">
 
-                <strong>&nbsp; Avg. Weight: &nbsp;</strong> 15-25lbs</span>
+                <span class="pt-1"> <strong>&nbsp; Avg. Weight: &nbsp;</strong> 15-25lbs</span>
+              </span>
             </p>
             <p class="mb-4 font-normal text-gray-700">
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/shedding.svg" alt="">
 
-                <strong> &nbsp; Shedding: &nbsp;</strong> Lower</span>
+                <span class="pt-1"> <strong> &nbsp; Shedding: &nbsp;</strong> Lower</span>
+
+              </span>
             </p>
             <a href="litters/pages/micro.html"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#186C91] rounded-lg hover:bg-[#186C91] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -276,14 +245,14 @@
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/average-weight.svg" alt="">
-                <strong>&nbsp; Avg. Weight: &nbsp;</strong> 10-20lbs
+                <span class="pt-1"> <strong>&nbsp; Avg. Weight: &nbsp;</strong> 10-20lbs</span>
               </span>
             </p>
             <p class="mb-4 font-normal text-gray-700">
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/shedding.svg" alt="">
-                <strong> &nbsp; Shedding: &nbsp;</strong> Lowest</span>
+                <span class="pt-1"> <strong> &nbsp; Shedding: &nbsp;</strong> Lowest</span></span>
             </p>
             <a href="litters/pages/toy.html"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#186C91] rounded-lg hover:bg-[#186C91] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -314,14 +283,14 @@
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/average-weight.svg" alt="">
-                <strong>&nbsp; Avg. Weight: &nbsp;</strong> 5-15lbs</span>
+                <span class="pt-1"> <strong>&nbsp; Avg. Weight: &nbsp;</strong> 5-15lbs</span></span>
             </p>
             <p class="mb-4 font-normal text-gray-700">
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/shedding.svg" alt="">
 
-                <strong> &nbsp; Shedding: &nbsp;</strong> Lowest</span>
+                <span class="pt-1"> <strong> &nbsp; Shedding: &nbsp;</strong> Lowest</span></span>
             </p>
             <a href="litters/pages/teacup.html"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#186C91] rounded-lg hover:bg-[#186C91] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -353,14 +322,15 @@
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/average-weight.svg" alt="">
-                <strong>&nbsp; Avg. Weight: &nbsp;</strong> 5-10lbs</span>
+                <span class="pt-1"> <strong>&nbsp; Avg. Weight: &nbsp;</strong> 5-10lbs</span></span>
             </p>
             <p class="mb-4 font-normal text-gray-700">
               <span
                 class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-[#186C91] ring-1 ring-inset ring-[#186C91]">
                 <img class="w-4 h-4" src="public/icons/shedding.svg" alt="">
 
-                <strong> &nbsp; Shedding: &nbsp;</strong> Lowest</span>
+                <span class="pt-1"> <strong> &nbsp; Shedding: &nbsp;</strong> Lowest</span>
+              </span>
             </p>
             <a href="litters/pages/micro-teacup.html"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#186C91] rounded-lg hover:bg-[#186C91] hover:opacity-[0.8] focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -469,6 +439,15 @@
   </section>
   <div id="footer"></div>
   <script src="utilities/js/main.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+
+  <!-- <script>
+    $(function () {
+      $("#header").load("components/header.html");
+      $("#footer").load("components/footer.html");
+    });
+  </script> -->
 </body>
 
 </html>

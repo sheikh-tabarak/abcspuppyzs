@@ -92,7 +92,7 @@ const Litters = [
         prices: [{
             title: "Male:",
             price: "<small>RESERVED</small>",
-            priority: "First Choice"
+            priority: "1ST"
         },
 
         {
@@ -104,7 +104,7 @@ const Litters = [
         // {
         //     title: "Female:",
         //     price: "$2,400",
-        //     priority: "First Choice"
+        //     priority: "1ST"
 
         // },
         {
@@ -345,18 +345,16 @@ const Litters = [
 
         //   Gavi Profile
 
-
-
         prices: [
             {
                 title: "Male:",
                 price: "<small>RESERVED</small>",
-                priority: "First Choice"
+                priority: "1ST"
             },
             {
                 title: "Male:",
                 price: "<small>RESERVED</small>",
-                priority: "Second Choice"
+                priority: "2ND"
             },
 
             {
@@ -478,7 +476,7 @@ const Litters = [
         prices: [{
             title: "Male:",
             price: "<small>RESERVED</small>",
-            priority: "First Choice"
+            priority: "1ST"
         },
 
         {
@@ -599,7 +597,7 @@ const Litters = [
         prices: [{
             title: "Male:",
             price: "<small>RESERVED</small>",
-            priority: "First Choice"
+            priority: "1ST"
         },
 
         {
@@ -720,7 +718,7 @@ const Litters = [
             {
                 title: "Male:",
                 price: "$2,200",
-                priority: "First Choice"
+                priority: "1ST"
             },
 
             {
@@ -732,7 +730,7 @@ const Litters = [
             {
                 title: "Female:",
                 price: "$2,400",
-                priority: "First Choice"
+                priority: "1ST"
 
             },
             {
@@ -847,7 +845,7 @@ const Litters = [
             {
                 title: "Male:",
                 price: "$2,200",
-                priority: "First Choice"
+                priority: "1ST"
             },
 
             {
@@ -859,7 +857,7 @@ const Litters = [
             {
                 title: "Female:",
                 price: "$2,400",
-                priority: "First Choice"
+                priority: "1ST"
 
             },
             {
@@ -968,7 +966,7 @@ const Litters = [
         prices: [{
             title: "Male:",
             price: "$2,200",
-            priority: "First Choice"
+            priority: "1ST"
         },
 
         {
@@ -980,7 +978,7 @@ const Litters = [
         {
             title: "Female:",
             price: "$2,400",
-            priority: "First Choice"
+            priority: "1ST"
 
         },
         {
