@@ -156,6 +156,12 @@ const Litters = [
     //1. Momma Kala & Father Zeus(0)
     {
         mode: 0,
+        thumbnail: {
+            type: "video",
+            caption: "Litter Video - 4 Weeks",
+            poster: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/momma-kala-teacup-goldendoodles-litter-yetu.jpg",
+            link: "public/img/our-goldendoodle-moms/teacup-goldendoodle/kala/momma-kala-teacup-goldendoodles-litter-yetu.mp4",
+        },
         image: "public/img/parents/our-goldendoodle-moms/teacup-goldendoodle/kala/1080x-mother-kala-and-father-zeus-present.jpg",
         name: "Momma Kala & Father Zeus",
         desc: "Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package. - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package - Micro Teacup Goldendoodles Are Our Smallest Variety, Averaging Less Than 10lbs. These Are Goldendoodles in a Pocket-Size Package.",

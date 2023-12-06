@@ -5,7 +5,9 @@ const Litters = [
     {
         mode: 0,
         thumbnail: {
+
             type: "video",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/our-goldendoodle-moms/micro-goldendoodle/hono/momma-hono-f1b-micro-goldendoodles-litter-yetu.jpg",
             link: "public/img/our-goldendoodle-moms/micro-goldendoodle/hono/momma-hono-f1b-micro-goldendoodles-litter-yetu.mp4",
         },
@@ -138,6 +140,7 @@ const Litters = [
         mode: 1,
         thumbnail: {
             type: "none",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/our-goldendoodle-dads/lord-jove/720-lord-jove-focus.jpg",
             link: "public/img/parents/familia-goldendoodle-moms/micro-goldendoodle/daimie/puppies/1080-cesi-pny-wsl.jpg",
         },
@@ -147,7 +150,7 @@ const Litters = [
         type: "F1B Micro Goldendoodle",
         status: {
             mode: "borned",
-            text: "Reservations Open! (3 Females)"
+            text: "<span class=\"text-red-600\">Reserved</span>"
         },
         expected: "December 2023",
         birthday: {
@@ -269,6 +272,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "video",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/momma-gavi-f1b-micro-goldendoodles-litter-tuzi.jpg",
             link: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/momma-gavi-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
@@ -396,6 +400,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "video",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/our-goldendoodle-moms/micro-goldendoodle/kiki/momma-kiki-f1b-micro-goldendoodles-litter-tuzi.jpg",
             link: "public/img/our-goldendoodle-moms/micro-goldendoodle/kiki/momma-kiki-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
@@ -515,6 +520,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "video",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/our-goldendoodle-moms/micro-goldendoodle/lulu/momma-lulu-f1b-micro-goldendoodles-litter-tuzi.jpg",
             link: "public/img/our-goldendoodle-moms/micro-goldendoodle/lulu/momma-lulu-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
@@ -635,6 +641,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "none",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/720-tien-profile.jpg",
             link: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/momma-gavi-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
@@ -764,6 +771,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "none",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/720-tien-profile.jpg",
             link: "public/img/familia-goldendoodle-moms/micro-goldendoodle/gavi/momma-gavi-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },
@@ -883,6 +891,7 @@ const Litters = [
         mode: 0,
         thumbnail: {
             type: "none",
+            caption: "Litter Video - 3 Weeks",
             poster: "public/img/our-goldendoodle-dads/lord-jove/720-lord-jove-focus.jpg",
             link: "public/img/our-goldendoodle-moms/micro-goldendoodle/lulu/momma-lulu-f1b-micro-goldendoodles-litter-tuzi.mp4",
         },

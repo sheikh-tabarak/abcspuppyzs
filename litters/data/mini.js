@@ -5,6 +5,7 @@ const Litters = [
         mode: 1,
         thumbnail: {
             type: "video",
+            caption: "Litter Video - 2 Weeks",
             poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.jpg",
             link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },

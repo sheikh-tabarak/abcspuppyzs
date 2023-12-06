@@ -151,6 +151,7 @@ const Litters = [
 
         thumbnail: {
             type: "video",
+            caption: "Litter Video - 2 Weeks",
             poster: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.jpg",
             link: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4",
         },

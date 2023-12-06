@@ -24,6 +24,18 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <script src="utilities/js/tailwind.js"></script>
   <link rel="stylesheet" href="utilities/css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+  <script>
+    $(function () {
+      $("#header").load("components/header.html");
+      $("#footer").load("components/footer.html");
+      $("#logoSection").load("components/logoSection.html");
+      $("#testimonials").load("components/testimonials.html");
+    });
+  </script>
 
   <title>About | ABCs Puppy Zs</title>
 </head>
@@ -380,8 +392,7 @@
   <section class="" id="logoSection"></section>
 
   <div id="testimonials"></div>
-  <div id="reviews-container" class="flex flex-wrap gap-8 px-4 lg:px-16">
-  </div>
+  <div id="reviews-container" class="flex flex-wrap gap-8 px-4 lg:px-16"></div>
 
   <div id="footer"></div>
 
