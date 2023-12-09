@@ -21,11 +21,19 @@
     </script>
 
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.png">
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="utilities/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('utilities/fonts/poppins-regular-webfont.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
     <script src="utilities/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -38,11 +46,9 @@
             $("#footer").load("components/footer.html");
             $("#logoSection").load("components/logoSection.html")
             $("#testimonials").load("components/testimonials.html")
-            // $("#litter-tabs").load("litters/tabs/micro-teacup.html");
         });
     </script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script src="utilities/js/tailwind.js"></script>
+    <link rel="stylesheet" href="utilities/css/tailwind-output.css">
     <title>TOY GOLDENDOODLES | ABCs Puppy Zs</title>
 </head>
 
