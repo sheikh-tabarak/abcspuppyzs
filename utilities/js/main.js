@@ -20,19 +20,19 @@ function SettheURLStructure() {
 function loadEssesntialElements() {
 
   // loads Header in to all pages!
-  fetch('components/header.html')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Network response was not ok: ${response.statusText}`);
-      }
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById('header').innerHTML = html;
-    })
-    .catch(error => {
-      console.error('Error fetching header:', error);
-    });
+  // fetch('components/header.html')
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error(`Network response was not ok: ${response.statusText}`);
+  //     }
+  //     return response.text();
+  //   })
+  //   .then(html => {
+  //     document.getElementById('header').innerHTML = html;
+  //   })
+  //   .catch(error => {
+  //     console.error('Error fetching header:', error);
+  //   });
 
   // loads Footer in to all pages!
   fetch('components/footer.html')
@@ -51,35 +51,35 @@ function loadEssesntialElements() {
 
 
   // loads logo section in to all pages!
-  fetch('components/logoSection.html')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Network response was not ok: ${response.statusText}`);
-      }
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById('logoSection').innerHTML = html;
-    })
-    .catch(error => {
-      console.error('Error fetching header:', error);
-    });
+  // fetch('components/logoSection.html')
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error(`Network response was not ok: ${response.statusText}`);
+  //     }
+  //     return response.text();
+  //   })
+  //   .then(html => {
+  //     document.getElementById('logoSection').innerHTML = html;
+  //   })
+  //   .catch(error => {
+  //     console.error('Error fetching header:', error);
+  //   });
 
 
   // Loading Testimonals
-  fetch('components/testimonials.html')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Network response was not ok: ${response.statusText}`);
-      }
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById('testimonials').innerHTML = html;
-    })
-    .catch(error => {
-      console.error('Error fetching header:', error);
-    });
+  // fetch('components/testimonials.html')
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error(`Network response was not ok: ${response.statusText}`);
+  //     }
+  //     return response.text();
+  //   })
+  //   .then(html => {
+  //     document.getElementById('testimonials').innerHTML = html;
+  //   })
+  //   .catch(error => {
+  //     console.error('Error fetching header:', error);
+  //   });
 }
 
 // loadEssesntialElements();
