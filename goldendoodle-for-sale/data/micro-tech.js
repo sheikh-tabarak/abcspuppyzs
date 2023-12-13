@@ -1,4 +1,6 @@
 const Litters = [
+
+    //1. Momma lil bit & Father Zeus
     {
         mode: 0,
         image: "public/img/our-goldendoodle-parents/our-goldendoodle-moms/micro-teacup-goldendoodle/lil-bit/1080x-mother-lil-bit-and-father-zeus-present.jpg",
@@ -99,7 +101,12 @@ const Litters = [
         puppies: [
         ]
 
-    }];
+    }
+];
+
+// export default Litters;
+// export { Litters };
+
 
 
 

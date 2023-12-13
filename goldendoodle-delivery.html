@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <script>
+    const hostname = window.location.hostname;
+    var baseHref = '/';
+    console.log(hostname)
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      baseHref = '/';
+
+    }
+    if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+
+    console.log(baseHref)
+    document.querySelector('base').setAttribute('href', baseHref);
+  </script>
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('utilities/fonts/poppins-regular-webfont.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+  <link rel="stylesheet" href="utilities/css/tailwind-output.css">
+  <link rel="stylesheet" href="utilities/css/style.css" />
+  <script src="utilities/js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $("#header").load("components/header.html");
+      $("#footer").load("components/footer.html");
+    });
+  </script>
+
+
+  <title>Goldendoodle Delivery | ABCs Puppy Zs</title>
+  <meta name="description" content="We are delivering our Goldendoodled, all relevant details are in that page">
+
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+
+
+  <div style="
+  
+  text-shadow: 0 4px 8px rgba(0,0,0,.5);
+  background-image: url('public/img/goldendoodle-pictures/about/1080-abt-frg.jpg');
+  background-position: center;
+  background-size: cover;
+
+  " class="text-center bg-white text-shadow-lg shadow-gray-200 text-white  ">
+    <div class="
+   bg-black bg-opacity-[0.3] px-5 lg:px-16  pt-20 py-16 lg:py-32 mt-[150px]
+   ">
+      <p class="block mb-2 text-lg font-semibold text-primary">
+        DELIVERY
+
+      </p>
+
+
+      <h2 class="text-dark my-4 text-3xl lg:text-[3.5rem] font-bold uppercase tracking-normal  py-3	">
+
+        PUPPY DELIVERY OPTIONS
+
+      </h2>
+      <p class="text-base italic tracking-wider text-lg lg:px-48 text-center">
+        Where are you Located?
+      </p>
+
+      <nav class="flex justify-center py-5 text-white" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li class="inline-flex items-center">
+            <a href="index.html" class="inline-flex items-center text-sm font-medium  ">
+              <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+              </svg>
+              Home
+            </a>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg class="w-3 h-3  mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="ml-1 text-sm font-medium  md:ml-2">Delivery</span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+  </div>
+
+  <div class="mx-8 lg:mx-16">
+    <section id="hero-section" class="">
+      <div class="lg:flex items-center justify-between gap-12 ">
+
+        <div class="mt-10 lg:w-1/2 lg:flex  ">
+          <img class="rounded-lg shadow-lg " src="public/img/goldendoodle-pictures/traits/720-trts-dog-smarts.jpg"
+            alt="Visiting" />
+        </div>
+        <div class="mr-auto lg:w-1/2">
+
+          <h4 class="w-full my-6 text-xl font-extrabold  leading-none md:text-2xl xl:text-3xl uppercase">
+            Visiting and Viewing
+
+          </h4>
+          <hr class="w-[70px] my-4 h-1.5 border-t-0 bg-[#186C91] opacity-100 dark:opacity-50 rounded " />
+          <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">As a Family-Owned and Operated Breeder, we cherish
+            our home-based approach, valuing privacy. However, we're excited to welcome visitors to experience firsthand
+            our Goldendoodle breeding legacy. We arrange Goldendoodle Puppy Viewings year-round, allowing you to meet
+            our puppies. For those unable to visit, we offer Teams Video Calls, providing a virtual VIP tour of ABCs
+            Puppy Zs from the comfort of your home.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class=" flex justify-center flex-col md:flex-row gap-10 py-16">
+      <!-- Nationwide Delivery -->
+      <div
+        class=" transition duration-500 hover:scale-[1.05] bg-white py-8 px-12 rounded-lg shadow-lg hover:shadow-2xl cursor-pointer text-center benefit-box flex-1">
+        <div class="flex justify-center">
+          <img class="w-32 h-32 place-self-center" src="public/icons/nationwide-delivery.svg" alt="">
+        </div>
+
+        <h2 class="text-lg font-semibold mb-2">Nationwide Delivery</h2>
+        <p>We offer nationwide hand delivery, ensuring our adorable puppies can find their forever homes all over the
+          United States, no matter where you are</p>
+      </div>
+
+      <!-- Personalized Visits -->
+      <div
+        class=" transition duration-500 hover:scale-[1.05] bg-white py-8 px-12 rounded-lg shadow-lg hover:shadow-2xl cursor-pointer text-center benefit-box flex-1">
+        <div class="flex justify-center">
+          <img class="w-32 h-32 place-self-center" src="public/icons/personalized-visits.svg" alt="">
+        </div>
+        <h2 class="text-lg font-semibold mb-2">Personalized Visits</h2>
+        <p>Visit our family home and experience firsthand the love and care that goes into raising our Goldendoodles. We
+          welcome you for personalized viewings</p>
+      </div>
+
+      <!-- Virtual Puppy Preview-->
+      <div
+        class=" transition duration-500 hover:scale-[1.05] bg-white py-8 px-12 rounded-lg shadow-lg hover:shadow-2xl cursor-pointer text-center benefit-box flex-1">
+        <div class="flex justify-center">
+          <img class="w-32 h-32 place-self-center" src="public/icons/virtual-puppy-preview.svg" alt="">
+        </div>
+        <h2 class="text-lg font-semibold mb-2">Virtual Puppy Preview</h2>
+        <p>Can't visit in person? No problem. Enjoy Teams Video Calls to meet our puppies and tour our facilities from
+          the comfort of your home, ensuring you make the right choice for your family</p>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <section id="hero-section" class=" bg-gray-200 py-5">
+    <div class="lg:flex items-center justify-between gaps-10  lg:mx-16 my-8 ">
+
+      <div class="w-[100%] md:w-[50%] lg:w-[50%] flex justify-centers py-8 rounded-lg">
+        <img class="place-self-center" src="public/img/abcs-puppy-zs-goldendoodle-logos/1080-delivery.png" alt="">
+      </div>
+
+      <div class="mx-8">
+
+        <h4 class="max-w-2xl my-4 text-xl font-extrabold  leading-none md:text-2xl xl:text-3xl uppercase">
+          Our Location
+
+        </h4>
+        <hr class="w-[70px] my-4 h-1.5 border-t-0 bg-[#186C91] opacity-100 dark:opacity-50 rounded " />
+
+        <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">
+
+          We are located outside of the Dallas/Fort Worth (DFW) Metroplex in Texas. Specifically, you can find us North
+          of Fort Worth and just West of Roanoke.
+
+        </p>
+        <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">
+          Out of State? No Worries! We Offer Nationwide Hand Delivery of Our Pups all over the United States.
+        </p>
+
+        <p class="max-w-2xl mb-6 font-light text-gray-500 text-lg">For more information and to plan your Visit, you can
+          easily <span class="text-[#186C91] font-bold"><a href="goldendoodle-puppy-chat">Contact Us </a></span> and get
+          an
+          email conversation started <br>
+        </p>
+
+        <a href="goldendoodle-puppy-chat">
+
+          <div class="flex gap-2 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" data-arp-injected="true">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="16" cy="16" r="16" fill="#186C91" />
+                <path fill="#FFF"
+                  d="M16.28 23.325a11.45 11.45 0 0 0 2.084-.34 5.696 5.696 0 0 0 2.602.17.627.627 0 0 1 .104-.008c.31 0 .717.18 1.31.56v-.625a.61.61 0 0 1 .311-.531c.258-.146.498-.314.717-.499.864-.732 1.352-1.708 1.352-2.742 0-.347-.055-.684-.159-1.006.261-.487.472-.999.627-1.53A4.59 4.59 0 0 1 26 19.31c0 1.405-.654 2.715-1.785 3.673a5.843 5.843 0 0 1-.595.442v1.461c0 .503-.58.792-.989.493a15.032 15.032 0 0 0-1.2-.81 2.986 2.986 0 0 0-.368-.187c-.34.051-.688.077-1.039.077-1.412 0-2.716-.423-3.743-1.134zm-7.466-2.922C7.03 18.89 6 16.829 6 14.62c0-4.513 4.258-8.12 9.457-8.12 5.2 0 9.458 3.607 9.458 8.12 0 4.514-4.259 8.121-9.458 8.121-.584 0-1.162-.045-1.728-.135-.245.058-1.224.64-2.635 1.67-.511.374-1.236.013-1.236-.616v-2.492a9.27 9.27 0 0 1-1.044-.765zm4.949.666c.043 0 .087.003.13.01.51.086 1.034.13 1.564.13 4.392 0 7.907-2.978 7.907-6.589 0-3.61-3.515-6.588-7.907-6.588-4.39 0-7.907 2.978-7.907 6.588 0 1.746.821 3.39 2.273 4.62.365.308.766.588 1.196.832.241.136.39.39.39.664v1.437c1.116-.749 1.85-1.104 2.354-1.104zm-2.337-4.916c-.685 0-1.24-.55-1.24-1.226 0-.677.555-1.226 1.24-1.226.685 0 1.24.549 1.24 1.226 0 .677-.555 1.226-1.24 1.226zm4.031 0c-.685 0-1.24-.55-1.24-1.226 0-.677.555-1.226 1.24-1.226.685 0 1.24.549 1.24 1.226 0 .677-.555 1.226-1.24 1.226zm4.031 0c-.685 0-1.24-.55-1.24-1.226 0-.677.555-1.226 1.24-1.226.685 0 1.24.549 1.24 1.226 0 .677-.555 1.226-1.24 1.226z" />
+              </g>
+            </svg>
+
+
+            <p>Let's Get Chatting Today!</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <div id="footer"></div>
+
+</body>
+
+</html>

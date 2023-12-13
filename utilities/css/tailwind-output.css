@@ -1265,12 +1265,12 @@ video {
   height: 240px;
 }
 
-.h-\[320px\] {
-  height: 320px;
-}
-
 .h-\[350px\] {
   height: 350px;
+}
+
+.h-\[400px\] {
+  height: 400px;
 }
 
 .h-\[40px\] {
@@ -1293,6 +1293,10 @@ video {
   height: 100vh;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .min-h-\[330px\] {
   min-height: 330px;
 }
@@ -1311,10 +1315,6 @@ video {
 
 .w-12 {
   width: 3rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-24 {
@@ -2024,6 +2024,10 @@ video {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -2692,6 +2696,11 @@ video {
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
+.bg-indigo-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+}
+
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
@@ -2705,10 +2714,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
 }
 
 .bg-opacity-60 {
@@ -2729,10 +2734,6 @@ video {
 
 .bg-opacity-\[0\.3\] {
   --tw-bg-opacity: 0.3;
-}
-
-.bg-\[url\(\'public\/images\/720-soc-resource\.jpg\'\)\] {
-  background-image: url('public/images/720-soc-resource.jpg');
 }
 
 .bg-\[url\(\'public\/img\/goldendoodle-training\/1080-abcspuppyzs-goldendoodle-training-dangerous-food-for-dogs\.jpg\'\)\] {
@@ -3025,6 +3026,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-3 {
@@ -3989,6 +3995,11 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-indigo-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
 }
@@ -4084,6 +4095,15 @@ video {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
+.focus\:ring-indigo-700:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(67 56 202 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-opacity-50:focus {
+  --tw-ring-opacity: 0.5;
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -4121,6 +4141,10 @@ video {
 
   .sm\:h-\[70px\] {
     height: 70px;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:max-w-\[70px\] {
@@ -4224,6 +4248,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:gap-28 {
+    gap: 7rem;
+  }
+
   .md\:gap-4 {
     gap: 1rem;
   }
@@ -4237,6 +4265,16 @@ video {
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:px-44 {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:py-6 {
@@ -4621,6 +4659,11 @@ video {
     padding-right: 5rem;
   }
 
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -4664,6 +4707,11 @@ video {
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .lg\:py-32 {
@@ -4764,6 +4812,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
   .xl\:gap-0 {
     gap: 0px;
   }
@@ -4771,6 +4823,10 @@ video {
   .xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .xl\:pt-24 {
+    padding-top: 6rem;
   }
 
   .xl\:text-3xl {

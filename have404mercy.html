@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <base href="/">
+    <script>
+        const hostname = window.location.hostname;
+        var baseHref = '/';
+        console.log(hostname)
+        if (hostname === 'localhost' || hostname === '127.0.0.1') {
+            baseHref = '/';
+
+        }
+        if (hostname === 'sheikh-tabarak.github.io') { baseHref = '/abcspuppyzs/'; }
+
+        console.log(baseHref)
+        document.querySelector('base').setAttribute('href', baseHref);
+    </script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon-circlepng.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="preload" href="utilities/fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('utilities/fonts/poppins-regular-webfont.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" href="utilities/css/tailwind-output.css">
+    <title>Have 404 Mercy</title>
+
+</head>
+
+<body>
+
+    <div
+        class="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
+        <div class=" w-full xl:w-1/2 relative pb-12 lg:pb-0">
+            <div class="relative">
+                <div class="absolute">
+                    <div class="">
+                        <h1
+                            class="max-w-2xl my-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl">
+                            Have 404 Mercy
+                        </h1>
+                        <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl">Sorry about
+                            that! Please visit our hompage to get where you need
+                            to go.</p>
+                        <a href="index.html"
+                            class="my-1 inline-flex items-center justify-center px-5 py-3 lg:mr-3 text-base font-medium text-center text-white rounded-lg bg-[#186C91] hover:bg-[#186C91] hover:opacity-[0.8] focus:ring-4 focus:ring-primary-300">
+                            Go Back to Homepage
+                            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
+                </div>
+                <!-- <div class="h-60 flex justify-center"
+                    style="background-image: url('public/img/abcs-puppy-zs-goldendoodle-logos/abcs.svg'); background-repeat: no-repeat;">
+
+                </div> -->
+            </div>
+        </div>
+        <div class=" w-full xl:w-1/2">
+            <img class="h-full w-full" src="public/img/abcs-puppy-zs-goldendoodle-logos/hero-puppy-images.png"
+                alt="Hero Puppy Images" />
+        </div>
+    </div>
+
+</body>
+
+</html>

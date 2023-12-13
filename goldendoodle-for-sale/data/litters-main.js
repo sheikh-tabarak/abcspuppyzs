@@ -1,4 +1,3 @@
-
 function showLitter() {
     document.getElementById('litter-popup').classList.remove('hidden');
     document.getElementById('darkbackground').classList.remove('hidden');

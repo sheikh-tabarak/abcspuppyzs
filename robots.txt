@@ -1,0 +1,9 @@
+Sitemap: https://www.abcspuppyzs.com/sitemap.xml
+
+User-agent: *
+Disallow: /public/
+Disallow: /goldendoodle-confirmation/
+Disallow: /goldendoodle-unsubscribe.html
+Disallow: /?page_id=144
+Disallow: /?p=6220
+Disallow: /?author=1

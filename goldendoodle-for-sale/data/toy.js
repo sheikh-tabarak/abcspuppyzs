@@ -435,7 +435,6 @@ const Litters = [
 
     },
 
-
     // 4 - Momma Moana & Father Jove (0)
     {
         mode: 0,
@@ -563,6 +562,9 @@ const Litters = [
 
     },
 ];
+
+
+export { Litters }
 
 
 
