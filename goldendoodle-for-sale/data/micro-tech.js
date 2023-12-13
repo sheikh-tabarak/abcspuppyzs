@@ -104,7 +104,6 @@ const Litters = [
     }
 ];
 
-// export default Litters;
 // export { Litters };
 
 
