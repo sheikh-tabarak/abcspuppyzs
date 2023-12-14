@@ -6,9 +6,10 @@ const Litters = [
         thumbnail: {
             type: "video",
             caption: "Litter Video - 2 Weeks",
-            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.jpg",
-            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+            poster: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.jpg",
+            link: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
+        // https://s3.amazonaws.com/abcspuppyzs.com/assets/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4
         birthday: {
             text: "August 26, 2023",
             value: "08-26-2023"
@@ -93,7 +94,7 @@ const Litters = [
 
         puppies: [
             {
-                image: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+                image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/mini-goldendoodle/clio/puppies/1080-wayde-pny-wsl.jpg",
                 name: "Wayde",
                 gender: "Male",
                 availablity: "Available",
@@ -106,7 +107,7 @@ const Litters = [
 
             }
             , {
-                image: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wils-pny-wsl.jpg",
+                image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/mini-goldendoodle/clio/puppies/1080-wils-pny-wsl.jpg",
                 name: "Wils",
                 gender: "Male",
                 availablity: "Available",
@@ -116,18 +117,7 @@ const Litters = [
                     value: "08-26-2023"
                 }
 
-            }, {
-                image: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wylt-pny-wsl.jpg",
-                name: "Wylt",
-                gender: "Male",
-                availablity: "Available",
-                price: "$1,700",
-                birthday: {
-                    text: "August 26, 2023",
-                    value: "08-26-2023"
-                }
-
-            }
+            },
         ]
 
     },
@@ -137,8 +127,8 @@ const Litters = [
         mode: 1,
         thumbnail: {
             type: "none",
-            poster: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
-            link: "public/img/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
+            poster: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/mini-goldendoodle/clio/litter-yetu/1080-wayde-pny-wsl.jpg",
+            link: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/mini-goldendoodle/clio/momma-clio-f1-miniature-goldendoodles-litter-yetu.mp4",
         },
         birthday: {
             text: "September 26, 2023",

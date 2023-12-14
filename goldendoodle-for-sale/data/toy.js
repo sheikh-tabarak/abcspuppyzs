@@ -95,7 +95,7 @@ const Litters = [
 
         puppies: [
             {
-                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-zayne-oh-so-cute.jpg",
+                image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-zayne-oh-so-cute.jpg",
                 name: "Zayne",
                 gender: "Male",
                 availablity: "Available",
@@ -108,7 +108,7 @@ const Litters = [
 
             }
             , {
-                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-xuan-oh-so-cute.jpg",
+                image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-xuan-oh-so-cute.jpg",
                 name: "Xuan",
                 gender: "Male",
                 availablity: "Available",
@@ -118,19 +118,10 @@ const Litters = [
                     value: "08-06-2023"
                 }
 
-            }, {
-                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-yago-oh-so-cute.jpg",
-                name: "Yago",
-                gender: "Male",
-                availablity: "Available",
-                price: "$3,000",
-                birthday: {
-                    text: "August 6, 2023",
-                    value: "08-06-2023"
-                }
+            },
 
-            }, {
-                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-zya-oh-so-cute.jpg",
+            {
+                image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/callie/litter-tuzi/1080-zya-oh-so-cute.jpg",
                 name: "Zya",
                 gender: "Female",
                 availablity: "Available",
@@ -152,8 +143,8 @@ const Litters = [
         thumbnail: {
             type: "video",
             caption: "Litter Video - 2 Weeks",
-            poster: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.jpg",
-            link: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4",
+            poster: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.jpg",
+            link: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/quince/momma-quince-toy-goldendoodles-litter-tuzi.mp4",
         },
         prices: [],
         image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/quince/1080x-mother-quince-and-father-zeus-present.jpg",
@@ -276,7 +267,7 @@ const Litters = [
         puppies: [
 
             {
-                image: "public/img/familia-goldendoodle-moms/toy-goldendoodle/quince/litter-tuzi/1080-urbain-pny-wsl.jpg",
+                image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/quince/litter-tuzi/1080-urbain-pny-wsl.jpg",
                 name: "Urbain",
                 gender: "Male",
                 availablity: "Available",
@@ -399,7 +390,7 @@ const Litters = [
                 image: "public/img/our-goldendoodle-parents/familia-goldendoodle-moms/toy-goldendoodle/jaimie/1080-dixon-pny-wsl.jpg",
                 name: "Dixon",
                 gender: "Male",
-                availablity: "Available",
+                availablity: "Reserved",
                 price: "$3,000",
 
                 birthday: {

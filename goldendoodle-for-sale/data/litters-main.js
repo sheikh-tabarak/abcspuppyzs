@@ -132,7 +132,7 @@ function showSubPopup(MainItemId, SubItemId) {
 
 
     if (Litters[MainItemId].status.mode == "available") {
-        document.getElementById('go-home-if-not-available').innerHTML = ' <p class="py-2"><strong> Litter Status::</strong> ' + Litters[MainItemId].status.text + '</p>'
+        document.getElementById('go-home-if-not-available').innerHTML = ' <p class="py-2"><strong> Litter Status:</strong> ' + Litters[MainItemId].status.text + '</p>'
 
     }
     else {
